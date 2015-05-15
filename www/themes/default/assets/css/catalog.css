@@ -1,0 +1,92 @@
+@charset "utf-8";
+#content {
+    max-width: 980px;
+    min-height: 1000px;
+}
+.catalog_with_sidebar {
+    position: relative;
+}
+.catalog_with_sidebar .products_list {
+    
+}
+.products_list .actions {
+    margin-bottom:20px;
+}
+.products_list .actions .buttons {
+    float:right;
+}
+.products_list .actions .buttons div{
+    background: #1abc9c;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+}
+.products_list .actions .buttons div a{
+    line-height: 30px;
+    float: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+#filter {
+    position: absolute;
+    left: 0px;
+    top: 700px;
+    display: inline-block;
+    float:left;
+    width:19%;
+    border: 5px solid #1abc9c;
+}
+#filter .rounded {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom:10px;
+}
+#filter .filter_header {
+    color:#333;
+    font-weight:bold;
+    font-size:16px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+}
+#filter ul.filter_links {
+    list-style:none;
+    margin-bottom:20px;
+}
+#filter ul.filter_links.current a {
+    margin-left: -18px;
+    padding-left: 20px;
+    background:transparent url("../images/icons/close_sprite.png") no-repeat top left;
+}
+#filter ul.filter_links.current a:hover {
+    background:transparent url("../images/icons/close_sprite.png") no-repeat bottom left;
+}
+#filter .light {
+    color:#989898;
+    padding-left:3px;
+}
+a.cancel_filter {
+    font-size:11px;
+    color:#989898;
+    margin-left:20px;
+}
+#filter ul.filter_links li {
+    padding-left:20px;
+}
+#filter form {
+    padding-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+#filter form input{
+    padding-top: 18px;
+    border: 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2014-11-27 01:33"><shop><name>Демо магазин</name><company>Демо кампания</company><url>http://demo-company.loc/</url><currencies><currency id="USD" rate="1"/></currencies><categories><category id="230" >Ноутбуки</category><category id="231" parentId="230">Бюджетный</category><category id="232" parentId="230">Игровой</category><category id="233" >Компьютеры</category><category id="234" parentId="233">Компьютерная акустика</category><category id="235" >Мониторы</category><category id="236" >Телефоны</category><category id="237" parentId="233">Планшеты</category></categories><offers><offer id="1" available="true"><url>http://ipresent.dev/product/lenovo-b570.html</url>
+<price>11219.4</price>
+<currencyId>USD</currencyId>
+<categoryId>231</categoryId>
+<picture>http://ipresent.dev/uploads/product/1_1394212611.jpg</picture>
+<name>Lenovo B570</name>
+<description>Celeron / Pentium, 1500-2200 МГц, 2048-4096 Мб, 320-500 Гб, 15.6 дюйм, Intel GMA HD, DVD-RW, Wi-Fi, Bluetooth (опционально), 2.35 кг</description>
+</offer>
+<offer id="2" available="true"><url>http://ipresent.dev/product/lenovo-g570.html</url>
+<price>11707.2</price>
+<currencyId>USD</currencyId>
+<categoryId>231</categoryId>
+<picture>http://ipresent.dev/uploads/product/2_3868671211.jpg</picture>
+<name>Lenovo G570</name>
+<description>Celeron / Pentium, 1500-2200 МГц, 2048-4096 Мб, 320-500 Гб, 15.6 дюйм, ATI Radeon HD 6370M, DVD-RW, Wi-Fi, Bluetooth (опционально), 2.43 кг</description>
+</offer>
+<offer id="3" available="true"><url>http://ipresent.dev/product/asus-k53u.html</url>
+<price>12195</price>
+<currencyId>USD</currencyId>
+<categoryId>231</categoryId>
+<picture>http://ipresent.dev/uploads/product/3_3626704570.jpg</picture>
+<name>ASUS K53U</name>
+<description>C-60 / E-240 / E-450, 1000-1650 МГц, 2048-4096 Мб, 320-500 Гб, 15.6 дюйм, DVD-RW, Wi-Fi, Bluetooth (опционально), 2.6 кг</description>
+</offer>
+<offer id="4" available="true"><url>http://ipresent.dev/product/asus-x54c.html</url>
+<price>12032.4</price>
+<currencyId>USD</currencyId>
+<categoryId>231</categoryId>
+<picture>http://ipresent.dev/uploads/product/4_3756621990.jpg</picture>
+<name>ASUS X54C</name>
+<description>Celeron / Pentium, 1500-2200 МГц, 2048-4096 Мб, 320-500 Гб, 15.6 дюйм, Intel HD Graphics 3000, DVD-RW, Wi-Fi, Bluetooth, 2.6 кг</description>
+</offer>
+<offer id="5" available="true"><url>http://ipresent.dev/product/dell-inspiron-n5050.html</url>
+<price>12357.6</price>
+<currencyId>USD</currencyId>
+<categoryId>231</categoryId>
+<picture>http://ipresent.dev/uploads/product/5_3420222470.jpg</picture>
+<name>DELL INSPIRON N5050</name>
+<description>Celeron, 1500-1700 МГц, 2048 Мб, 320-500 Гб, 15.6 дюйм, Intel HD Graphics 3000, DVD-RW, Wi-Fi, Bluetooth (опционально), 2.37 кг</description>
+</offer>
+<offer id="6" available="true"><url>http://ipresent.dev/product/fujitsu-lifebook-ah531.html</url>
+<price>12845.4</price>
+<currencyId>USD</currencyId>
+<categoryId>231</categoryId>
+<picture>http://ipresent.dev/uploads/product/6_3640043311.jpg</picture>
+<name>Fujitsu LIFEBOOK AH531</name>
+<description>Celeron / Pentium, 1500-2200 МГц, 2048 Мб, 320 Гб, 15.6 дюйм, Intel HD Graphics 3000, DVD-RW, Wi-Fi, Bluetooth, 2.5 кг</description>
+</offer>
+<offer id="7" available="true"><url>http://ipresent.dev/product/hp-elitebook-8560w.html</url>
+<price>102438</price>
+<currencyId>USD</currencyId>
+<categoryId>232</categoryId>
+<picture>http://ipresent.dev/uploads/product/7_2473068848.jpg</picture>
+<name>HP EliteBook 8560w</name>
+<description>Core i7, 2500 МГц, 8192 Мб, 750 Гб, 15.6 дюйм, NVIDIA Quadro 2000M, BD-RE, Wi-Fi, Bluetooth, 3 кг</description>
+</offer>
+<offer id="8" available="true"><url>http://ipresent.dev/product/dell-alienware-m17x.html</url>
+<price>92682</price>
+<currencyId>USD</currencyId>
+<categoryId>232</categoryId>
+<picture>http://ipresent.dev/uploads/product/8_1963532300.jpg</picture>
+<name>DELL ALIENWARE M17x</name>
+<description>Core i7, 2200-2400 МГц, 8192-16384 Мб, 750-1500 Гб, 17 дюйм, AMD Radeon HD 6990M, BD-RE / Blu-Ray / DVD-RW, Wi-Fi, Bluetooth, 5.3 кг</description>
+</offer>
+<offer id="9" available="true"><url>http://ipresent.dev/product/apple-macbook-pro-15-late-2011.html</url>
+<price>80324.4</price>
+<currencyId>USD</currencyId>
+<categoryId>232</categoryId>
+<picture>http://ipresent.dev/uploads/product/9_2590727812.jpg</picture>
+<name>Apple MacBook Pro 15 Late 2011</name>
+<description>Core i7, 2200-2400 МГц, 4096 Мб, 500-750 Гб, 15.4 дюйм, ATI Radeon HD 6750M / ATI Radeon HD 6770М, DVD-RW, Wi-Fi, Bluetooth, 2.54 кг</description>
+</offer>
+<offer id="10" available="true"><url>http://ipresent.dev/product/lenovo-thinkpad-w520.html</url>
+<price>79674</price>
+<currencyId>USD</currencyId>
+<categoryId>232</categoryId>
+<picture>http://ipresent.dev/uploads/product/10_2401124636.jpg</picture>
+<name>Lenovo THINKPAD W520</name>
+<description>Core i7 / Core i7 Extreme, 2000-2700 МГц, 4096-8192 Мб, 160-580 Гб, 15.6 дюйм, NVIDIA Quadro 2000M, DVD-RW, Wi-Fi, Bluetooth, 2.45 кг</description>
+</offer>
+<offer id="11" available="true"><url>http://ipresent.dev/product/sony-vaio-vpc-f13s8r.html</url>
+<price>63414</price>
+<currencyId>USD</currencyId>
+<categoryId>232</categoryId>
+<picture>http://ipresent.dev/uploads/product/11_3660928757.jpg</picture>
+<name>Sony VAIO VPC-F13S8R</name>
+<description>Core i5, 2660 МГц, 4096 Мб, 640 Гб, 16.4 дюйм, NVIDIA GeForce GT 425M, Blu-Ray, Wi-Fi, Bluetooth, 3.1 кг</description>
+</offer>
+<offer id="12" available="true"><url>http://ipresent.dev/product/acer-aspire-5943g-7748g75twiss.html</url>
+<price>76422</price>
+<currencyId>USD</currencyId>
+<categoryId>232</categoryId>
+<picture>http://ipresent.dev/uploads/product/12_907263756.jpg</picture>
+<name>Acer ASPIRE 5943G-7748G75TWiss</name>
+<description>Core i7, 1730 МГц, 8192 Мб, 750 Гб, 15.6 дюйм, ATI Mobility Radeon HD 5850, BD-RE, Wi-Fi, Bluetooth, 3.3 кг</description>
+</offer>
+<offer id="13" available="true"><url>http://ipresent.dev/product/logitech-x-530.html</url>
+<price>3219.48</price>
+<currencyId>USD</currencyId>
+<categoryId>234</categoryId>
+<picture>http://ipresent.dev/uploads/product/13_4128067837.jpg</picture>
+<name>Logitech X-530</name>
+<description>число каналов: 5.1, мощность 71.20 Вт, 40-20000 Гц, материал колонок: пластик, материал сабвуфера: MDF, разъем для наушников, магнитное экранирование</description>
+</offer>
+<offer id="14" available="true"><url>http://ipresent.dev/product/microlab-m-860.html</url>
+<price>2894.28</price>
+<currencyId>USD</currencyId>
+<categoryId>234</categoryId>
+<picture>http://ipresent.dev/uploads/product/14_2180845265.jpg</picture>
+<name>Microlab M-860</name>
+<description>число каналов: 5.1, мощность 62 Вт, 30-20000 Гц, материал колонок: пластик, материал сабвуфера: MDF, магнитное экранирование, пульт ДУ</description>
+</offer>
+<offer id="15" available="true"><url>http://ipresent.dev/product/edifier-m3700.html</url>
+<price>3739.8</price>
+<currencyId>USD</currencyId>
+<categoryId>234</categoryId>
+<picture>http://ipresent.dev/uploads/product/15_3469703268.jpg</picture>
+<name>Edifier M3700</name>
+<description>число каналов: 5.1, мощность 80 Вт, 45-20000 Гц, материал колонок: MDF, материал сабвуфера: MDF, магнитное экранирование, пульт ДУ</description>
+</offer>
+<offer id="16" available="true"><url>http://ipresent.dev/product/logitech-z-313.html</url>
+<price>2731.68</price>
+<currencyId>USD</currencyId>
+<categoryId>234</categoryId>
+<picture>http://ipresent.dev/uploads/product/16_2449582409.jpg</picture>
+<name>Logitech Z-313</name>
+<description>число каналов: 2.1, мощность 25 Вт, 48-20000 Гц, материал колонок: пластик, материал сабвуфера: MDF</description>
+</offer>
+<offer id="17" available="true"><url>http://ipresent.dev/product/sven-sps-820.html</url>
+<price>1788.6</price>
+<currencyId>USD</currencyId>
+<categoryId>234</categoryId>
+<picture>http://ipresent.dev/uploads/product/17_311641466.jpg</picture>
+<name>Sven SPS-820</name>
+<description>число каналов: 2.1, мощность 38 Вт, 50-20000 Гц, материал колонок: MDF, материал сабвуфера: MDF, магнитное экранирование</description>
+</offer>
+<offer id="18" available="true"><url>http://ipresent.dev/product/edifier-m1385.html</url>
+<price>2178.84</price>
+<currencyId>USD</currencyId>
+<categoryId>234</categoryId>
+<picture>http://ipresent.dev/uploads/product/18_4162605308.jpg</picture>
+<name>Edifier M1385</name>
+<description>число каналов: 2.1, мощность 28 Вт, материал сабвуфера: MDF, разъем для наушников, магнитное экранирование, радио</description>
+</offer>
+<offer id="19" available="true"><url>http://ipresent.dev/product/edifier-x600.html</url>
+<price>1463.4</price>
+<currencyId>USD</currencyId>
+<categoryId>234</categoryId>
+<picture>http://ipresent.dev/uploads/product/19_512850980.jpg</picture>
+<name>Edifier X600</name>
+<description>число каналов: 2.1, мощность 30 Вт, 48-20000 Гц, материал колонок: MDF, материал сабвуфера: MDF, магнитное экранирование</description>
+</offer>
+<offer id="20" available="true"><url>http://ipresent.dev/product/microlab-fc-362.html</url>
+<price>2764.2</price>
+<currencyId>USD</currencyId>
+<categoryId>234</categoryId>
+<picture>http://ipresent.dev/uploads/product/20_2437497996.jpg</picture>
+<name>Microlab FC 362</name>
+<description>число каналов: 2.1, мощность 54 Вт, 35-20000 Гц, материал сабвуфера: MDF, разъем для наушников</description>
+</offer>
+<offer id="21" available="true"><url>http://ipresent.dev/product/dell-u2412m.html</url>
+<price>7804.8</price>
+<currencyId>USD</currencyId>
+<categoryId>235</categoryId>
+<picture>http://ipresent.dev/uploads/product/21_4120008399.jpg</picture>
+<name>DELL U2412M</name>
+<description>ЖК (TFT E-IPS) 24&quot;, широкоформатный, 1920x1200, LED-подсветка, 300 кд/м2, 1000:1, 8 мс, 178°/178°, USB-концентратор, DVI, DisplayPort, VGA</description>
+</offer>
+<offer id="22" available="true"><url>http://ipresent.dev/product/dell-u2312hm.html</url>
+<price>5853.6</price>
+<currencyId>USD</currencyId>
+<categoryId>235</categoryId>
+<picture>http://ipresent.dev/uploads/product/22_295793449.jpg</picture>
+<name>DELL U2312HM</name>
+<description>ЖК (TFT IPS) 23&quot;, широкоформатный, 1920x1080, LED-подсветка, 300 кд/м2, 1000:1, 8 мс, 178°/178°, USB-концентратор, DVI, DisplayPort, VGA</description>
+</offer>
+<offer id="23" available="true"><url>http://ipresent.dev/product/lg-flatron-m2250d.html</url>
+<price>6829.2</price>
+<currencyId>USD</currencyId>
+<categoryId>235</categoryId>
+<picture>http://ipresent.dev/uploads/product/23_108716227.jpg</picture>
+<name>LG Flatron M2250D</name>
+<description>ЖК (TFT TN) 21.5&quot;, широкоформатный, 1920x1080, LED-подсветка, 250 кд/м2, 5 мс, 170°/160°, стереоколонки, ТВ-тюнер, HDMI, VGA, композитный вход, компонентный вход, SCART</description>
+</offer>
+<offer id="24" available="true"><url>http://ipresent.dev/product/lg-flatron-ips226v.html</url>
+<price>5691</price>
+<currencyId>USD</currencyId>
+<categoryId>235</categoryId>
+<picture>http://ipresent.dev/uploads/product/24_2666105353.jpg</picture>
+<name>LG Flatron IPS226V</name>
+<description>ЖК (TFT E-IPS) 21.5&quot;, широкоформатный, 1920x1080, LED-подсветка, 250 кд/м2, 1000:1, 5 мс, 178°/178°, DVI, HDMI, VGA</description>
+</offer>
+<offer id="25" available="true"><url>http://ipresent.dev/product/samsung-syncmaster-s22a350n.html</url>
+<price>4878</price>
+<currencyId>USD</currencyId>
+<categoryId>235</categoryId>
+<picture>http://ipresent.dev/uploads/product/25_3775583538.jpg</picture>
+<name>Samsung SyncMaster S22A350N</name>
+<description>ЖК (TFT TN) 21.5&quot;, широкоформатный, 1920x1080, LED-подсветка, 250 кд/м2, 1000:1, 5 мс, 170°/160°, VGA</description>
+</offer>
+<offer id="26" available="true"><url>http://ipresent.dev/product/philips-237e3qphsu.html</url>
+<price>5203.2</price>
+<currencyId>USD</currencyId>
+<categoryId>235</categoryId>
+<picture>http://ipresent.dev/uploads/product/26_1684102751.jpg</picture>
+<name>Philips 237E3QPHSU</name>
+<description>ЖК (TFT IPS) 23&quot;, широкоформатный, 1920x1080, LED-подсветка, 250 кд/м2, 1000:1, 5 мс, 178°/178°, HDMI x2, VGA</description>
+</offer>
+<offer id="27" available="true"><url>http://ipresent.dev/product/philips-227e3lsu.html</url>
+<price>6178.8</price>
+<currencyId>USD</currencyId>
+<categoryId>235</categoryId>
+<picture>http://ipresent.dev/uploads/product/27_4115865976.jpg</picture>
+<name>Philips 227E3LSU</name>
+<description>ЖК (TFT TN) 21.5&quot;, широкоформатный, 1920x1080, LED-подсветка, 250 кд/м2, 1000:1, 5 мс, DVI, VGA</description>
+</offer>
+<offer id="28" available="true"><url>http://ipresent.dev/product/hp-zr2740w.html</url>
+<price>14959.2</price>
+<currencyId>USD</currencyId>
+<categoryId>235</categoryId>
+<picture>http://ipresent.dev/uploads/product/28_3863048410.jpg</picture>
+<name>HP ZR2740w</name>
+<description>ЖК (TFT IPS) 27&quot;, широкоформатный, 2560x1440, LED-подсветка, 380 кд/м2, 1000:1, 12 мс, 178°/178°, USB-концентратор, DVI, DisplayPort</description>
+</offer>
+<offer id="29" available="true"><url>http://ipresent.dev/product/hp-zr2440w.html</url>
+<price>12357.6</price>
+<currencyId>USD</currencyId>
+<categoryId>235</categoryId>
+<picture>http://ipresent.dev/uploads/product/29_4202236339.jpg</picture>
+<name>HP ZR2440w</name>
+<description>ЖК (TFT IPS) 24&quot;, широкоформатный, 1920x1200, LED-подсветка, 350 кд/м2, 1000:1, 6 мс, 178°/178°, USB-концентратор, DVI, HDMI, DisplayPort</description>
+</offer>
+<offer id="30" available="true"><url>http://ipresent.dev/product/samsung-galaxy-ace-ii.html</url>
+<price>12682.8</price>
+<currencyId>USD</currencyId>
+<categoryId>236</categoryId>
+<picture>http://ipresent.dev/uploads/product/30_3280163402.jpg</picture>
+<name>Samsung Galaxy Ace II</name>
+<description>GSM, 3G, смартфон, Android 2.3, вес 118 г, ШхВхТ: 62.3x118.3x10.5 мм, экран 3.8&quot;, 480x800, FM-радио, Bluetooth, Wi-Fi, GPS, ГЛОНАСС, фотокамера 5 МП, память 4 Гб, слот microSD (TransFlash), аккумулятор 1500 мАч</description>
+</offer>
+<offer id="31" available="true"><url>http://ipresent.dev/product/htc-one-xl.html</url>
+<price>13821</price>
+<currencyId>USD</currencyId>
+<categoryId>236</categoryId>
+<picture>http://ipresent.dev/uploads/product/31_1513339612.jpg</picture>
+<name>HTC One XL</name>
+<description>GSM, 3G, смартфон, Android 4.0, вес 129 г, ШхВхТ: 69.9x134.8x8.9 мм, экран 4.7&quot;, 720x1280, FM-радио, Bluetooth, Wi-Fi, GPS, фотокамера 8 МП, память 32 Гб, аккумулятор 1800 мАч</description>
+</offer>
+<offer id="32" available="true"><url>http://ipresent.dev/product/htc-sensation-xl.html</url>
+<price>15609.6</price>
+<currencyId>USD</currencyId>
+<categoryId>236</categoryId>
+<picture>http://ipresent.dev/uploads/product/32_1038757871.jpg</picture>
+<name>HTC Sensation XL</name>
+<description>GSM, 3G, смартфон, Android 2.3, вес 162 г, ШхВхТ: 70.7x132.5x9.9 мм, экран 4.7&quot;, 480x800, FM-радио, Bluetooth, Wi-Fi, GPS, фотокамера 8 МП, память 16 Гб, аккумулятор 1600 мАч</description>
+</offer>
+<offer id="33" available="true"><url>http://ipresent.dev/product/apple-iphone-4s-16gb.html</url>
+<price>20853.45</price>
+<currencyId>USD</currencyId>
+<categoryId>236</categoryId>
+<picture>http://ipresent.dev/uploads/product/33_1655271216.jpg</picture>
+<name>Apple iPhone 4S 16Gb</name>
+<description>GSM, CDMA800, CDMA1900, 3G, смартфон, iOS 5, вес 140 г, ШхВхТ: 58.6x115.2x9.3 мм, экран 3.5&quot;, 640x960, Bluetooth, Wi-Fi, GPS, ГЛОНАСС, фотокамера 8 МП, память 16 Гб</description>
+</offer>
+<offer id="34" available="true"><url>http://ipresent.dev/product/apple-iphone-3gs-8gb.html</url>
+<price>13129.95</price>
+<currencyId>USD</currencyId>
+<categoryId>236</categoryId>
+<picture>http://ipresent.dev/uploads/product/34_1878888500.jpg</picture>
+<name>Apple iPhone 3GS 8Gb</name>
+<description>GSM, 3G, смартфон, iOS, вес 135 г, ШхВхТ: 62x116x12 мм, экран 3.5&quot;, 320x480, Bluetooth, Wi-Fi, GPS, фотокамера 3 МП, память 8 Гб</description>
+</offer>
+<offer id="35" available="true"><url>http://ipresent.dev/product/apple-iphone-4-16gb.html</url>
+<price>16991.7</price>
+<currencyId>USD</currencyId>
+<categoryId>236</categoryId>
+<picture>http://ipresent.dev/uploads/product/35_1651971351.jpg</picture>
+<name>Apple iPhone 4 16Gb</name>
+<description>GSM, 3G, смартфон, iOS 4, вес 137 г, ШхВхТ: 59x115x9 мм, экран 3.5&quot;, 640x960, Bluetooth, Wi-Fi, GPS, фотокамера 5 МП, память 16 Гб</description>
+</offer>
+<offer id="36" available="true"><url>http://ipresent.dev/product/nokia-n9.html</url>
+<price>13821</price>
+<currencyId>USD</currencyId>
+<categoryId>236</categoryId>
+<picture>http://ipresent.dev/uploads/product/36_3971681810.jpg</picture>
+<name>Nokia N9</name>
+<description>GSM, 3G, смартфон, MeeGo 1.2, вес 135 г, ШхВхТ: 61x116x12 мм, экран 3.9&quot;, 480x854, Bluetooth, Wi-Fi, GPS, фотокамера 8 МП, аккумулятор 1450 мАч</description>
+</offer>
+<offer id="37" available="true"><url>http://ipresent.dev/product/blackberry-bold-9900.html</url>
+<price>14471.4</price>
+<currencyId>USD</currencyId>
+<categoryId>236</categoryId>
+<picture>http://ipresent.dev/uploads/product/37_1855531437.jpg</picture>
+<name>BlackBerry Bold 9900</name>
+<description>GSM, 3G, смартфон, BlackBerry OS, вес 130 г, ШхВхТ: 66x115x11 мм, экран 2.8&quot;, 640x480, Bluetooth, Wi-Fi, GPS, фотокамера 5 МП, память 8 Гб, слот microSD (TransFlash), аккумулятор 1230 мАч</description>
+</offer>
+<offer id="38" available="true"><url>http://ipresent.dev/product/blackberry-bold-9780.html</url>
+<price>12325.08</price>
+<currencyId>USD</currencyId>
+<categoryId>236</categoryId>
+<picture>http://ipresent.dev/uploads/product/38_234137804.jpg</picture>
+<name>BlackBerry Bold 9780</name>
+<description>GSM, 3G, смартфон, BlackBerry OS, вес 122 г, ШхВхТ: 60x109x14 мм, экран 2.4&quot;, 480x360, Bluetooth, Wi-Fi, GPS, фотокамера 5 МП, память 256 Мб, слот microSD (TransFlash), аккумулятор 1500 мАч</description>
+</offer>
+<offer id="39" available="true"><url>http://ipresent.dev/product/apple-ipad-2-16gb-wi-fi--3g.html</url>
+<price>13284.42</price>
+<currencyId>USD</currencyId>
+<categoryId>237</categoryId>
+<picture>http://ipresent.dev/uploads/product/39_1988905028.jpg</picture>
+<name>Apple iPad 2 16Gb Wi-Fi + 3G</name>
+<description>экран 9.7&quot;, 1024x768, емкостный, мультитач, iOS, встроенная память 16 Гб, Wi-Fi, Bluetooth, 3G, GPS, гироскоп, две фотокамеры, вес 613 г</description>
+</offer>
+<offer id="40" available="true"><url>http://ipresent.dev/product/apple-ipad-2-64gb-wi-fi--3g.html</url>
+<price>17300.64</price>
+<currencyId>USD</currencyId>
+<categoryId>237</categoryId>
+<picture>http://ipresent.dev/uploads/product/40_1879723234.jpg</picture>
+<name>Apple iPad 2 64Gb Wi-Fi + 3G</name>
+<description>экран 9.7&quot;, 1024x768, емкостный, мультитач, iOS, встроенная память 64 Гб, Wi-Fi, Bluetooth, 3G, GPS, гироскоп, две фотокамеры, вес 613 г</description>
+</offer>
+<offer id="41" available="true"><url>http://ipresent.dev/product/samsung-galaxy-tab-70-plus-p6200-16gb.html</url>
+<price>11382</price>
+<currencyId>USD</currencyId>
+<categoryId>237</categoryId>
+<picture>http://ipresent.dev/uploads/product/41_2379570972.jpg</picture>
+<name>Samsung Galaxy Tab 7.0 Plus P6200 16GB</name>
+<description>экран 7&quot;, 1024x600, емкостный, мультитач, Android 3.2, встроенная память 16 Гб, microSDHC, Wi-Fi, Bluetooth, 3G, GPS, гироскоп, две фотокамеры, подключение к компьютеру по USB, вес 343 г</description>
+</offer>
+<offer id="42" available="true"><url>http://ipresent.dev/product/acer-iconia-tab-a100-8gb.html</url>
+<price>11869.8</price>
+<currencyId>USD</currencyId>
+<categoryId>237</categoryId>
+<picture>http://ipresent.dev/uploads/product/42_772290327.jpg</picture>
+<name>Acer Iconia Tab A100 8Gb</name>
+<description>экран 7&quot;, 1024x600, емкостный, мультитач, Android 3.2, встроенная память 8 Гб, microSDHC, Wi-Fi, Bluetooth, GPS, гироскоп, две фотокамеры, HDMI, подключение к компьютеру по USB, вес 410 г</description>
+</offer>
+<offer id="43" available="true"><url>http://ipresent.dev/product/asus-transformer-pad-prime-201-64gb.html</url>
+<price>16097.4</price>
+<currencyId>USD</currencyId>
+<categoryId>237</categoryId>
+<picture>http://ipresent.dev/uploads/product/43_4269660810.jpg</picture>
+<name>Asus Transformer Pad Prime 201 64Gb</name>
+<description>экран 10.1&quot;, 1280x800, емкостный, мультитач, Android 4.0, встроенная память 64 Гб, microSD, Wi-Fi, Bluetooth, гироскоп, две фотокамеры, micro HDMI, подключение к компьютеру по USB, вес 586 г</description>
+</offer>
+<offer id="44" available="true"><url>http://ipresent.dev/product/samsung-galaxy-tab-101-p7500-16gb.html</url>
+<price>15447</price>
+<currencyId>USD</currencyId>
+<categoryId>237</categoryId>
+<picture>http://ipresent.dev/uploads/product/44_473039834.jpg</picture>
+<name>Samsung Galaxy Tab 10.1 P7500 16Gb</name>
+<description>экран 10.1&quot;, 1280x800, емкостный, мультитач, Android 3.1, встроенная память 16 Гб, Wi-Fi, Bluetooth, 3G, GPS, гироскоп, две фотокамеры, подключение к компьютеру по USB, вес 565 г</description>
+</offer>
+</offers></shop></yml_catalog>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2015-03-23 00:44">
+  <shop>
+    <name>Bazzilla - ID: 12455</name>
+    <company>Bazzilla</company>
+    <url>http://bazzilla.com/</url>
+    <currencies>
+      <currency id="UAH" rate="1"/>
+    </currencies>
+    <categories>
+      <category id="5074">Сборные головоломки</category>
+      <category id="5076">Металлические головоломки</category>
+    </categories>
+    <local_delivery_cost>0</local_delivery_cost>
+    <offers>
+      <offer id="37855" available="true">
+        <price>0</price>
+        <currencyId>UAH</currencyId>
+        <categoryId>5074</categoryId>
+        <picture>http://bazzilla.com/images/cache/f/c/fc27b0541ef258eb8ba90086059eae42.jpeg</picture>
+        <delivery>true</delivery>
+        <name><![CDATA[Сборная модель МДИ "Яхта" П089]]></name>
+        <vendor><![CDATA[МДИ]]></vendor>
+        <vendorCode><![CDATA[П089]]></vendorCode>
+        <description><![CDATA[Объемный 3D пазл из экологически чистого дерева, содержит бесклеевые соединения. При склеивании модели получается замечательная игрушка, которую к тому же можно разукрасить красками. Сборные деревянные модели направлены на развитие логики, внимания, усидчивости и ощущения трехмерной формы.     
+Возраст: от 5 лет
+Размер: 37*23 см]]></description>
+        <param name="Город поставщика">Киев</param>
+      </offer>
+      <offer id="37856" available="true">
+        <price>0</price>
+        <currencyId>UAH</currencyId>
+        <categoryId>5074</categoryId>
+        <picture>http://bazzilla.com/images/cache/4/d/4d9199c2b01c7283993f97a913a7b281.jpeg</picture>
+        <delivery>true</delivery>
+        <name><![CDATA[Сборная модель МДИ "Яхтсмен" С015]]></name>
+        <vendor><![CDATA[МДИ]]></vendor>
+        <vendorCode><![CDATA[С015]]></vendorCode>
+        <description><![CDATA[Объемный 3D пазл из экологически чистого дерева, содержит бесклеевые соединения. При склеивании модели получается замечательная игрушка, которую к тому же можно разукрасить красками. Сборные деревянные модели направлены на развитие логики, внимания, усидчивости и ощущения трехмерной формы.     
+Возраст: от 5 лет
+]]></description>
+        <param name="Город поставщика">Киев</param>
+      </offer>
+      <offer id="37907" available="true">
+        <price>0</price>
+        <currencyId>UAH</currencyId>
+        <categoryId>5074</categoryId>
+        <picture>http://bazzilla.com/images/cache/0/e/0e90ee763affc62a4baead9af8362662.jpeg</picture>
+        <delivery>true</delivery>
+        <name><![CDATA[Головоломка МДИ № 1 Д127]]></name>
+        <vendor><![CDATA[МДИ]]></vendor>
+        <vendorCode><![CDATA[Д127]]></vendorCode>
+        <description><![CDATA[Деревянная головоломка № 1 - детская головоломка, которая будет интересна и взрослым. Развивающая игрушка предназначена для развития у ребенка с самого раннего возраста мелкой моторики, логики, усидчивости, ощущения формы. 
+Возраст: от 6 лет 
+Размер:10 х 10 х 10 см ]]></description>
+        <param name="Город поставщика">Киев</param>
+      </offer>
+      <offer id="37911" available="true">
+        <price>0</price>
+        <currencyId>UAH</currencyId>
+        <categoryId>5074</categoryId>
+        <picture>http://bazzilla.com/images/cache/b/9/b97087f58f74d31e2797079ebd49f258.jpeg</picture>
+        <delivery>true</delivery>
+        <name><![CDATA[Головоломка МДИ № 13 Д156]]></name>
+        <vendor><![CDATA[МДИ]]></vendor>
+        <vendorCode><![CDATA[Д156]]></vendorCode>
+        <description><![CDATA[Веревочная головоломка 13 - интересная задача на логику, смекалку и сообразительность. Цель - снять кольцо. 
+Возраст: от 6 лет 
+Размер:13 х 15 х 8 см ]]></description>
+        <param name="Город поставщика">Киев</param>
+      </offer>
+      <offer id="37916" available="true">
+        <price>0</price>
+        <currencyId>UAH</currencyId>
+        <categoryId>5074</categoryId>
+        <picture>http://bazzilla.com/images/cache/7/e/7eb1620e92568f8b4b6404bb748a38a9.jpeg</picture>
+        <delivery>true</delivery>
+        <name><![CDATA[Головоломка МДИ № 18 Д161]]></name>
+        <vendor><![CDATA[МДИ]]></vendor>
+        <vendorCode><![CDATA[Д161]]></vendorCode>
+        <description><![CDATA[Веревочная головоломка 18  - интересная задача на логику, смекалку и сообразительность. Цель - снять кольцо. 
+Возраст: от 6 лет 
+Размер:13 х 15 х 8 см ]]></description>
+        <param name="Город поставщика">Киев</param>
+      </offer>
+      <offer id="37917" available="true">
+        <price>0</price>
+        <currencyId>UAH</currencyId>
+        <categoryId>5074</categoryId>
+        <picture>http://bazzilla.com/images/cache/6/9/69c3c9979adbb27e37327c9bd892163a.jpeg</picture>
+        <delivery>true</delivery>
+        <name><![CDATA[Головоломка МДИ № 19 Д162]]></name>
+        <vendor><![CDATA[МДИ]]></vendor>
+        <vendorCode><![CDATA[Д162]]></vendorCode>
+        <description><![CDATA[Веревочная головоломка 19 - детская головоломка, которая будет интересна и взрослым. Развивающая игрушка предназначена для развития у ребенка с самого раннего возраста мелкой моторики, логики, усидчивости, ощущения цвета и формы. 
+Возраст: от 6 лет 
+Размер:13 х 15 х 8 см ]]></description>
+        <param name="Город поставщика">Киев</param>
+      </offer>
+      <offer id="37920" available="true">
+        <price>0</price>
+        <currencyId>UAH</currencyId>
+        <categoryId>5074</categoryId>
+        <picture>http://bazzilla.com/images/cache/0/a/0a341a33ed4f2bc0f193118615a58290.jpeg</picture>
+        <delivery>true</delivery>
+        <name><![CDATA[Головоломка МДИ № 4 Д130]]></name>
+        <vendor><![CDATA[МДИ]]></vendor>
+        <vendorCode><![CDATA[Д130]]></vendorCode>
+        <description><![CDATA[Деревянная головоломка №4. Задача - извлечь три стержня, скрепленные между собой загадочным образом внутри многогранника. Игрушка предназначена для развития у ребенка с самого раннего возраста мелкой моторики, логики, усидчивости, абстрактного мышления. 
+Возраст: от 6 лет 
+Размер:10 х 10 х 10 см ]]></description>
+        <param name="Город поставщика">Киев</param>
+      </offer>
+      <offer id="37925" available="true">
+        <price>0</price>
+        <currencyId>UAH</currencyId>
+        <categoryId>5074</categoryId>
+        <picture>http://bazzilla.com/images/cache/a/8/a8a06ef35602ea1bfec6b3e2510cd527.jpeg</picture>
+        <delivery>true</delivery>
+        <name><![CDATA[Головоломка МДИ № 9 Д135]]></name>
+        <vendor><![CDATA[МДИ]]></vendor>
+        <vendorCode><![CDATA[Д135]]></vendorCode>
+        <description><![CDATA[Деревянная головоломка №9 - детская головоломка, которая будет интересна и взрослым. Развивающая игрушка предназначена для развития у ребенка с самого раннего возраста мелкой моторики, логики, усидчивости, ощущения формы. 
+Возраст: от 6 лет 
+Размер:10 х 10 х 10 см ]]></description>
+        <param name="Город поставщика">Киев</param>
+      </offer>
+      <offer id="75677" available="true">
+        <price>0</price>
+        <currencyId>UAH</currencyId>
+        <categoryId>5076</categoryId>
+        <picture>http://bazzilla.com/images/cache/3/4/340e35d5d08b0b2ce1c3d7858c559c27.jpeg</picture>
+        <delivery>true</delivery>
+        <name><![CDATA[Скульптор-гвозди Лавка приколов Pin point Н55В]]></name>
+        <vendor><![CDATA[Лавка приколов]]></vendor>
+        <vendorCode><![CDATA[Н55В]]></vendorCode>
+        <description><![CDATA[Гвозди с помощью которых можно получить 3D картинку. Материал: пластик, метал. Размер: 18*13 см]]></description>
+        <param name="Город поставщика">Киев</param>
+      </offer>
+      <offer id="78560" available="true">
+        <price>0</price>
+        <currencyId>UAH</currencyId>
+        <categoryId>5074</categoryId>
+        <picture>http://bazzilla.com/images/cache/c/3/c30532c4f1e78eb76615410e7e013d38.jpeg</picture>
+        <delivery>true</delivery>
+        <name><![CDATA[Сборная модель Ling Zhi "Пирамида" 38 эл. 9005]]></name>
+        <vendor><![CDATA[Ling Zhi]]></vendor>
+        <vendorCode><![CDATA[9005]]></vendorCode>
+        <description><![CDATA[Сборная модель- кристальный пазл 3D "Пирамида" 38 эл.
+Детали пронумерованы
+Упаковка: коробка
+]]></description>
+        <param name="Город поставщика">пгт. Дружба</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
