@@ -10,8 +10,9 @@
 .catalog_with_sidebar .products_list {
     
 }
-.products_list .actions {
-    margin-bottom:20px;
+.products_list .actions form{
+    width: 188px;
+    margin: 0 auto;
 }
 .products_list .actions .buttons {
     float:right;
