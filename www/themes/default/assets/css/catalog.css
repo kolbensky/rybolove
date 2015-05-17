@@ -1,7 +1,8 @@
 @charset "utf-8";
 #content {
-    max-width: 980px;
     min-height: 1000px;
+    width: 78%;
+    padding-left: 230px;
 }
 .catalog_with_sidebar {
     position: relative;
@@ -33,8 +34,9 @@
     top: 700px;
     display: inline-block;
     float:left;
-    width:19%;
+    width:210px;
     border: 5px solid #1abc9c;
+    margin-left: 20px;
 }
 #filter .rounded {
     -webkit-border-radius: 5px;
@@ -74,6 +76,7 @@ a.cancel_filter {
 }
 #filter ul.filter_links li {
     padding-left:20px;
+    font-size: 14px;
 }
 #filter form {
     padding-top: 18px;
@@ -89,4 +92,5 @@ a.cancel_filter {
     color: #333;
     font-weight: bold;
     text-align: center;
+    border-bottom: 1px solid #333; 
 }
