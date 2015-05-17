@@ -8,9 +8,6 @@
 /*--------------------------------------------------------------------------------------------------------------
 verical menu nice edition
 */
-.mainm{
-  float: left;
-}
 .mainm,
 .mainm ul,
 .mainm ul li,
@@ -27,6 +24,8 @@ verical menu nice edition
   box-sizing: border-box;
 }
 .mainm {
+  float: left;
+  display:inline-block;
   margin-left: 20px;
   width: 220px;
   font-family: Raleway, sans-serif;

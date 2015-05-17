@@ -1,14 +1,15 @@
 @charset "utf-8";
 #content {
     min-height: 1000px;
-    width: 78%;
-    padding-left: 230px;
+    display: inline-block;
+    width: 79%;
 }
 .catalog_with_sidebar {
     position: relative;
 }
-.catalog_with_sidebar .products_list {
-    
+.catalog_with_sidebar .products_list .actions{
+    line-height: 30px;
+    font-size: 14px;   
 }
 .products_list .actions form{
     width: 188px;
@@ -90,8 +91,74 @@ a.cancel_filter {
     padding-top: 18px;
     border: 0;
     font-size: 16px;
-    color: #333;
     font-weight: bold;
     text-align: center;
     border-bottom: 1px solid #333; 
+}
+/*adaptive*/
+/*action bars*/
+@media screen and (max-width: 792px){
+    .products_list .actions{
+        height: 65px;
+    }
+    .products_list .actions .buttons{
+        display: block;
+        float: left;
+    }
+}
+/*content width*/
+@media screen and (max-width: 1170px){
+    #content{
+        width: 70%; 
+    }
+}
+@media screen and (max-width: 820px){
+    #content{
+        width: 60%; 
+    }
+}
+@media screen and (max-width: 620px){
+    #content{
+        width: 50%; 
+    }
+}
+@media screen and (max-width: 500px){
+    #content{
+        display: block;
+        width: 100%; 
+        margin-top: 950px;
+    }
+}
+/*header*/
+@media screen and (max-width: 1034px){
+    #header{
+        height:220px; 
+    }
+    #header .blocks .left{
+        display: block;
+    }
+    #header .blocks .middle{
+        position: absolute;
+        padding-left: 0;
+        margin-left: 0;
+        left: -10px;
+        top: 130px;
+        display: block;
+    }
+    #header .blocks .right{
+        margin:0;
+        padding:0;
+        left: 0px;
+        display: block;
+        float: left;
+    }
+    #top_menu {
+        width: 900px;
+        font-size: 14px;
+    }
+    #top_menu * {
+       float: left;
+       padding: 0;
+       margin: 0;
+    }
 }

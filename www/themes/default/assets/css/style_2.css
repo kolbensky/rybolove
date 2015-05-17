@@ -1084,6 +1084,9 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
   color: #ffffff;
   border: 1px solid white;
 }
+.banners{
+  display: none; /*пока отключим*/
+}
 .banners .mcContainer{
   background-color: black;
   width: 715px;
