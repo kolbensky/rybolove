@@ -1,6 +1,6 @@
 @charset "utf-8";
 #content {
-    min-height: 1000px;
+    min-height: 1200px;
     display: inline-block;
     width: 98%;
     padding-left: 1%;
@@ -54,13 +54,12 @@
 }
 #filter {
     position: absolute;
-    left: 0px;
-    top: 700px;
+    left: 1%;
+    top: 540px;
     display: inline-block;
     float:left;
-    width:210px;
+    width: 18.8%;
     border: 5px solid #1abc9c;
-    margin-left: 20px;
 }
 #filter .rounded {
     -webkit-border-radius: 5px;
@@ -110,12 +109,13 @@ a.cancel_filter {
     font-weight: bold;
 }
 #filter form input{
-    padding-top: 18px;
+    padding: 18px 0 0 0;
     border: 0;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     border-bottom: 1px solid #333; 
+    width: 50px;
 }
 /*
 @media screen and (max-width: 942px){
