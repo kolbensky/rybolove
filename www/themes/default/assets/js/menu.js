@@ -2,6 +2,7 @@
 $(document).ready(function(){
 $('.mainm li.parent').addClass('has-sub')
 var filter = $(document).find('#filter');//find filter
+var content = $(document).find('#content');//find content
 var openUl = [];
 var openUlHeigth = [];
 var liNumber = 0;
@@ -10,7 +11,7 @@ var newFilterHeight = 0;
     $('.mainm li.has-sub>a').on('click', function(){
         $(this).removeAttr('href');
         var element = $(this).parent('li');
-        
+
         if (element.hasClass('open')) {
             element.removeClass('open');
             element.find('li').removeClass('open');
@@ -36,7 +37,15 @@ var newFilterHeight = 0;
             }
         }
     });
-
+//cancel min-height for #content if there is no filter on the page
+    if ((filter.length == 1)&&(content.length != 0)){
+        content.css("min-height","1200px");
+        console.log(content.css("min-height"));
+    }
+    else if ((filter.length == 0)&&(content.length != 0)){
+        content.css("min-height","none");
+        console.log(content.css("min-height"));
+    }
 });
 })(jQuery);
 
