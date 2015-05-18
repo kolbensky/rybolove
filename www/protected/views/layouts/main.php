@@ -132,7 +132,10 @@
 	</div>
 
 	</div>
-<div class="mainm">
+
+
+<div id="content">
+	<div class="mainm">
 		<?php
 			Yii::import('application.modules.store.models.StoreCategory');
 			$items = StoreCategory::model()->findByPk(1)->asCMenuArray();
@@ -146,8 +149,6 @@
 			}
 		?>
 	</div>
-
-<div id="content">
 <!--<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/instagram.js"></script>-->
 	<?php if(($messages = Yii::app()->user->getFlash('messages'))): ?>
 		<div class="flash_messages">
