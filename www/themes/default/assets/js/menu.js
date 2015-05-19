@@ -2,16 +2,23 @@
 $(document).ready(function(){
 $('.mainm li.parent').addClass('has-sub')
 var filter = $(document).find('#filter');//find filter
+var content = $(document).find('#content');//find content
+var openUl = [];
+var openUlHeigth = [];
+var liNumber = 0;
+var FilterStartHeight = 540;
+var newFilterHeight = 0;
     $('.mainm li.has-sub>a').on('click', function(){
         $(this).removeAttr('href');
         var element = $(this).parent('li');
-        
+
         if (element.hasClass('open')) {
             element.removeClass('open');
             element.find('li').removeClass('open');
             element.find('ul').slideUp(200);
             if(filter.length == 1){ //if there is a filter on the page
-                filter.css('display','block');
+                filter.css('top',FilterStartHeight);
+                
             }
         }
         else {
@@ -22,11 +29,23 @@ var filter = $(document).find('#filter');//find filter
             element.siblings('li').find('li').removeClass('open');
             element.siblings('li').find('ul').slideUp(200);
             if(filter.length == 1){ //if there is a filter on the page
-                filter.css('display','none');
+                openUl = $(document).find('.open');
+                ul = $(openUl).find("ul");
+                liNumber = $(ul).find( "li" ).size();//the number of li
+                newFilterHeight = FilterStartHeight + 42*liNumber;
+                filter.css('top',newFilterHeight);
             }
         }
     });
-
+//cancel min-height for #content if there is no filter on the page
+    if ((filter.length == 1)&&(content.length != 0)){
+        content.css("min-height","1200px");
+        console.log(content.css("min-height"));
+    }
+    else if ((filter.length == 0)&&(content.length != 0)){
+        content.css("min-height","none");
+        console.log(content.css("min-height"));
+    }
 });
 })(jQuery);
 
