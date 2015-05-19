@@ -51,10 +51,8 @@
 	Yii::import('application.modules.notifier.NotifierModule');
 	NotifierModule::renderDialog();
 ?>
-
-<div id="header">
-	<!-- Small top menu -->
-	<div id="top_menu">
+<div id="top_menu">
+	<div class="wrapper">
 		<div class="left">
 			<?php
 				$this->widget('zii.widgets.CMenu', array(
@@ -83,6 +81,10 @@
 			</ul>
 		</div>
 	</div>
+</div>
+<div id="header">
+	<!-- Small top menu -->
+	
 
 	<div class="blocks">
 		<div class="left">

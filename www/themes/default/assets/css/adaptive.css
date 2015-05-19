@@ -31,7 +31,10 @@
 	#header .blocks .right{
     	float: left;
     }
-    #top_menu{
-    	height: 60px; /*че не работает?*/
+    
+}
+@media screen and (max-width: 851px){
+#top_menu{
+        height: 84px;
     }
 }

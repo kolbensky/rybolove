@@ -13,6 +13,22 @@
     margin-right: 0;
 
 }
+#content .product{
+    display: inline-block;
+    
+}
+#content .product .info{
+    display: inline-block;
+    
+}
+#content .product .images{
+    display: inline-block;
+
+}
+#content .product .info{
+    display: inline-block;
+    width: 400px;
+}
 .catalog_with_sidebar {
     position: relative;
 }
