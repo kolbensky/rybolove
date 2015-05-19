@@ -17,10 +17,10 @@
     position: relative;
 }
 .products_list{
-    display: inline-block;
-    width: 79%;
     float: right;
+    width: 79%;
     padding-left: 1%;
+    margin: 0 auto;
 }
 .catalog_with_sidebar .products_list .actions{
     line-height: 30px;
@@ -60,6 +60,7 @@
     float:left;
     width: 19.5%;
     padding-left: 1.5%;
+    min-width: 216px;
 }
 
 #filter .rounded {
@@ -175,12 +176,5 @@ a.cancel_filter {
     text-align: center;
     border-bottom: 1px solid #333; 
     width: 50px;
-}
-*/
-/*
-@media screen and (max-width: 942px){
-    #header{
-        height: 210px;
-    }
 }
 */

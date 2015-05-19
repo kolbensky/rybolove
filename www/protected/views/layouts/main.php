@@ -39,7 +39,8 @@
     <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/style_2.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/fonts.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/menu.css">
-
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/adaptive.css">
+	
 	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/common.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/menu.js"></script>
 </head>
