@@ -39,7 +39,8 @@
     <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/style_2.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/fonts.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/menu.css">
-
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/adaptive.css">
+	
 	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/common.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/menu.js"></script>
 </head>
@@ -50,10 +51,8 @@
 	Yii::import('application.modules.notifier.NotifierModule');
 	NotifierModule::renderDialog();
 ?>
-
-<div id="header">
-	<!-- Small top menu -->
-	<div id="top_menu">
+<div id="top_menu">
+	<div class="wrapper">
 		<div class="left">
 			<?php
 				$this->widget('zii.widgets.CMenu', array(
@@ -82,6 +81,10 @@
 			</ul>
 		</div>
 	</div>
+</div>
+<div id="header">
+	<!-- Small top menu -->
+	
 
 	<div class="blocks">
 		<div class="left">

@@ -29,6 +29,7 @@ verical menu nice edition
   width: 20%;
   font-family: Raleway, sans-serif;
   color: #ffffff;
+  min-width: 216px;
 }
 .mainm ul ul {
   display: none;
