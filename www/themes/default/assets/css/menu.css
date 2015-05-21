@@ -25,7 +25,7 @@ verical menu nice edition
 }
 .mainm {
   float: left;
-  display:inline-block;
+  display:none;
   width: 20%;
   font-family: Raleway, sans-serif;
   color: #ffffff;
