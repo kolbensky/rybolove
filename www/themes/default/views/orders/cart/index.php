@@ -189,7 +189,7 @@ if(empty($items))
 	<span class="current_currency">
 		<?php echo Yii::app()->currency->active->symbol; ?>
 	</span>
-	<button class="blue_button" type="submit" name="create" value="1">Оформить</button>
+	<button id="cart_button" class="blue_button" type="submit" name="create" value="1">Оформить</button>
 </div>
 
 <?php echo CHtml::endForm() ?>

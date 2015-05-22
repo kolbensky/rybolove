@@ -1328,4 +1328,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 .button_profile_people {
     width: 150px;
 }
+#cart_button {
+    float: right;
+}
 

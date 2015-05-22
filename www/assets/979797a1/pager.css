@@ -60,3 +60,6 @@ ul.yiiPager .last
 
 
 }
+.products_list .pager li a:active {
+    color: #333;
+}

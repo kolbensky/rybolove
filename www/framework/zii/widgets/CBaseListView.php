@@ -218,7 +218,7 @@ abstract class CBaseListView extends CWidget
 				$start=$end-$count+1;
 			}
 			if(($summaryText=$this->summaryText)===null)
-				$summaryText=Yii::t('zii','Displaying {start}-{end} of 1 result.|Отабражено {start}-{end} из {count} товаров.',$total);
+				$summaryText=Yii::t('zii','Displaying {start}-{end} of 1 result.|Показаны {start}-{end} из {count} товаров.',$total);
 			echo strtr($summaryText,array(
 				'{start}'=>$start,
 				'{end}'=>$end,

@@ -10,8 +10,8 @@
 $this->pageTitle=Yii::t('UsersModule.core', 'Личный кабинет');
 ?>
 <h1 class="has_background"><?php echo Yii::t('UsersModule.core', 'Личный кабинет'); ?></h1>
-    <input id="prof" class="button_profile" type="submit" name="yt0" value="Личные данные">
-    <input id="blod"  class="button_profile" type="submit" name="yt0" value="миниБлог">
+    <input id="prof" class="button_profile" type="submit" name="yt0" value="Личные данные" style="display: none">
+    <input id="blod"  class="button_profile" type="submit" name="yt0" value="миниБлог" style="display: none">
 <div class="box_profile">
 <div class="form wide padding-all">
 	<?php $form=$this->beginWidget('CActiveForm'); ?>
