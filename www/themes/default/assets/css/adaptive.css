@@ -13,6 +13,7 @@
     } 
     .products_list .actions .buttons{
     	float: left;
+		margin-top: 10px;
     } 
     #header .blocks .middle{
     	float: left;
@@ -55,6 +56,11 @@
 
 }
 @media screen and (max-width: 490px){
-.products_list .product_block {width: 100%}
 
+.products_list .product_block {width: 100%}
+.products_list.wide .product_block .table {float: none; margin: 0 auto;}
+.products_list.wide .product_block  {height: auto; margin: 0 auto;}
+.products_list.wide .product_block  .name {height: auto; text-align: center;}
+.products_list.wide .product_block  .price {display:block; text-align: center;}
+.products_list.wide .product_block  form {  width: 200px;}
 }
