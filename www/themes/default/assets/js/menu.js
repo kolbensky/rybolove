@@ -43,13 +43,15 @@ var newFilterHeight = 0;
             }
         }
     });
+
 //cancel min-height for #content if there is no filter on the page
     if ((filter.length == 1)&&(content.length != 0)){
-        content.css("min-height","1200px");
+        content.css("min-height","1150px");
     }
     else if ((filter.length == 0)&&(content.length != 0)){
         content.css("min-height","none");
     }
+
 });
 })(jQuery);
 
