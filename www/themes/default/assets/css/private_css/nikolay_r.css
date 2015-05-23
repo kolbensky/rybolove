@@ -55,10 +55,33 @@
 	height: 110px;
 } 
 #header .blocks .right #auth{
+	position: static;
 	height: 40px;
-	margin-top:32px;
+	margin-top:35px;
+	width: 90px;
+	display: inline-block;
+	float: left;
 }
-@media screen and (max-width: 860px){
+#header .blocks .right #auth a{
+	padding: 0;
+}
+#cart{
+	position: static;
+	display: inline-block;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	margin-top: 35px;
+	margin-left: 5px;
+	float: left;
+}
+#cart .cauntSmallCart{
+	position: static;
+	float: right;
+	margin-right: -9px;
+	margin-top: -12px;
+}
+@media screen and (max-width: 861px){
     #header .blocks .right{
     	display: block;
     	position: static;
@@ -67,7 +90,41 @@
     	width: 100%;
     	padding: 0;
     	margin: 0;
+    	margin-bottom: 15px;
     } 
+    
+	#header .blocks .right #cart{
+		position: static;
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		padding: 0;
+		float: none;
+		clear: both;
+	}
+	#header .blocks .right #cart .priceSmallCart{
+		width: 100%;
+	}
+	#header .blocks .right #auth{
+		margin:0;
+		position: absolute;
+		width: 300px;
+		height: 30px;
+		top: 55px;
+		left: 250px;
+		font-size: 14px;
+	}
+	#header .blocks .right #auth a{
+		margin:0;
+		float: left;
+		display: inline-block;
+		padding-right: 5px;
+	}
+}
+@media screen and (max-width: 790px){
+	#header .blocks .right #auth{
+		top: 100px;
+	}
 }
 /*product page*/
 #content .product{
