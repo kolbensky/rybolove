@@ -74,6 +74,7 @@ $this->breadcrumbs[] = $this->model->name;
 					<a <?php if($itemView==='_product') echo 'class="active"'; ?> href="<?php echo Yii::app()->request->removeUrlParam('/store/category/view', 'view') ?>"><span class="icon dots"></span>Картинками</a>
 				</div>
 			</div>
+            <div style="clear: both;"></div>
 		</div>
 
 		<?php
