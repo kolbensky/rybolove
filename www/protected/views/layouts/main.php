@@ -39,8 +39,12 @@
     <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/style_2.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/fonts.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/menu.css">
-	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/dasha_h.css">
-	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/adaptive.css">
+	<!-- private css-->
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/private_css/Dasha_H.css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/private_css/nikolay_r.css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/private_css/Anton_A.css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/private_css/Alexander_A.css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/private_css/Yury_S.css">
 	
 	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/common.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/menu.js"></script>
