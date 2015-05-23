@@ -1,3 +1,56 @@
-body{
-	
+#header #logo{
+	height: 80px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+#header .blocks .left{
+	position: static;
+	float: left;
+	margin-right: 10px;
+	width: 20%;
+	height: 110px;
+	min-width: 216px;
+}
+#header .blocks .middle{
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	margin: auto 0;
+	height: 110px;	
+}
+#header .blocks .middle .search_box{
+	position: relative;
+	height: 40px;
+	top:30px;
+	padding:0;
+}
+#header .blocks .middle .search_box form{
+	height: 40px;
+}
+#header .blocks .middle .search_box form input{
+	width: 72%;
+	padding: 0;
+	padding-left: 3%;
+	height: 40px;
+}
+#header .blocks .middle .search_box form button{
+	height: 38px;
+	width: 20%;
+}
+#header .blocks .middle .currencies{
+	position: absolute;
+	top: 25px;
+	right: 0;
+}
+#header .blocks .right{
+	position: static;
+	float: right;
+	margin: 0;
+	padding: 0;
+	height: 110px;
+} 
+#header .blocks .right #auth{
+	height: 40px;
+	margin-top:32px;
 }
