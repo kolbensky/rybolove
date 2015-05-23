@@ -80,6 +80,7 @@
 				</li>
 			</ul>
 		</div>
+		<div class="clear"></div>
 	</div>
 </div>
 <div id="header">
@@ -130,8 +131,11 @@
 
 			<div id="cart">
 				<?php $this->renderFile(Yii::getPathOfAlias('orders.views.cart._small_cart').'.php'); ?>
+				
 			</div>
+			
 		</div>
+		<div class="clear"></div>
 	</div>
 
 	</div>
