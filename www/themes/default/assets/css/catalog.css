@@ -14,7 +14,8 @@
 
 }
 #content .product{
-    display: inline-block;
+    max-width: 980px;
+    margin: 0 auto;
     
 }
 #content .product .info{

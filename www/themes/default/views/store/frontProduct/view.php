@@ -88,7 +88,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
 		<?php $this->renderPartial('_configurations', array('model'=>$model)); ?>
 
 		<div class="errors" id="productErrors"></div>
-
+		
 		<div style="clear: both;font-size: 16px">
 			<?php
 			if($model->appliedDiscount)
@@ -102,7 +102,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
 		</div>
 		<div style="clear:both;"></div>
 				<div class="quantity">
-            <?php echo CHtml::numberField("quantities[$index]", $product['quantity'], array('class'=>'count')) ?>
+            <?php echo CHtml::numberField("quantities[$index]", $product['quantity'], array('class'=>'count','placeholder'=>'1')) ?>
         </div>
 		<div class="actions">
 			<?php
@@ -201,7 +201,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){
-		
+		$("#profile").css( "display", "none" );
     $("a[aria-controls='home']").click(function(){
     	$("#profile").css( "display", "none" );
     	$(".product-tab li:first").addClass("active");

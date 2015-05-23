@@ -1334,4 +1334,6 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 .products_list .pager li a:hover {
     color: #595959;
 }
-
+.product .info .tab-content .desc{
+  width: 400px;
+}
