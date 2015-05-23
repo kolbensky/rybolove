@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/style_2.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/fonts.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/menu.css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/adaptive.css">
 	<!-- private css-->
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/private_css/dasha_h.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/private_css/nikolay_r.css">
