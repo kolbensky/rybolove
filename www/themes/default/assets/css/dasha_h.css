@@ -1,0 +1,27 @@
+
+.products_list.wide .product_block .name {
+    display:block;
+    text-align:left;
+    padding:40px 0 10px 0px;
+	height: 40px;
+}
+.products_list.wide .product_block {
+
+    width: 100%!important;
+    height:210px;
+    display:block;
+}
+.products_list.wide .product_block .name a {
+	width: auto;
+	overflow: visible;
+	display: inline;
+}
+
+.products_list.wide .actions form {
+  width: auto;
+}
+.products_list select {
+
+    margin-left: 5px;
+
+}
