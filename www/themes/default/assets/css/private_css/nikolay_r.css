@@ -1,3 +1,7 @@
+/*header*/
+#header {
+	display: block;
+}
 #header #logo{
 	height: 80px;
 	margin: 0 auto;
@@ -53,4 +57,28 @@
 #header .blocks .right #auth{
 	height: 40px;
 	margin-top:32px;
+}
+@media screen and (max-width: 860px){
+    #header .blocks .right{
+    	display: block;
+    	position: static;
+    	float: left;
+    	height: 40px;
+    	width: 100%;
+    	padding: 0;
+    	margin: 0;
+    } 
+}
+/*product page*/
+#content .product{
+	text-align: left;
+}
+.product .images .additional{
+	min-height: 0;
+}
+
+/*catalog*/
+.products_list .product_block .name a{
+	text-align: left;
+	margin-left: 10%;
 }
