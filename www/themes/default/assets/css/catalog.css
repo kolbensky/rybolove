@@ -50,6 +50,7 @@
 }
 .products_list .actions .buttons {
     float:right;
+	margin-right: 10px;
 }
 .products_list .actions .buttons div{
     background: #1abc9c;
@@ -65,7 +66,7 @@
 }
 .products_list h1{
     padding-left: 10px;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 #filter {
     position: absolute;
