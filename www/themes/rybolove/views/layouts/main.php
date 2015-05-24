@@ -216,5 +216,6 @@
     
     <!-- Main Script -->
     <script src="<?=$temdir?>js/main.js"></script>
+    <script src="<?=$temdir?>js/menu.js"></script>
   </body>
 </html>

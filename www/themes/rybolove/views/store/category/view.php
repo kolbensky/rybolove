@@ -11,9 +11,37 @@
             </div>
         </div>
     </div>
-    
+
+
+</div>    
+
 	
-	<?php
+        
+        <div class="container">
+        <div class="leftWrapper">
+        <div class="mainm">
+        <?php
+            Yii::import('application.modules.store.models.StoreCategory');
+            $items = StoreCategory::model()->findByPk(1)->asCMenuArray();
+            if(isset($items['items']))
+            {
+                $this->widget('application.extensions.mbmenu.MbMenu',array(
+                    'cssFile'=>Yii::app()->theme->baseUrl.'/assets/css/menu.css',
+                    'htmlOptions'=>array('class'=>'dropdown', 'id'=>'nav'),
+                    'items'=>$items['items'])
+                );
+            }
+            ?>
+        </div>
+        <div id="filter">
+        <?php
+            $this->widget('application.modules.store.widgets.filter.SFilterRenderer', array(
+                'model'=>$this->model,
+                'attributes'=>$this->eavAttributes,
+            ));
+        ?>
+</div>
+</div><?php
 			$this->widget('zii.widgets.CListView', array(
 				'dataProvider'=>$provider,
 				'ajaxUpdate'=>false,
@@ -24,6 +52,7 @@
 				),
 			));
 		?>
+        </div>
 <?php /*    
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
