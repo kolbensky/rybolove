@@ -117,7 +117,7 @@
                 </div>  
             </div>
         </div>
-    </div> <!-- End mainmenu area -->
+    </div><!-- End mainmenu area -->
     <? echo $content;?>
     
     <div class="footer-top-area">

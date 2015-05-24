@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-bit-title text-center">
-                        <h2>Shop</h2>
+                        <!--<h2>Shop</h2>-->
                     </div>
                 </div>
             </div>
@@ -41,7 +41,8 @@
             ));
         ?>
 </div>
-</div><?php
+</div>
+        <?php
 			$this->widget('zii.widgets.CListView', array(
 				'dataProvider'=>$provider,
 				'ajaxUpdate'=>false,
