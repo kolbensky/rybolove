@@ -16,7 +16,7 @@
 		?>
 	</div>
 	<div class="name">
-		<?php echo CHtml::link(CHtml::encode($data->name), array('frontProduct/view', 'url'=>$data->url)) ?>
+		<?php echo CHtml::link('<i class="fa fa-link"></i>'.CHtml::encode($data->name), array('frontProduct/view', 'url'=>$data->url), array('class'=>'')) ?>
 	</div>
 	<div class="price">
 		<?php

@@ -1,4 +1,10 @@
-<!DOCTYPE html><?php $temdir = Yii::app()->theme->baseUrl.'/assets/';?>
+<!DOCTYPE html>
+<?php
+    $temdir = Yii::app()->theme->baseUrl.'/assets/';
+    $assetsManager = Yii::app()->clientScript;
+    $assetsManager->registerCoreScript('jquery');
+    $assetsManager->registerCoreScript('jquery.ui');
+?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -75,6 +81,10 @@
             </div>
         </div>
     </div> <!-- End header area -->
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6cc6e7299ff19030276dd95b289af1bd4b23ed4b
     <div class="site-branding-area">
         <div class="container">
             <div class="row">
@@ -83,7 +93,11 @@
                         <img src="<?=$temdir?>img/logo.png" alt="">
                     </div>
                 </div>
+<<<<<<< HEAD
+
+=======
                 
+>>>>>>> 6cc6e7299ff19030276dd95b289af1bd4b23ed4b
                 <div class="col-sm-6">
                     <div class="shopping-item">
                         <a href="cart.html">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
@@ -92,6 +106,36 @@
             </div>
         </div>
     </div> <!-- End site branding area -->
+<<<<<<< HEAD
+
+    <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop page</a></li>
+                        <li><a href="single-product.html">Single product</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Others</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End mainmenu area -->
+=======
+>>>>>>> 6cc6e7299ff19030276dd95b289af1bd4b23ed4b
     
     <div class="mainmenu-area">
         <div class="container">
@@ -118,7 +162,7 @@
                 </div>  
             </div>
         </div>
-    </div> <!-- End mainmenu area -->
+    </div><!-- End mainmenu area -->
     <? echo $content;?>
     
     <div class="footer-top-area">
@@ -216,6 +260,11 @@
     <script src="<?=$temdir?>js/jquery.easing.1.3.min.js"></script>
     
     <!-- Main Script -->
-    <script src="<?=$temdir?>js/main.js"></script>
+    <script src="<?=$temdir?>js/main.js"></script
+
+    <script src="<?=$temdir?>js/common.js"></script>
+
+    <script src="<?=$temdir?>js/menu.js"></script>
+
   </body>
 </html>
