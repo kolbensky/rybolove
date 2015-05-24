@@ -22,6 +22,7 @@
 	padding: 0;
 	margin: auto 0;
 	height: 110px;	
+	width: 36%;
 }
 #header .blocks .middle .search_box{
 	position: relative;
@@ -82,6 +83,12 @@
 	margin-top: -12px;
 }
 @media screen and (max-width: 861px){
+	#header .blocks .middle{
+		width: calc(100% - 258px);
+	}
+    #header .blocks .middle .search_box{
+		width: 100%;
+	}	
     #header .blocks .right{
     	display: block;
     	position: static;
@@ -96,13 +103,28 @@
 	#header .blocks .right #cart{
 		position: static;
 		display: block;
-		width: 90%;
+		width: 95%;
 		margin: 0 auto;
 		padding: 0;
 		float: none;
 		clear: both;
 	}
+	#header .blocks .right #cart .cart_right{
+		position: static;
+		width: 100%;
+	}
+	#header .blocks .right #cart .cart_right .light{
+		position: static;
+		width: 100%;
+	}
+	#header .blocks .right #cart .cart_right .light .cart_left{
+
+	}
+	#header .blocks .right #cart .cauntSmallCart{
+		margin-left: -12px;
+	}
 	#header .blocks .right #cart .priceSmallCart{
+		position: static;
 		width: 100%;
 	}
 	#header .blocks .right #auth{
@@ -125,6 +147,9 @@
 	#header .blocks .right #auth{
 		top: 100px;
 	}
+}
+@media screen and (max-width: 530px){
+
 }
 /*product page*/
 #content .product{
