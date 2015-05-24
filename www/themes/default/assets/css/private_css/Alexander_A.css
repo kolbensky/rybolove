@@ -1,0 +1,37 @@
+@media screen and (max-width: 320px){
+    #content .product{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (max-width: 320px){
+    .product-tab{
+        width:100%;
+        max-width: 250px;
+    }
+    .product .info .tab-content .desc{
+    	width: 260px
+    }
+    div.wide.form label{
+    	width: 280px;
+    }
+    div.form input[type="text"], div.form input[type="password"], div.form textarea, div.form select{
+    	  width: 190px;
+  padding: 4px;
+  border: 1px solid #1abc9c;
+  margin: 1px;
+  font-size: 12px;
+  outline: none;
+    }
+    #content .product .info{
+    	width: 270px;
+    }
+    .product .images{
+    	width: 295px;
+
+    }
+    .product .images .additional{
+    	width: 285px;
+    }
+}
