@@ -1011,7 +1011,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
   color: #1abc9c;
 }
 .product #leave_comment{
-  background-color: white;
+  background-color: white; 
 }
 .product #comments_tab{
   border: 0px;
