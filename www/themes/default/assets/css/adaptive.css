@@ -27,6 +27,10 @@
 }
 @media screen and (max-width: 890px){
 	#header .blocks .middle, #header .blocks .right {float: right}
+
+    .products_list .actions {
+     padding-left: 0px;
+    }
 }
 @media screen and (max-width: 880px){
 	.products_list {
@@ -51,10 +55,12 @@
     	width: 100%;
     }
 }
+/*
 @media screen and (max-width: 590px){
 	#header .blocks .middle, #header .blocks .right, #header .blocks .left  {float: none; clear: both;   display: block; margin: 0 auto;}
 
 }
+*/
 @media screen and (max-width: 490px){
 
 .products_list .product_block {width: 100%}

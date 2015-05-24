@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 #content {
     width: 98%;
@@ -37,7 +38,6 @@
     margin: 0 auto;
 }
 .catalog_with_sidebar .products_list .actions{
-    line-height:30px;
     font-size: 14px;  
     margin-bottom: 1px; 
 }
@@ -126,6 +126,13 @@ a.cancel_filter {
 
 #filter ul.filter_links li {
     padding-left:20px;
+}
+@media screen and (max-width: 830px){
+    #content .product{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
 }
 /*
 #filter {
