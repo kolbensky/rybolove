@@ -1,10 +1,14 @@
-<?php
+<?
+if($data->mainImage)
+			$imgSource = $data->mainImage->getUrl('190x150');
+		else
+			$imgSource = 'http://placehold.it/190x150';
 
 /**
  * @var StoreProduct $data
  */
-?>
 
+/*
 <div class="product_block">
 	<div class="image">
 		<?php
@@ -58,3 +62,28 @@
 			<?php echo CHtml::endForm() ?>
 	</div>
 </div>
+*/ ?>
+<div class="col-md-4 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img style = "" src="<?=$imgSource; ?>" alt="">
+                        </div>
+                        <h2><?php 
+                        	$title = CHtml::encode($data->name);
+                        	echo CHtml::link(CHtml::encode($data->name), array('frontProduct/view', 'url'=>$data->url), array('title'=> $title)); ?></h2>
+                        <div class="product-carousel-price">
+                            <?php /*
+								if($data->appliedDiscount)
+								echo '<span style=""><s>'.$data->toCurrentCurrency('originalPrice').'</s></span>';
+							*/
+							?>
+							<div class="price">
+								<?php echo $data->priceRange() ?>
+							</div>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">В корзину</a>
+                        </div>                       
+                    </div>
+                </div>

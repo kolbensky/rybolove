@@ -1,82 +1,47 @@
-<?php
 
-/**
- * Category view
- * @var $this CategoryController
- * @var $model StoreCategory
- * @var $provider CActiveDataProvider
- * @var $categoryAttributes
- */
+ 
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Shop</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-// Set meta tags
-$this->pageTitle = ($this->model->meta_title) ? $this->model->meta_title : $this->model->name;
-$this->pageKeywords = $this->model->meta_keywords;
-$this->pageDescription = $this->model->meta_description;
 
-// Create breadcrumbs
-$ancestors = $this->model->excludeRoot()->ancestors()->findAll();
+</div>    
 
-foreach($ancestors as $c)
-	$this->breadcrumbs[$c->name] = $c->getViewUrl();
-
-$this->breadcrumbs[] = $this->model->name;
-
-?>
-<div id="filter">
-		<?php
-			$this->widget('application.modules.store.widgets.filter.SFilterRenderer', array(
-				'model'=>$this->model,
-				'attributes'=>$this->eavAttributes,
-			));
-		?>
-	</div>
-<div class="catalog_with_sidebar">
-<div class="products_list <?php if($itemView==='_product_wide') echo 'wide'; ?>">
-		<?php
-			$this->widget('zii.widgets.CBreadcrumbs', array(
-				'links'=>$this->breadcrumbs,
-			));
-		?>
-
-		<h1><?php echo CHtml::encode($this->model->name); ?></h1>
-
-		<?php if(!empty($this->model->description)): ?>
-			<div>
-				<?php echo $this->model->description ?>
-			</div>
-		<?php endif ?>
-
-		<div class="actions">
-			<?php
-				echo Yii::t('StoreModule.core', 'Сортировать:');
-				echo CHtml::dropDownList('sorter', Yii::app()->request->url, array(
-					Yii::app()->request->removeUrlParam('/store/category/view', 'sort')  => '---',
-					Yii::app()->request->addUrlParam('/store/category/view', array('sort'=>'price'))  => Yii::t('StoreModule.core', 'Сначала дешевые'),
-					Yii::app()->request->addUrlParam('/store/category/view', array('sort'=>'price.desc')) => Yii::t('StoreModule.core', 'Сначала дорогие'),
-				), array('onchange'=>'applyCategorySorter(this)'));
-			?>
-
-			<?php
-				$limits=array(Yii::app()->request->removeUrlParam('/store/category/view', 'per_page')  => $this->allowedPageLimit[0]);
-				array_shift($this->allowedPageLimit);
-				foreach($this->allowedPageLimit as $l)
-					$limits[Yii::app()->request->addUrlParam('/store/category/view', array('per_page'=> $l))]=$l;
-
-				echo Yii::t('StoreModule.core', 'На странице:');
-				echo CHtml::dropDownList('per_page', Yii::app()->request->url, $limits, array('onchange'=>'applyCategorySorter(this)'));
-			?>
-
-			<div class="buttons">
-				<div class="silver_clean silver_button <?php if($itemView==='_product_wide') echo 'active'; ?>">
-					<a <?php if($itemView==='_product_wide') echo 'class="active"'; ?> href="<?php echo Yii::app()->request->addUrlParam('/store/category/view',  array('view'=>'wide')) ?>"><span class="icon lines"></span>Списком</a>
-				</div>
-				<div class="silver_clean silver_button <?php if($itemView==='_product') echo 'active'; ?>">
-					<a <?php if($itemView==='_product') echo 'class="active"'; ?> href="<?php echo Yii::app()->request->removeUrlParam('/store/category/view', 'view') ?>"><span class="icon dots"></span>Картинками</a>
-				</div>
-			</div>
-		</div>
-
-		<?php
+	
+        
+        <div class="container">
+        <div class="leftWrapper">
+        <div class="mainm">
+        <?php
+            Yii::import('application.modules.store.models.StoreCategory');
+            $items = StoreCategory::model()->findByPk(1)->asCMenuArray();
+            if(isset($items['items']))
+            {
+                $this->widget('application.extensions.mbmenu.MbMenu',array(
+                    'cssFile'=>Yii::app()->theme->baseUrl.'/assets/css/menu.css',
+                    'htmlOptions'=>array('class'=>'dropdown', 'id'=>'nav'),
+                    'items'=>$items['items'])
+                );
+            }
+            ?>
+        </div>
+        <div id="filter">
+        <?php
+            $this->widget('application.modules.store.widgets.filter.SFilterRenderer', array(
+                'model'=>$this->model,
+                'attributes'=>$this->eavAttributes,
+            ));
+        ?>
+</div>
+</div><?php
 			$this->widget('zii.widgets.CListView', array(
 				'dataProvider'=>$provider,
 				'ajaxUpdate'=>false,
@@ -87,5 +52,219 @@ $this->breadcrumbs[] = $this->model->name;
 				),
 			));
 		?>
-	</div>
-</div><!-- catalog_with_sidebar end -->
+        </div>
+<?php /*    
+    <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-2.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-3.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-4.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-2.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-3.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-4.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-2.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-3.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product-4.jpg" alt="">
+                        </div>
+                        <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$899.00</ins> <del>$999.00</del>
+                        </div>  
+                        
+                        <div class="product-option-shop">
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-pagination text-center">
+                        <nav>
+                          <ul class="pagination">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+*/ ?>
