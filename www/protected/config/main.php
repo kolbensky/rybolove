@@ -11,7 +11,7 @@ return array(
 	// pre-loading components
 	'preload'=>array('log'),
         //themename
-        'theme' => 'tms1',
+        'theme' => 'rybolove',
 
 	// autoloading model and component classes
 	'import'=>array(

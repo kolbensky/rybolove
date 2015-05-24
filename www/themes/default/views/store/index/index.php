@@ -42,8 +42,7 @@
 		});
 	});
 </script>
-
-<div id="shares">
+<!--<div id="shares">
 	<div class="shared_products">
 		<div class="share_list">
 			<ul>
@@ -83,5 +82,5 @@
 	<div class="all_news">
 		<a href="<?=$n->category->viewUrl?>">Все новости</a>
 	</div>
-</div>
+</div>-->
 <?php $this->endClip(); ?>
