@@ -1,2 +1,11 @@
 .carousel-inner .col-md-6{padding: 0;}
 .carousel-inner .big-img{width: 100%;}
+
+.logo img {
+  width: 180px;
+  height: auto;
+  padding: 15px 0;
+ } 
+.shopping-item {
+  margin-top: 28px;
+}
