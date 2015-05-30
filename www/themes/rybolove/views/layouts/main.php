@@ -32,8 +32,12 @@
     <link rel="stylesheet" href="<?=$temdir?>css/responsive.css">
     <link rel="stylesheet" href="<?=$temdir?>nikolay_r.css">
     <link rel="stylesheet" href="<?=$temdir?>main.css">
+
+      <link rel="stylesheet" href="<?=$temdir?>Yrii.css">
+
     <link rel="stylesheet" href="<?=$temdir?>sano.css">
       <link rel="stylesheet" href="<?=$temdir?>anton.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -153,7 +157,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
-                        <h2><span>Мы в социальных сетях</span></h2>
+                        <img src="<?=$temdir?>img/logo.png" alt="">
                         <p>Посетите наши страницы с социальных сетях</p>
                         <div class="footer-social">
                             <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
