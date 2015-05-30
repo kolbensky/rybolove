@@ -1,4 +1,4 @@
-<?php
+		<?php
             Yii::import('application.modules.store.models.StoreCategory');
             $items = StoreCategory::model()->findByPk(1)->asCMenuArray();
             if(isset($items['items']))

@@ -29,3 +29,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+.single-product-area .leftWrapper{
+  padding-top: 0;
+}
