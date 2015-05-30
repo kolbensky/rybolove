@@ -231,6 +231,13 @@ a.cancel_filter {
 .footer-menu #yw1{
   padding: 0;
 }
+.product-inner form{
+  float: left;
+}
+.product-inner .blue_button{
+  height: 42px;
+  float: left;
+}
 @media (max-width: 1200px){
   #yw1{
     width: calc(100% - 276px);

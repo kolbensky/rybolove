@@ -167,8 +167,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                             </div>
                         </div>
                         
-                        
-                       
+
                     </div>                    
                 </div>
             </div>
