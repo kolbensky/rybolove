@@ -139,10 +139,10 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                         	<?php echo StoreProduct::formatPrice($model->toCurrentCurrency()); ?>
                                         </ins> 
                                         <del><!-- discount price-->
-                                            <?php
+                                            <?php /*
                                             if($model->appliedDiscount)
                                                 echo $model->toCurrentCurrency('originalPrice').' '.Yii::app()->currency->active->symbol;
-                                            ?></del>
+                                            */?></del>
                                     </div>    
                                     
                                     <form action="" class="cart">

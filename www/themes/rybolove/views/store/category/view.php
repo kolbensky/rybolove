@@ -51,6 +51,7 @@
 				'sortableAttributes'=>array(
 					'name', 'price'
 				),
+                'pagerCssClass' => 'product-pagination text-center'
 			));
 		?>
         </div>
