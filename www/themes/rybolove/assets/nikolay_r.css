@@ -228,6 +228,9 @@ a.cancel_filter {
 .mainm .parent ul {
     display: none;
 }
+.footer-menu #yw1{
+  padding: 0;
+}
 @media (max-width: 1200px){
   #yw1{
     width: calc(100% - 276px);
