@@ -37,7 +37,7 @@ else
             ?>
 
            <!-- <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>-->
-            <?php echo CHtml::link('<i class="fa fa-link"></i>'.Yii::t('StoreModule.core','Подробней'), array('frontProduct/view', 'url'=>$data->url), array('class'=>'view-details-link')) ?>
+            <?php echo CHtml::link('<i class="fa fa-link"></i>'.Yii::t('StoreModule.core','Подробнее'), array('frontProduct/view', 'url'=>$data->url), array('class'=>'view-details-link')) ?>
 
         </div>
     </div>
