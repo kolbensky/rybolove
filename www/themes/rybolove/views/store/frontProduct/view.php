@@ -40,6 +40,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
+                    
 <!--
                     <div class="single-sidebar">
                         <h2 class="sidebar-title">Search Products</h2>
@@ -149,7 +150,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                         <div class="quantity">
                                             <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
                                         </div>
-                                        <button class="add_to_cart_button" type="submit">Add to cart</button>
+                                        <button class="add_to_cart_button" type="submit">Купить</button>
                                     </form>   
                                     <!--
                                     <div class="product-inner-category">
