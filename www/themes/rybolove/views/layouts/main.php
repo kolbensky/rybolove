@@ -45,13 +45,17 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="user-menu">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
-                            <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                            <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
-                            <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
-                        </ul>
+                        <?php
+                $this->widget('zii.widgets.CMenu', array(
+                    'items'=>array(
+                        array('label'=>Yii::t('core', 'Помощь'), 'url'=>array('/pages/pages/view', 'url'=>'help')),
+                        array('label'=>Yii::t('core', 'Как сделать заказ'), 'url'=>array('/pages/pages/view', 'url'=>'how-to-create-order')),
+                        array('label'=>Yii::t('core', 'Гарантия'), 'url'=>array('/pages/pages/view', 'url'=>'garantiya')),
+                        array('label'=>Yii::t('core', 'Доставка и оплата'), 'url'=>array('/pages/pages/view', 'url'=>'dostavka-i-oplata')),
+                        array('label'=>Yii::t('core', 'Обратная связь'), 'url'=>array('/feedback/default/index')),
+                    ),
+                ));
+            ?>
                     </div>
                 </div>
                 
@@ -75,6 +79,19 @@
                                     <li><a href="#">German</a></li>
                                 </ul>
                             </li>
+                    <?php /*
+                            <li>
+                                <a href="<?php echo Yii::app()->createUrl('/store/compare/index') ?>">
+                                    <span class="icon compare"></span><?php echo Yii::t('core', 'Товары на сравнение ({c})', array('{c}'=>SCompareProducts::countSession())) ?>
+                                </a>
+                            </li>
+                    
+                            <li>
+                                <a href="<?php echo Yii::app()->createUrl('/store/wishlist/index') ?>">
+                                    <span class="icon heart"></span><?php echo Yii::t('core', 'Список желаний ({c})', array('{c}'=>StoreWishlist::countByUser())) ?>
+                                </a>
+                            </li>
+                            */?>
                         </ul>
                     </div>
                 </div>
@@ -118,7 +135,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="shop.html">Shop page</a></li>
-                        <li><a href="single-product.html">Single product</a></li>
+                        <li><a href="spinnigi/katushki-bezinercionnie">Катушки</a></li>
                         <li><a href="cart.html">Cart</a></li>
                         <li><a href="checkout.html">Checkout</a></li>
                         <li><a href="#">Category</a></li>
