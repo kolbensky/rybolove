@@ -3,8 +3,18 @@
 }
 .blue_button{
 	width: 200px;
+	width: 43px;
 	background: none repeat scroll 0 0 #1abc9c;
 	border: 0;
 	outline: none;
 	color: white;
+}
+.product-inner .blue_button{
+	height: 42px;
+  	float: left;
+  	width: 140px;
+}
+.list-view .blue_button{
+	height: 42px;
+	width: 210px;
 }
