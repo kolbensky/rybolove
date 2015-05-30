@@ -38,6 +38,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
+<!--
                     <div class="single-sidebar">
                         <h2 class="sidebar-title">Search Products</h2>
                         <form action="">
@@ -87,7 +88,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                             <li><a href="">Sony Smart TV - 2015</a></li>
                             <li><a href="">Sony Smart TV - 2015</a></li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
                 
                 <div class="col-md-8">
@@ -135,7 +136,11 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                         	<?php echo Yii::app()->currency->active->symbol; ?>
                                         	<?php echo StoreProduct::formatPrice($model->toCurrentCurrency()); ?>
                                         </ins> 
-                                        <del>$800.00</del>
+                                        <del><!-- discount price-->
+                                            <?php
+                                            if($model->appliedDiscount)
+                                                echo $model->toCurrentCurrency('originalPrice').' '.Yii::app()->currency->active->symbol;
+                                            ?></del>
                                     </div>    
                                     
                                     <form action="" class="cart">
