@@ -20,5 +20,12 @@ margin-bottom: 0px;
 margin-top: 28px;
 }
 body {
-	font-family: Decima Nova Pro Light;
+	font-family: 'DecimaNovaProLt';
+}
+@font-face {
+  font-family: 'DecimaNovaProLt';
+  src: url('fonts/Decima_Nova_Pro_Light.otf') format('embedded-opentype'),  url('fonts/Decima_Nova_Pro_Light.otf')  format('opentype'),
+	     url('fonts/Decima_Nova_Pro_Light.otf') format('woff'), url('fonts/Decima_Nova_Pro_Light.otf')  format('truetype'), url('fonts/Decima_Nova_Pro_Light.otf') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }

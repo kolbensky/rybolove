@@ -17,21 +17,12 @@
 
 	
         
-        <div class="container">
-        <div class="leftWrapper">
+<div class="container">
+    <div class="leftWrapper">
         <div class="mainm">
         <?php
-            Yii::import('application.modules.store.models.StoreCategory');
-            $items = StoreCategory::model()->findByPk(1)->asCMenuArray();
-            if(isset($items['items']))
-            {
-                $this->widget('application.extensions.mbmenu.MbMenu',array(
-                    'cssFile'=>Yii::app()->theme->baseUrl.'/assets/css/menu.css',
-                    'htmlOptions'=>array('class'=>'dropdown', 'id'=>'nav'),
-                    'items'=>$items['items'])
-                );
-            }
-            ?>
+            include 'mainm.php';
+        ?>
         </div>
         <div id="filter">
         <?php
@@ -42,6 +33,14 @@
         ?>
 </div>
 </div>
+
+                        <div class="product-breadcroumb">
+                           <?php
+                                $this->widget('zii.widgets.CBreadcrumbs', array(
+                                'links'=>$this->breadcrumbs,
+                                    ));
+                            ?>
+                        </div>
         <?php
 			$this->widget('zii.widgets.CListView', array(
 				'dataProvider'=>$provider,
@@ -51,6 +50,7 @@
 				'sortableAttributes'=>array(
 					'name', 'price'
 				),
+                'pagerCssClass' => 'product-pagination text-center'
 			));
 		?>
         </div>
