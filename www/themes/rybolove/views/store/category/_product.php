@@ -83,7 +83,33 @@ if($data->mainImage)
                         </div>  
                         
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">В корзину</a>
+                            
+		<?php
+		echo CHtml::form(array('/orders/cart/add'));
+		echo CHtml::hiddenField('product_id', $data->id);
+		echo CHtml::hiddenField('product_price', $data->price);
+		echo CHtml::hiddenField('use_configurations', $data->use_configurations);
+		echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
+		echo CHtml::hiddenField('configurable_id', 0);
+		echo CHtml::hiddenField('quantity', 1);
+
+		if($data->getIsAvailable())
+		{
+			echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Купить'), array('/orders/cart/add'), array(
+				'id'=>'addProduct'.$data->id,
+				'dataType'=>'json',
+				'success'=>'js:function(data, textStatus, jqXHR){processCartResponseFromList(data, textStatus, jqXHR, "'.Yii::app()->createAbsoluteUrl('/store/frontProduct/view', array('url'=>$data->url)).'")}',
+			), array('class'=>'blue_button'));
+		}
+		else
+		{
+			echo CHtml::link('Нет в наличии', '#', array(
+				'onclick' => 'showNotifierPopup('.$data->id.'); return false;',
+				'class'   => 'notify_link',
+			));
+		}
+		?>
+                          
                         </div>                       
                     </div>
                 </div>
