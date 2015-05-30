@@ -140,8 +140,8 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
-                        <h2>e<span>Electronics</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+                        <h2><span>Мы в социальных сетях</span></h2>
+                        <p>Посетите наши страницы с социальных сетях</p>
                         <div class="footer-social">
                             <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -154,38 +154,42 @@
                 
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">User Navigation </h2>
-                        <ul>
-                            <li><a href="#">My account</a></li>
-                            <li><a href="#">Order history</a></li>
-                            <li><a href="#">Wishlist</a></li>
-                            <li><a href="#">Vendor contact</a></li>
-                            <li><a href="#">Front page</a></li>
-                        </ul>                        
+                        <h2 class="footer-wid-title">Навигация</h2>
+                        <?php
+            $this->widget('zii.widgets.CMenu', array(
+                'items'=>array(
+                    array('label'=>Yii::t('core', 'Помощь'), 'url'=>array('/pages/pages/view', 'url'=>'help')),
+                    array('label'=>Yii::t('core', 'Как сделать заказ'), 'url'=>array('/pages/pages/view', 'url'=>'how-to-create-order')),
+                    array('label'=>Yii::t('core', 'Гарантия'), 'url'=>array('/pages/pages/view', 'url'=>'garantiya')),
+                    array('label'=>Yii::t('core', 'Доставка и оплата'), 'url'=>array('/pages/pages/view', 'url'=>'dostavka-i-oplata')),
+                    array('label'=>Yii::t('core', 'Обратная связь'), 'url'=>array('/feedback/default/index')),
+                ),
+            ));
+            ?>                        
                     </div>
                 </div>
                 
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">Categories</h2>
+                        <h2 class="footer-wid-title">Категории</h2>
                         <ul>
-                            <li><a href="#">Mobile Phone</a></li>
-                            <li><a href="#">Home accesseries</a></li>
-                            <li><a href="#">LED TV</a></li>
-                            <li><a href="#">Computer</a></li>
-                            <li><a href="#">Gadets</a></li>
+                            <li><a href="#">Спиннинги</a></li>
+                            <li><a href="#">Катушки</a></li>
+                            <li><a href="#">Приманки</a></li>
+                            <li><a href="#">Удилища</a></li>
+                            <li><a href="#">Оснастка</a></li>
                         </ul>                        
                     </div>
                 </div>
                 
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-newsletter">
-                        <h2 class="footer-wid-title">Newsletter</h2>
-                        <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                        <h2 class="footer-wid-title">Почтовая рассылка</h2>
+                        <p>Подпишитесь на нашу супер рассылку</p>
                         <div class="newsletter-form">
                             <form action="#">
-                                <input type="email" placeholder="Type your email">
-                                <input type="submit" value="Subscribe">
+                                <input type="email" placeholder="Введите ваш e-mail">
+                                <input type="submit" value="Подписаться">
                             </form>
                         </div>
                     </div>
@@ -199,10 +203,10 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="copyright">
-                        <p>&copy; 2015 eElectronics. All Rights Reserved. Coded with <i class="fa fa-heart"></i> by <a href="http://wpexpand.com" target="_blank">WP Expand</a></p>
+                        <p>&copy; 2015 rybolove. Все права сохранены.</p>
                     </div>
                 </div>
-                
+                <!--
                 <div class="col-md-4">
                     <div class="footer-card-icon">
                         <i class="fa fa-cc-discover"></i>
@@ -210,7 +214,7 @@
                         <i class="fa fa-cc-paypal"></i>
                         <i class="fa fa-cc-visa"></i>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div> <!-- End footer bottom area -->
