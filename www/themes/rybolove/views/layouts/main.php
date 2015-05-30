@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="<?=$temdir?>css/owl.carousel.css">
     <link rel="stylesheet" href="<?=$temdir?>style.css">
     <link rel="stylesheet" href="<?=$temdir?>css/responsive.css">
-    <link rel="stylesheet" href="<?=$temdir?>categoryPage.css">
+    <link rel="stylesheet" href="<?=$temdir?>nikolay_r.css">
     <link rel="stylesheet" href="<?=$temdir?>main.css">
     <link rel="stylesheet" href="<?=$temdir?>sano.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -49,37 +49,24 @@
                         <?php
                 $this->widget('zii.widgets.CMenu', array(
                     'items'=>array(
-                        array('label'=>Yii::t('core', 'Помощь'), 'url'=>array('/pages/pages/view', 'url'=>'help')),
-                        array('label'=>Yii::t('core', 'Как сделать заказ'), 'url'=>array('/pages/pages/view', 'url'=>'how-to-create-order')),
-                        array('label'=>Yii::t('core', 'Гарантия'), 'url'=>array('/pages/pages/view', 'url'=>'garantiya')),
-                        array('label'=>Yii::t('core', 'Доставка и оплата'), 'url'=>array('/pages/pages/view', 'url'=>'dostavka-i-oplata')),
-                        array('label'=>Yii::t('core', 'Обратная связь'), 'url'=>array('/feedback/default/index')),
+                        //array('label'=>Yii::t('core', 'Помощь'), 'url'=>array('/pages/pages/view', 'url'=>'help')),
+                        //array('label'=>Yii::t('core', 'Как сделать заказ'), 'url'=>array('/pages/pages/view', 'url'=>'how-to-create-order')),
+                        //array('label'=>Yii::t('core', 'Гарантия'), 'url'=>array('/pages/pages/view', 'url'=>'garantiya')),
+                        //array('label'=>Yii::t('core', 'Доставка и оплата'), 'url'=>array('/pages/pages/view', 'url'=>'dostavka-i-oplata')),
+                        //array('label'=>Yii::t('core', 'Обратная связь'), 'url'=>array('/feedback/default/index')),
+                        array('label'=>Yii::t('core', 'Личный кабинет'), 'url'=>array('#', 'url'=>'garantiya')),
+                        array('label'=>Yii::t('core', 'Мои заказы'), 'url'=>array('#', 'url'=>'dostavka-i-oplata')),
+                        array('label'=>Yii::t('core', 'Выход'), 'url'=>array('#')),
                     ),
                 ));
             ?>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="header-right">
                         <ul class="list-unstyled list-inline">
-                            <li class="dropdown dropdown-small">
-                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">USD</a></li>
-                                    <li><a href="#">INR</a></li>
-                                    <li><a href="#">GBP</a></li>
-                                </ul>
-                            </li>
 
-                            <li class="dropdown dropdown-small">
-                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">language :</span><span class="value">English </span><b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="#">French</a></li>
-                                    <li><a href="#">German</a></li>
-                                </ul>
-                            </li>
                     <?php /*
                             <li>
                                 <a href="<?php echo Yii::app()->createUrl('/store/compare/index') ?>">
@@ -134,14 +121,12 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop page</a></li>
-                        <li><a href="spinnigi/katushki-bezinercionnie">Катушки</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Others</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Каталог товаров</a></li>
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Помощь</a></li>
                     </ul>
                 </div>  
             </div>
