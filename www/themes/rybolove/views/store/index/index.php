@@ -1,5 +1,6 @@
+    <div class="bg-green">
 
-    
+    <div class="container">
     <div class="slider-area">
         <div class="zigzag-bottom"></div>
         <div id="slide-list" class="carousel carousel-fade slide" data-ride="carousel">
@@ -30,11 +31,24 @@
                         </div>
                     </div>
                 </div>
+                <div class="item">
+                    <div class="single-slide">
+                        <div class="col-md-6"><img class="big-img" src="themes/rybolove/assets/img/slide2-1.png" alt=""></div>
+                        <div class="col-md-6">
+                            <img class="col-md-12 small-img" src="themes/rybolove/assets/img/slide2-2.png" alt="">
+                            <img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide2-3.png" alt="">
+                            <img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide2-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
                 
             </div>
 
         </div>        
     </div> <!-- End slider area -->
+    </div>
+        <div class="zigzag-bottom"></div>
+    </div>
     
     <div class="promo-area">
         <div class="zigzag-bottom"></div>

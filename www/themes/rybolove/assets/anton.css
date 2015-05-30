@@ -1,0 +1,22 @@
+.product-f-image{
+    display: table-cell;
+    height: 271px;
+    vertical-align: middle;
+}
+.single-slide .col-md-12{
+    padding: 0;
+}
+.bg-green .zigzag-bottom:first-child{
+    vertical-align: bottom;
+    position: relative;
+    bottom: 0;
+}
+.bg-green{
+    position: relative;
+}
+.bg-green .zigzag-bottom:first-child{
+    vertical-align: bottom;
+    position: relative;
+    bottom: 0;
+    display: none;
+}
