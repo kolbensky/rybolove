@@ -41,7 +41,7 @@
 
 		if($data->getIsAvailable())
 		{
-			echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Купить'), array('/orders/cart/add'), array(
+			echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Куп223ить'), array('/orders/cart/add'), array(
 				'id'=>'addProduct'.$data->id,
 				'dataType'=>'json',
 				'success'=>'js:function(data, textStatus, jqXHR){processCartResponseFromList(data, textStatus, jqXHR, "'.Yii::app()->createAbsoluteUrl('/store/frontProduct/view', array('url'=>$data->url)).'")}',

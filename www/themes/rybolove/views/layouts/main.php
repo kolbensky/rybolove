@@ -217,6 +217,7 @@
    
     <!-- Latest jQuery form server -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
+
     
     <!-- Bootstrap JS form CDN -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -229,11 +230,13 @@
     <script src="<?=$temdir?>js/jquery.easing.1.3.min.js"></script>
     
     <!-- Main Script -->
-    <script src="<?=$temdir?>js/main.js"></script
+    <script src="<?=$temdir?>js/main.js"></script>
 
     <script src="<?=$temdir?>js/common.js"></script>
 
     <script src="<?=$temdir?>js/menu.js"></script>
-
+    <script> 
+        
+    </script>
   </body>
 </html>
