@@ -29,8 +29,9 @@
     <link rel="stylesheet" href="<?=$temdir?>css/owl.carousel.css">
     <link rel="stylesheet" href="<?=$temdir?>style.css">
     <link rel="stylesheet" href="<?=$temdir?>css/responsive.css">
-    <link rel="stylesheet" href="<?=$temdir?>categoryPage.css">
+    <link rel="stylesheet" href="<?=$temdir?>nikolay_r.css">
     <link rel="stylesheet" href="<?=$temdir?>main.css">
+    <link rel="stylesheet" href="<?=$temdir?>sano.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -96,8 +97,8 @@
                 </div>
 
                 <div class="col-sm-6">
-                    <div class="shopping-item">
-                        <a href="cart.html">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
+                    <div class="shopping-item" id="cart">
+                        <?php $this->renderFile(Yii::getPathOfAlias('orders.views.cart._small_cart').'.php'); ?>
                     </div>
                 </div>
             </div>

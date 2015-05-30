@@ -39,7 +39,9 @@
   min-width: 216px;
 
 }
-
+.user-menu #yw1{
+  padding: 0;
+}
 /*filter*/
 
 #filter {
@@ -103,6 +105,11 @@ a.cancel_filter {
 
 #filter ul.filter_links li {
     padding-left:20px;
+}
+
+/*product page*/
+.cart .quantity input{
+  height: 42px;
 }
 /*mainm*/
 @charset "utf-8";
