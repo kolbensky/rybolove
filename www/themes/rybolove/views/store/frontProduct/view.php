@@ -146,11 +146,25 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                             */?></del>
                                     </div>    
                                     
-                                    <form action="" class="cart">
-                                        <div class="quantity">
-                                            <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
-                                        </div>
-                                        <button class="add_to_cart_button" type="submit">Купить</button>
+
+                              
+            <?php
+                echo CHtml::form(array('/cart/add'),  'post',array('id'=>'prod'.$model->id));
+                echo CHtml::hiddenField('product_id', $model->id);
+                echo CHtml::hiddenField('product_price', $model->price);
+                echo CHtml::hiddenField('use_configurations', $model->use_configurations);
+                echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
+                echo CHtml::hiddenField('configurable_id', 0);
+                echo CHtml::hiddenField('quantity', 1);
+
+                echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'blue_button'))
+            ?>
+
+            <?php echo CHtml::endForm() ?>
+
+
+        </div>
+
                                     </form>   
                                     <!--
                                     <div class="product-inner-category">
@@ -479,4 +493,5 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
         $("#profile").fadeIn(1000);
     });
 });
+
 </script>

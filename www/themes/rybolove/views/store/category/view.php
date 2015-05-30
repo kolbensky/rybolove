@@ -45,12 +45,14 @@
 			$this->widget('zii.widgets.CListView', array(
 				'dataProvider'=>$provider,
 				'ajaxUpdate'=>false,
-				'template'=>'{items} {pager} {summary}',
+				'template'=>'{items} <div class="row"> <div class="col-md-12">{pager} </div></div>{summary}' ,
 				'itemView'=>$itemView,
 				'sortableAttributes'=>array(
 					'name', 'price'
 				),
-                'pagerCssClass' => 'product-pagination text-center'
+                'pagerCssClass' => 'product-pagination text-center',
+
+                'pager' => array('class' => 'CLinkPager', 'header' => '', 'htmlOptions'=>array('class'=>'pagination')),
 			));
 		?>
         </div>
