@@ -1,2 +1,31 @@
 .carousel-inner .col-md-6{padding: 0;}
 .carousel-inner .big-img{width: 100%;}
+
+.logo img {
+  width: 180px;
+  height: auto;
+  padding: 15px 0;
+ } 
+.shopping-item {
+  margin-top: 28px;
+}
+.site-branding-area .single-sidebar input[type="text"] {
+width: 74%;
+}
+.site-branding-area .sidebar-title {
+margin-bottom: 0px;
+}
+.site-branding-area .single-sidebar {
+margin-bottom: 0px;
+margin-top: 28px;
+}
+body {
+	font-family: 'DecimaNovaProLt';
+}
+@font-face {
+  font-family: 'DecimaNovaProLt';
+  src: url('fonts/Decima_Nova_Pro_Light.otf') format('embedded-opentype'),  url('fonts/Decima_Nova_Pro_Light.otf')  format('opentype'),
+	     url('fonts/Decima_Nova_Pro_Light.otf') format('woff'), url('fonts/Decima_Nova_Pro_Light.otf')  format('truetype'), url('fonts/Decima_Nova_Pro_Light.otf') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
