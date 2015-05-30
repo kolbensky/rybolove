@@ -9,3 +9,16 @@
 .shopping-item {
   margin-top: 28px;
 }
+.site-branding-area .single-sidebar input[type="text"] {
+width: 74%;
+}
+.site-branding-area .sidebar-title {
+margin-bottom: 0px;
+}
+.site-branding-area .single-sidebar {
+margin-bottom: 0px;
+margin-top: 28px;
+}
+body {
+	font-family: Decima Nova Pro Light;
+}
