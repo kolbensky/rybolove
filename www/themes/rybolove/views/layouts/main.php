@@ -153,7 +153,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
-                        <h2><span>Мы в социальных сетях</span></h2>
+                        <img src="<?=$temdir?>img/logo.png" alt="">
                         <p>Посетите наши страницы с социальных сетях</p>
                         <div class="footer-social">
                             <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
