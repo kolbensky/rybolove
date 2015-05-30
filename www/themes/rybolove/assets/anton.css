@@ -13,6 +13,7 @@
 }
 .bg-green{
     position: relative;
+	  overflow: hidden;
 }
 .bg-green .zigzag-bottom:first-child{
     vertical-align: bottom;

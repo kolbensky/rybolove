@@ -18,6 +18,7 @@
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+	
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -91,15 +92,26 @@
     <div class="site-branding-area">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="logo">
                         <img src="<?=$temdir?>img/logo.png" alt="">
                     </div>
                 </div>
 
-                <div class="col-sm-6">
+				<div class="col-sm-4">
+					<div class="single-sidebar">
+                       
+						<?php echo CHtml::form($this->createUrl('/store/category/search')) ?>
+					<input type="text" placeholder="Поиск товаров" name="q" id="searchQuery">
+					<button type="submit">Поиск</button>
+						<?php echo CHtml::endForm() ?>
+                    </div>
+				</div>
+                <div class="col-sm-4">
+                                 
                     <div class="shopping-item" id="cart">
                         <?php $this->renderFile(Yii::getPathOfAlias('orders.views.cart._small_cart').'.php'); ?>
+
                     </div>
                 </div>
             </div>
