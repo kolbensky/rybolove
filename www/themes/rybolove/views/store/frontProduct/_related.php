@@ -9,7 +9,7 @@
 	<?php foreach($model->relatedProducts as $data):  ?>
 		<div class="product_block">
 			<div class="image">
-				<?php
+				<?php 
 				if($data->mainImage)
 					$imgSource = $data->mainImage->getUrl('190x150');
 				else

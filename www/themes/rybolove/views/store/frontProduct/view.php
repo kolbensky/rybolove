@@ -207,7 +207,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                             </div>
                         </div>
                         
-                        
+                    <!--
                         <div class="related-products-wrapper">
                             <h2 class="related-products-title">Related Products</h2>
                             <div class="related-products-carousel">
@@ -302,6 +302,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                 </div>                                    
                             </div>
                         </div>
+                    -->
                     </div>                    
                 </div>
             </div>
