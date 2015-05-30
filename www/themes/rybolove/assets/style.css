@@ -80,7 +80,10 @@ body { font-family: 'Titillium Web', sans-serif; }
     width: 100%;
     z-index: 999;}
 
-
+.mainmenu-area .navbar-collapse{
+    width: 1000px;
+    margin: 0 auto!important;
+}
 
 .logo h1 {
     font-size: 40px;
