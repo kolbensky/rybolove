@@ -3,3 +3,6 @@
     height: 271px;
     vertical-align: middle;
 }
+.single-slide .col-md-12{
+    padding: 0;
+}
