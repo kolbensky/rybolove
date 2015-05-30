@@ -34,171 +34,146 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
 
 ?>
 
-<div class="product">
-	<?php
-		$this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		));
-	?>
 
-	<div class="images">
-		<div class="image_row">
-			<div class="main">
-				<?php
-					// Main product image
-					if($model->mainImage)
-						echo CHtml::link(CHtml::image($model->mainImage->getUrl('340x250', 'resize'), $model->mainImage->title), $model->mainImage->getUrl(), array('class'=>'thumbnail'));
-					else
-						echo CHtml::link(CHtml::image('http://placehold.it/340x250'), '#', array('class'=>'thumbnail'));
-				?>
-			</div>
-			<div class="stars">
-				<?php $this->widget('CStarRating',array(
-					'name'=>'rating_'.$model->id,
-					'id'=>'rating_'.$model->id,
-					'allowEmpty'=>false,
-					'readOnly'=>isset(Yii::app()->request->cookies['rating_'.$model->id]),
-					'minRating'=>1,
-					'maxRating'=>5,
-					'value'=>($model->rating+$model->votes) ? round($model->rating / $model->votes) : 0,
-					'callback'=>'js:function(){rateProduct('.$model->id.')}',
-			)); ?>
-			</div>
-		</div>
-		<div class="additional">
-			<ul>
-			<?php
-			// Display additional images
-			foreach($model->imagesNoMain as $image)
-			{
-				echo CHtml::openTag('li', array('class'=>'span2'));
-				echo CHtml::link(CHtml::image($image->getUrl('160x120'), $image->title), $image->getUrl(), array('class'=>'thumbnail'));
-				echo CHtml::closeTag('li');
-			}
-			?>
-			</ul>
-		</div>
-	</div>
+ <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="leftWrapper">
+						<div class="mainm">
+						<?php
+							$this->renderPartial('//layouts/_mainm');
+						?>
+						</div>
+						
+					</div>
 
-	<div class="info">
-		<?php echo CHtml::form(array('/orders/cart/add')) ?>
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="product-content-right">
+                        <div class="product-breadcroumb">
+                            <?php
+								$this->widget('zii.widgets.CBreadcrumbs', array(
+								'links'=>$this->breadcrumbs,
+							));
+							?>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="product-images">
+                                    <div class="product-main-img">
+                                        <?php
+										// Main product image
+										if($model->mainImage)
+											echo CHtml::link(CHtml::image($model->mainImage->getUrl('340x250', 'resize'), $model->mainImage->title), $model->mainImage->getUrl(), array('class'=>'thumbnail'));
+										else
+											echo CHtml::link(CHtml::image('http://placehold.it/340x250'), '#', array('class'=>'thumbnail'));
+										?>
+                                    </div>
+                                    
+                                    <div class="product-gallery">
+                                        <?php
+										// Display additional images
+										foreach($model->imagesNoMain as $image)
+										{
+											echo CHtml::openTag('li', array('class'=>'span2'));
+											echo CHtml::link(CHtml::image($image->getUrl('160x120'), $image->title), $image->getUrl(), array('class'=>'thumbnail'));
+											echo CHtml::closeTag('li');
+										}
+										?>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="product-inner">
+                                    <h2 class="product-name">Sony Smart TV - 2015</h2>
+                                    <div class="product-inner-price">
+                                        <ins>
+                                        	<?php echo Yii::app()->currency->active->symbol; ?>
+                                        	<?php echo StoreProduct::formatPrice($model->toCurrentCurrency()); ?>
+                                        </ins> 
+                                        <del><!-- discount price-->
+                                            <?php /*
+                                            if($model->appliedDiscount)
+                                                echo $model->toCurrentCurrency('originalPrice').' '.Yii::app()->currency->active->symbol;
+                                            */?></del>
+                                    </div>    
+                                    
 
-		<h1><?php echo CHtml::encode($model->name); ?></h1>
+                              
+            <?php
+                echo CHtml::form(array('/cart/add'),  'post',array('id'=>'prod'.$model->id));
+                echo CHtml::hiddenField('product_id', $model->id);
+                echo CHtml::hiddenField('product_price', $model->price);
+                echo CHtml::hiddenField('use_configurations', $model->use_configurations);
+                echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
+                echo CHtml::hiddenField('configurable_id', 0);
+                echo CHtml::hiddenField('quantity', 1);
 
-		<?php $this->renderPartial('_configurations', array('model'=>$model)); ?>
+                echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'blue_button'))
+            ?>
 
-		<div class="errors" id="productErrors"></div>
-		
-		<div style="clear: both;font-size: 16px">
-			<?php
-			if($model->appliedDiscount)
-				echo '<span style="color:red; "><s>'.$model->toCurrentCurrency('originalPrice').' '.Yii::app()->currency->active->symbol.'</s></span>';
-			?>
-		</div>
+            <?php echo CHtml::endForm() ?>
 
-		<div class="price">
-			<span id="productPrice"><?php echo StoreProduct::formatPrice($model->toCurrentCurrency()); ?></span>
-			<?php echo Yii::app()->currency->active->symbol; ?>
-		</div>
-		<div style="clear:both;"></div>
-				<div class="quantity">
-            <?php echo CHtml::numberField("quantities[$index]", $product['quantity'], array('class'=>'count','placeholder'=>'1')) ?>
+
         </div>
-		<div class="actions">
-			<?php
-				echo CHtml::hiddenField('product_id', $model->id);
-				echo CHtml::hiddenField('product_price', $model->price);
-				echo CHtml::hiddenField('use_configurations', $model->use_configurations);
-				echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
-				echo CHtml::hiddenField('configurable_id', 0);
-				echo CHtml::hiddenField('quantity', 1);
 
-				if($model->isAvailable)
-				{
-					echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Купить'), array('/orders/cart/add'), array(
-						'dataType' => 'json',
-						'success'  => 'js:function(data, textStatus, jqXHR){processCartResponse(data, textStatus, jqXHR)}',
-					), array(
-						'id'=>'buyButton',
-						'class'=>'blue_button'
-					));
-				}
-				else
-				{
-					echo CHtml::link('Сообщить о появлении', '#', array(
-						'onclick' => 'showNotifierPopup('.$model->id.'); return false;',
-					));
-				}
-
-				echo CHtml::endForm();
-			?>
-
-
-		</div>
-		<div style="clear:both;"></div>
-			<div role="tabpanel" style="margin-top:30px;">
+                                    </form>   
+                                    <!--
+                                    <div class="product-inner-category">
+                                        <p>Category: <a href="">Summer</a>. Tags: <a href="">awesome</a>, <a href="">best</a>, <a href="">sale</a>, <a href="">shoes</a>. </p>
+                                    </div> -->
+                                    
+                                    <div role="tabpanel">
                                         <ul class="product-tab" role="tablist">
-                                            <li role="presentation" class="active" ><a  aria-controls="home" role="tab" data-toggle="tab" style="cursor: pointer;">Описание</a></li>
-                                            <li role="presentation" class="" ><a  aria-controls="profile" role="tab" data-toggle="tab" style="cursor: pointer;">Отзывы</a></li>
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Описание</a></li>
+                                            <!--<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Отзывы</a></li> -->
                                         </ul>
                                         <div class="tab-content">
-                                            <div role="tabpanel" class="tab-pane fade active in" id="home">
+                                            <div role="tabpanel" class="tab-pane fade in active" id="home">
                                                 <div class="desc"><?php echo $model->full_description; ?></div>
                                             </div>
+                                            <!--        
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
+                                                <h2>Reviews</h2>
                                                 <div class="submit-review">
-                                                    <?php
-		$tabs = array();
 
-		// EAV tab
+                                                    <p><label for="name">Name</label> <input name="name" type="text"></p>
+                                                    <p><label for="email">Email</label> <input name="email" type="email"></p>
+                                                <div class="rating-chooser">
+                                                        <p>Your rating</p>
 
+                                                        <div class="rating-wrap-post">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p><label for="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
+                                                    <p><input type="submit" value="Submit"></p>
 
-		// Comments tab
-		$tabs[Yii::t('StoreModule.core', 'Отзывы').' ('.$model->commentsCount.')'] = array(
-			'id'=>'comments_tab',
-			'content'=>$this->renderPartial('comments.views.comment.create', array(
-				'model'=>$model,
-			), true));
-
-		// Related products tab
-		if($model->relatedProductCount)
-		{
-			$tabs[Yii::t('StoreModule.core', 'Сопутствующие продукты').' ('.$model->relatedProductCount.')'] = array(
-				'id'=>'related_products_tab',
-				'content'=>$this->renderPartial('_related', array(
-					'model'=>$model,
-				), true));
-		}
-
-		// Render tabs
-		$this->widget('zii.widgets.jui.CJuiTabs', array(
-			'id'=>'tabs',
-			'tabs'=>$tabs
-		));
-
-		// Fix tabs opening by anchor
-		Yii::app()->clientScript->registerScript('tabSelector', '
-			$(function() {
-				var anchor = $(document).attr("location").hash;
-				var result = $("#tabs").find(anchor).parents(".ui-tabs-panel");
-				if($(result).length)
-				{
-					$("#tabs").tabs("select", "#"+$(result).attr("id"));
-				}
-			});
-		');
-	?>
                                                 </div>
-                                            </div>
+                                            </div>-->
                                         </div>
                                     </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
 
-	</div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-	<div style="clear:both;"></div>
-
-</div>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#profile").css( "display", "none" );
@@ -215,4 +190,5 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
         $("#profile").fadeIn(1000);
     });
 });
+
 </script>

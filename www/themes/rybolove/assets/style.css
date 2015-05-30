@@ -80,7 +80,10 @@ body { font-family: 'Titillium Web', sans-serif; }
     width: 100%;
     z-index: 999;}
 
-
+.mainmenu-area .navbar-collapse{
+    width: 1000px;
+    margin: 0 auto!important;
+}
 
 .logo h1 {
     font-size: 40px;
@@ -232,7 +235,7 @@ body { font-family: 'Titillium Web', sans-serif; }
 .promo-area {
     background: none repeat scroll 0 0 #1abc9c;
     color: #fff;
-    padding: 77px 0 200px;
+    padding: 117px 0 200px;
 }
 
 .brands-area {
@@ -460,7 +463,6 @@ body { font-family: 'Titillium Web', sans-serif; }
     color: #1abc9c;
 }
 .footer-wid-title {
-    font-family: raleway;
     font-size: 30px;
     font-weight: 100;color: #fff
 }
@@ -1010,8 +1012,6 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
     margin-bottom: 15px;
 }
 
-
-
 .single-shop-product h2 {
     font-size: 20px;
     margin: 10px 0;
@@ -1024,4 +1024,8 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 
 .pagination > li > a, .pagination > li > span {
     color: #1abc9c;
+}
+.logo img{
+    height: 140px;
+    padding:10px 0;
 }

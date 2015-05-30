@@ -10,7 +10,7 @@ $this->pageTitle = Yii::t('StoreModule.core', 'Поиск');
 $this->breadcrumbs[] = Yii::t('StoreModule.core', 'Поиск');
 
 ?>
-
+<div class="container">
 <div class="catalog">
 
 	<div class="products_list">
@@ -66,4 +66,5 @@ $this->breadcrumbs[] = Yii::t('StoreModule.core', 'Поиск');
 			}
 		?>
 	</div>
+</div>
 </div>

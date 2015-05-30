@@ -118,3 +118,14 @@ function applyCategorySorter(el)
 {
     window.location = $(el).val();
 }
+ //добавления в корзину
+function addToCart(submitButton){
+    var form = $(submitButton).closest('form');
+    $.ajax({
+    method: "POST",
+    url: "/cart/add",
+    data: $(form).serializeObject(),
+    success: alert('Товар успешно добавлен в корзину')
+    });
+return false;
+}
