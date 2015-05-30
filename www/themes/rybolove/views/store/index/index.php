@@ -1,5 +1,6 @@
+    <div class="bg-green">
 
-    
+    <div class="container">
     <div class="slider-area">
         <div class="zigzag-bottom"></div>
         <div id="slide-list" class="carousel carousel-fade slide" data-ride="carousel">
@@ -45,6 +46,9 @@
 
         </div>        
     </div> <!-- End slider area -->
+    </div>
+        <div class="zigzag-bottom"></div>
+    </div>
     
     <div class="promo-area">
         <div class="zigzag-bottom"></div>
