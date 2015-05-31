@@ -107,7 +107,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="brand-wrapper">
-                            <h2 class="section-title">Brands</h2>
+                            <h2 class="section-title">Бренды</h2>
                             <div class="brand-list">
                                 <img src="themes/rybolove/assets/img/brand_1.png" alt="">
                                 <img src="themes/rybolove/assets/img/brand_2.png" alt="">
