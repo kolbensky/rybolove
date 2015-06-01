@@ -25,11 +25,6 @@
     color: #333333;
 }
 .col-md-4 .single-shop-product h2{
-    height: 44px;
-}
-.single-shop-product{
-    padding: 0 20px;
-}
-#yw1{
-    padding-left: 30px;
+    height: 54px;
+    line-height: 27px;
 }
