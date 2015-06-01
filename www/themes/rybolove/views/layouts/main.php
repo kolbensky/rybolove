@@ -50,6 +50,7 @@
     <div class="header-area">
         <div class="container">
             <div class="row">
+                <!--
                 <div class="col-md-8">
                     <div class="user-menu">
                         <?php
@@ -68,6 +69,7 @@
             ?>
                     </div>
                 </div>
+                -->
 
                 <div class="col-md-4">
                     <div class="header-right">
@@ -98,7 +100,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="logo">
-                        <img src="<?=$temdir?>img/logo.png" alt="">
+                        <a href="/"><img src="<?=$temdir?>img/logo.png" alt=""></a>
                     </div>
                 </div>
 
@@ -157,7 +159,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
-                        <img src="<?=$temdir?>img/logo.png" alt="">
+                        <img src="<?=$temdir?>img/logo-footer.png" alt="">
                         <p>Посетите наши страницы с социальных сетях</p>
                         <div class="footer-social">
                             <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -192,11 +194,11 @@
                     <div class="footer-menu">
                         <h2 class="footer-wid-title">Категории</h2>
                         <ul>
-                            <li><a href="#">Спиннинги</a></li>
-                            <li><a href="#">Катушки</a></li>
-                            <li><a href="#">Приманки</a></li>
-                            <li><a href="#">Удилища</a></li>
-                            <li><a href="#">Оснастка</a></li>
+                            <li><a href="spinnigi">Катушки</a></li>
+                            <li><a href="udilisha">Удилища</a></li>
+                            <li><a href="primanki">Приманки</a></li>
+                            <li><a href="osnastka">Оснастка</a></li>
+                            <li><a href="leska-i-shnuri">Леска и шнуры</a></li>
                         </ul>                        
                     </div>
                 </div>
