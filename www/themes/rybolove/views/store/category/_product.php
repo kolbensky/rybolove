@@ -14,9 +14,12 @@ if($data->mainImage)
                         <div class="product-upper">
                             <? echo CHtml::link('<img src="'.$imgSource.'" alt="">', array('frontProduct/view', 'url'=>$data->url), array('title'=> $title)); ?>
                         </div>
-                        <h2><?php 
+                        <h2>
+                            <?php
                         	$title = CHtml::encode($data->name);
-                        	echo CHtml::link(CHtml::encode($data->name), array('frontProduct/view', 'url'=>$data->url), array('title'=> $title)); ?></h2>
+                        	echo CHtml::link(CHtml::encode($data->name), array('frontProduct/view', 'url'=>$data->url), array('title'=> $title));
+                            ?>
+                        </h2>
                         <div class="product-carousel-price">
                             <?php /*
 								if($data->appliedDiscount)
