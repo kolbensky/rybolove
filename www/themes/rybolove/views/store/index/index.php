@@ -88,7 +88,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="latest-product">
-                        <h2 class="section-title">Latest Products</h2>
+                        <h2 class="section-title">Популярные товары</h2>
                         <div class="product-carousel">
                             <?php
                             foreach($popular as $p)
