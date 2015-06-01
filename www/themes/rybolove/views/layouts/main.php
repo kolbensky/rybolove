@@ -98,7 +98,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="logo">
-                        <img src="<?=$temdir?>img/logo.png" alt="">
+                        <a href="/"><img src="<?=$temdir?>img/logo.png" alt=""></a>
                     </div>
                 </div>
 
