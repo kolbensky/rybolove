@@ -272,7 +272,7 @@ body { font-family: 'Titillium Web', sans-serif; }
 .single-promo:hover {color: #fff;background: #222;border-color: #222}
 
 .section-title {
-    font-family: "Raleway",sans-serif;
+    /*font-family: "Raleway",sans-serif;*/
     font-size: 50px;
     font-weight: 100;
     margin-bottom: 50px;
