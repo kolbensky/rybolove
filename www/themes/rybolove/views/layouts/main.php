@@ -50,6 +50,7 @@
     <div class="header-area">
         <div class="container">
             <div class="row">
+                <!--
                 <div class="col-md-8">
                     <div class="user-menu">
                         <?php
@@ -68,6 +69,7 @@
             ?>
                     </div>
                 </div>
+                -->
 
                 <div class="col-md-4">
                     <div class="header-right">
