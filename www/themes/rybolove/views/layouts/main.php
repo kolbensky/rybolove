@@ -197,11 +197,11 @@
                     <div class="footer-menu">
                         <h2 class="footer-wid-title">Категории</h2>
                         <ul>
-                            <li><a href="spinnigi">Катушки</a></li>
-                            <li><a href="udilisha">Удилища</a></li>
-                            <li><a href="primanki">Приманки</a></li>
-                            <li><a href="osnastka">Оснастка</a></li>
-                            <li><a href="leska-i-shnuri">Леска и шнуры</a></li>
+                            <li><a href="/spinnigi">Катушки</a></li>
+                            <li><a href="/udilisha">Удилища</a></li>
+                            <li><a href="/primanki">Приманки</a></li>
+                            <li><a href="/osnastka">Оснастка</a></li>
+                            <li><a href="/leska-i-shnuri">Леска и шнуры</a></li>
                         </ul>                        
                     </div>
                 </div>
