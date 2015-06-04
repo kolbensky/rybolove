@@ -253,6 +253,7 @@ a.cancel_filter {
 }
 .category-container:hover .green-line{
   background: #222;
+  cursor: pointer;
 }
 @media (max-width: 1200px){
   #yw1{
