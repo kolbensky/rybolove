@@ -255,9 +255,28 @@ a.cancel_filter {
   background: #222;
   cursor: pointer;
 }
+.contactInfo{
+  float: left;
+  margin-top: 28px;
+  font-size: 12px;
+}
+.site-branding-area .single-sidebar input[type="text"]{
+  width: calc(100% - 84px);
+  float: left;
+  margin: 0;
+}
+.site-branding-area .single-sidebar form button{
+  width: 82px;
+  float: left;
+}
 @media (max-width: 1200px){
   #yw1{
     width: calc(100% - 276px);
+  }
+}
+@media (max-width: 950px){
+  .contactInfo{
+    display: none;
   }
 }
 

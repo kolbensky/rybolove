@@ -11,6 +11,22 @@ $this->breadcrumbs[] = Yii::t('StoreModule.core', 'Поиск');
 
 ?>
 <div class="container">
+	<div class="leftWrapper">
+        <div class="mainm">
+        <?php
+            $this->renderPartial('//layouts/_mainm');
+        ?>
+        </div>
+        <div id="filter">
+        <?php
+            $this->widget('application.modules.store.widgets.filter.SFilterRenderer', array(
+                'model'=>$this->model,
+                'attributes'=>$this->eavAttributes,
+            ));
+        ?>
+		</div>
+	</div>
+	
 <div class="catalog">
 
 	<div class="products_list">
