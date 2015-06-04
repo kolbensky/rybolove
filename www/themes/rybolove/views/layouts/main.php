@@ -140,7 +140,7 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Каталог товаров</a></li>
+                        <li><a href="page/categories">Каталог товаров</a></li>
                         <li><a href="#">Как сделать заказ</a></li>
                         <li><a href="#">Гарантия</a></li>
                         <li><a href="#">Доставка и оплата</a></li>
@@ -239,7 +239,7 @@
             </div>
         </div>
     </div> <!-- End footer bottom area -->
-   
+
     <!-- Latest jQuery form server -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
 
