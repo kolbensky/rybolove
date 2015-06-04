@@ -136,14 +136,41 @@
     padding: 0;
 }
 .order_data{
-    padding-left: 30px;
+    padding-left: 0;
 }
 .product-quantity{
     border-right: 1px solid #ddd;
+    min-width: 166px;
+}
+.cart_item .product-price{
+    min-width: 82px;
+    padding: 0 3px;
 }
 .actions{
     text-align: left!important;
 }
 .cart_totals{
     float: left;
+}
+.zagolovok-korzina{
+    margin-top: 25px;
+}
+.order_data .row{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.order_data .row input, .order_data .row textarea{
+    width: 300px;
+}
+.order_data .row textarea{
+    resize: none;
+}
+.order_data .row label{
+    display: block;
+}
+.user_data h2{
+    padding-top: 25px;
+}
+.checkout-button{
+    margin-bottom: 30px;
 }

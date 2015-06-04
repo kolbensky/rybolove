@@ -21,9 +21,9 @@ if(empty($items))
 }
 ?>
 <div class="container">
-<h1 class="has_background"><?php echo Yii::t('OrdersModule.core', 'Оформление заказа'); ?></h1>
+<h1 class="has_background zagolovok-korzina"><?php echo Yii::t('OrdersModule.core', 'Оформление заказа'); ?></h1>
 
-<div class="col-md-12">
+
 <div class="product-content-right">
 <div class="woocommerce">
     <?php echo CHtml::form() ?>
@@ -174,7 +174,6 @@ if(empty($items))
     <?php echo CHtml::endForm() ?>
 </div>
 
-</div>
 </div>
 
 
