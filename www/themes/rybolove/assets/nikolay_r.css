@@ -251,7 +251,9 @@ a.cancel_filter {
 .product-option-shop .blue_button:hover{
   background: #222;
 }
-
+.category-container:hover .green-line{
+  background: #222;
+}
 @media (max-width: 1200px){
   #yw1{
     width: calc(100% - 276px);
