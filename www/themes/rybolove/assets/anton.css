@@ -63,6 +63,10 @@
         width: 50%;
         float: left;
     }
+    .adaptive-slide{
+        width: 50%;
+        float: left;
+    }
 }
 @media (max-width: 1200px){
     .mainmenu-area{
@@ -86,14 +90,6 @@
 .static_pages{
     padding-top: 30px;
 }
-@media (max-width: 768px){
-    .carousel-inner .col-md-6 img{
-        width: 100%;
-    }
-    .carousel-inner .col-md-12 img{
-        width: 50%;
-    }
-}
 @media (max-width: 520px){
     .slider-area{
         display: none;
@@ -102,4 +98,10 @@
 .single-shop-product .product-upper{
     display: table-cell;
     vertical-align: middle;
+}
+.single-slide .col-sm-6, .col-sm-12{
+    padding: 0;
+}
+.bg-green .container{
+    padding: 0;
 }

@@ -22,36 +22,34 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <div class="single-slide">
-                        <div class="col-md-6"><img class="big-img" src="themes/rybolove/assets/img/slide2.png" alt=""></div>
-						<div class="col-md-6">
-							<img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide1.png" alt="">
-							<img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide3.png" alt="">
-							<img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide4.png" alt="">
-							<img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide5.png" alt="">
+                        <div class="col-sm-6"><img class="big-img" src="themes/rybolove/assets/img/slide1-1.png" alt=""></div>
+						<div class="col-sm-6">
+                            <img class="col-sm-12" src="themes/rybolove/assets/img/slide1-2.png" alt="">
+							<img class="col-sm-6 adaptive-slide" src="themes/rybolove/assets/img/slide1-3.png" alt="">
+							<img class="col-sm-6 adaptive-slide" src="themes/rybolove/assets/img/slide1-4.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="single-slide">
-                        <div class="col-md-6"><img class="big-img" src="themes/rybolove/assets/img/slide2-1.png" alt=""></div>
-                        <div class="col-md-6">
-                            <img class="col-md-12 small-img" src="themes/rybolove/assets/img/slide2-2.png" alt="">
-                            <img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide2-3.png" alt="">
-                            <img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide2-4.png" alt="">
+                        <div class="col-sm-6"><img class="big-img" src="themes/rybolove/assets/img/slide2-1.png" alt=""></div>
+                        <div class="col-sm-6">
+                            <img class="col-sm-12" src="themes/rybolove/assets/img/slide2-2.png" alt="">
+                            <img class="col-sm-6 adaptive-slide" src="themes/rybolove/assets/img/slide2-4.png" alt="">
+                            <img class="col-sm-6 adaptive-slide" src="themes/rybolove/assets/img/slide2-3.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="single-slide">
-                        <div class="col-md-6"><img class="big-img" src="themes/rybolove/assets/img/slide3-1.png" alt=""></div>
-                        <div class="col-md-6">
-                            <img class="col-md-12 small-img" src="themes/rybolove/assets/img/slide3-2.png" alt="">
-                            <img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide3-3.png" alt="">
-                            <img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide3-4.png" alt="">
+                        <div class="col-sm-6"><img class="big-img" src="themes/rybolove/assets/img/slide3-1.png" alt=""></div>
+                        <div class="col-sm-6">
+                            <img class="col-sm-12" src="themes/rybolove/assets/img/slide3-2.png" alt="">
+                            <img class="col-sm-6 adaptive-slide" src="themes/rybolove/assets/img/slide3-3.png" alt="">
+                            <img class="col-sm-6 adaptive-slide" src="themes/rybolove/assets/img/slide3-4.png" alt="">
                         </div>
                     </div>
                 </div>
-                
             </div>
 
         </div>        
