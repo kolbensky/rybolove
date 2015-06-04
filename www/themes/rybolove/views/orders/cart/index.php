@@ -170,7 +170,7 @@ if(empty($items))
         </div>
 
     </div>
-    <input type="submit" value="Оформить заказ" name="proceed" class="checkout-button button alt wc-forward">
+    <button id="cart_button" class="oformit" type="submit" name="create" value="1">Оформить</button>
     <?php echo CHtml::endForm() ?>
 </div>
 
