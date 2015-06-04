@@ -101,22 +101,21 @@
     <div class="site-branding-area">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-4 col-sm-3">
                     <div class="logo">
                         <a href="/"><img src="<?=$temdir?>img/logo.png" alt=""></a>
                     </div>
                 </div>
 
-				<div class="col-sm-4">
+				<div class="col-md-4 col-sm-5">
 					<div class="single-sidebar">
-                       
-						<?php echo CHtml::form($this->createUrl('/store/category/search')) ?>
-					<input type="text" placeholder="Поиск товаров" name="q" id="searchQuery">
-					<button type="submit">Поиск</button>
+                        <?php echo CHtml::form($this->createUrl('/store/category/search')) ?>
+					    <input type="text" placeholder="Поиск товаров" name="q" id="searchQuery">
+					    <button type="submit">Поиск</button>
 						<?php echo CHtml::endForm() ?>
                     </div>
 				</div>
-                <div class="col-sm-4">
+                <div class="col-md-4 col-sm-4">
                                  
                     <div class="shopping-item" id="cart">
                         <?php $this->renderFile(Yii::getPathOfAlias('orders.views.cart._small_cart').'.php'); ?>
