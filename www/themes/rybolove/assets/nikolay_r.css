@@ -248,6 +248,10 @@ a.cancel_filter {
 .product-gallery li a{
   float: left;
 }
+.product-option-shop .blue_button:hover{
+  background: #222;
+}
+
 @media (max-width: 1200px){
   #yw1{
     width: calc(100% - 276px);
