@@ -78,10 +78,7 @@ body { font-family: 'Titillium Web', sans-serif; }
     font-family: "Roboto Condensed",sans-serif;
     text-transform: uppercase;
     width: 100%;
-    z-index: 999;}
-
-.mainmenu-area .navbar-nav{
-
+    z-index: 999;
 }
 
 @media (max-width: 1200px) {
@@ -94,15 +91,12 @@ body { font-family: 'Titillium Web', sans-serif; }
     .mainmenu-area{
         height: 50px!important;
     }
-
 }
 @media (max-width: 992px) {
     #undefined-sticky-wrapper {
         height: 50px !important;
     }
 }
-
-
 
 .logo h1 {
     font-size: 40px;

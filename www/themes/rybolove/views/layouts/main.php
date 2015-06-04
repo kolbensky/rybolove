@@ -143,12 +143,12 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="page/categories">Каталог товаров</a></li>
-                        <li><a href="#">Как сделать заказ</a></li>
-                        <li><a href="#">Гарантия</a></li>
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">Обратная связь</a></li>
-                        <li><a href="#">Помощь</a></li>
+                        <li><a href="/page/categories">Каталог товаров</a></li>
+                        <li><a href="/page/how-to-create-order">Как сделать заказ</a></li>
+                        <li><a href="/page/garantiya">Гарантия</a></li>
+                        <li><a href="/page/dostavka-i-oplata">Доставка и оплата</a></li>
+                        <li><a href="/page/obratnaya-svyaz">Обратная связь</a></li>
+                        <li><a href="/page/help">Помощь</a></li>
                     </ul>
                 </div>  
             </div>
