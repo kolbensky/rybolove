@@ -631,7 +631,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea {
     border: 1px solid #ddd;
     padding: 10px;
 }
-input[type="submit"], button[type=submit] {
+input[type="submit"], button[type=submit], input[type="button"] {
     background: none repeat scroll 0 0 #1abc9c;
     border: medium none;
     color: #fff;
@@ -699,7 +699,7 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
 }
 .product-gallery {
     margin-bottom: 25px;
-    margin-left: -15px;
+    /*margin-left: -15px;*/
     overflow: hidden;
 }
 .product-gallery img {

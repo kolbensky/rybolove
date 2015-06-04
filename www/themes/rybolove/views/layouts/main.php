@@ -9,10 +9,21 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Latest jQuery form server -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	
+    <!-- Bootstrap JS form CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+   
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo CHtml::encode($this->pageTitle) ?></title>
 	<meta name="description" content="<?php echo CHtml::encode($this->pageDescription) ?>">
 	<meta name="keywords" content="<?php echo CHtml::encode($this->pageKeywords) ?>">
+	<link rel="shortcut icon" href="<?=$temdir?>img/favicon_4.ico" type="image/png">
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -31,6 +42,7 @@
 	
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?=$temdir?>css/owl.carousel.css">
+    <link rel="stylesheet" href="<?=$temdir?>fancybox/jquery.fancybox-1.3.4.css">
     <link rel="stylesheet" href="<?=$temdir?>style.css">
     <link rel="stylesheet" href="<?=$temdir?>css/responsive.css">
     <link rel="stylesheet" href="<?=$temdir?>nikolay_r.css">
@@ -47,6 +59,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+
   </head>
   <body>
    
@@ -243,21 +257,15 @@
         </div>
     </div> <!-- End footer bottom area -->
 
-    <!-- Latest jQuery form server -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	
-    <!-- Bootstrap JS form CDN -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    
-    <!-- jQuery sticky menu -->
+     <!-- jQuery sticky menu -->
     <script src="<?=$temdir?>js/owl.carousel.min.js"></script>
     <script src="<?=$temdir?>js/jquery.sticky.js"></script>
     
     <!-- jQuery easing -->
     <script src="<?=$temdir?>js/jquery.easing.1.3.min.js"></script>
-    
+
+
+	
     <!-- Main Script -->
     <script src="<?=$temdir?>js/main.js"></script>
 

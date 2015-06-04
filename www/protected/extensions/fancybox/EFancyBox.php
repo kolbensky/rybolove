@@ -69,17 +69,12 @@ class EFancyBox extends CWidget
 		$assets = dirname(__FILE__).'/assets';
 		$baseUrl = Yii::app()->assetManager->publish($assets);
 		if(is_dir($assets)){
-			Yii::app()->clientScript->registerCoreScript('jquery');
 			Yii::app()->clientScript->registerScriptFile($baseUrl . '/jquery.fancybox-1.3.4.pack.js', CClientScript::POS_HEAD);
 			Yii::app()->clientScript->registerCssFile($baseUrl . '/jquery.fancybox-1.3.4.css');
 			// if mouse actions enbled register the js
 			if ($this->mouseEnabled) {
 				Yii::app()->clientScript->registerScriptFile($baseUrl . '/jquery.mousewheel-3.0.4.pack.js', CClientScript::POS_HEAD);
-			}
-			// if easing enbled register the js
-			if ($this->easingEnabled) {
-				Yii::app()->clientScript->registerScriptFile($baseUrl . '/jquery.easing-1.3.pack.js', CClientScript::POS_HEAD);
-			}
+			}
 		} else {
 			throw new Exception('EFancyBox - Error: Couldn\'t find assets to publish.');
 		}

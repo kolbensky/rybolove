@@ -107,23 +107,20 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                               
                                     <?php
                                      ///форма для отправки данных о добавлении товара в карзину
-                                        echo CHtml::form(array('/cart/add'),  'post',array('id'=>'prod'.$model->id));
+                                        echo CHtml::form(array('/cart/add'),  'post',array('id'=>'prod'.$model->id, 'class'=>'cart'));
                                         echo CHtml::hiddenField('product_id', $model->id);
                                         echo CHtml::hiddenField('product_price', $model->price);
                                         echo CHtml::hiddenField('use_configurations', $model->use_configurations);
                                         echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
                                         echo CHtml::hiddenField('configurable_id', 0);
-                                        echo CHtml::hiddenField('quantity', 1);
+                                        echo '<div class="quantity">' . CHtml::numberField('quantity', 1, array('class' => 'input-text qty text')) . '</div>';
 
-                                        echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'blue_button'))
+                                        echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'add_to_cart_button'))
                                     ?>
 
                                     <?php echo CHtml::endForm() ?>
-
-                                    <!--
-                                    <div class="product-inner-category">
-                                        <p>Category: <a href="">Summer</a>. Tags: <a href="">awesome</a>, <a href="">best</a>, <a href="">sale</a>, <a href="">shoes</a>. </p>
-                                    </div> -->
+									<div class="clear"></div>
+                                 
                                     
                                     <div role="tabpanel">
                                         <ul class="product-tab" role="tablist">

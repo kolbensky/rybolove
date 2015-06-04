@@ -33,3 +33,12 @@ body {
 .single-product-area .leftWrapper{
   padding-top: 0;
 }
+.clear {clear: both}
+
+.product-gallery li {
+  width: 100px;
+  float: left;
+}
+.product-gallery li a {
+  float: none;
+}
