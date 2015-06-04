@@ -41,6 +41,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="item">
+                    <div class="single-slide">
+                        <div class="col-md-6"><img class="big-img" src="themes/rybolove/assets/img/slide3-1.png" alt=""></div>
+                        <div class="col-md-6">
+                            <img class="col-md-12 small-img" src="themes/rybolove/assets/img/slide3-2.png" alt="">
+                            <img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide3-3.png" alt="">
+                            <img class="col-md-6 small-img" src="themes/rybolove/assets/img/slide3-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
                 
             </div>
 
