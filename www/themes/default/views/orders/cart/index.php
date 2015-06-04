@@ -192,4 +192,5 @@ if(empty($items))
 	<button id="cart_button" class="blue_button" type="submit" name="create" value="1">Оформить</button>
 </div>
 
-<?php echo CHtml::endForm() ?>
+
+

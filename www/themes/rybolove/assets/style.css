@@ -837,7 +837,7 @@ td.product-thumbnail img {
 td.product-name {
     font-size: 18px;
 }
-div.quantity input.plus, div.quantity input.minus {
+div.quantity input.plus, div.quantity input.minus, button.minus, button.plus {
     background: none repeat scroll 0 0 #1abc9c;
     border: medium none;
     color: #fff;

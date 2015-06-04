@@ -94,6 +94,9 @@
         float: right;
         margin-bottom: 10px;
     }
+    .shopping-item i.fa{
+        margin-left: 0;
+    }
 }
 @media (max-width: 768px){
     .categories-container .col-sm-4{
@@ -131,4 +134,16 @@
 }
 .bg-green .container{
     padding: 0;
+}
+.order_data{
+    padding-left: 30px;
+}
+.product-quantity{
+    border-right: 1px solid #ddd;
+}
+.actions{
+    text-align: left!important;
+}
+.cart_totals{
+    float: left;
 }

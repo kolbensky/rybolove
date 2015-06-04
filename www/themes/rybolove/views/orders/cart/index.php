@@ -14,182 +14,168 @@ $this->pageTitle = Yii::t('OrdersModule.core', 'Оформление заказ�
 
 if(empty($items))
 {
-	echo CHtml::openTag('h2');
-	echo Yii::t('OrdersModule.core', 'Корзина пуста');
-	echo CHtml::closeTag('h2');
-	return;
+    echo CHtml::openTag('h2');
+    echo Yii::t('OrdersModule.core', 'Корзина пуста');
+    echo CHtml::closeTag('h2');
+    return;
 }
 ?>
+<div class="container">
+<h1 class="has_background"><?php echo Yii::t('OrdersModule.core', 'Оформление заказа'); ?></h1>
 
-<h1 class="has_background"><?php echo Yii::t('OrdersModule.core', 'Оформление заказа') ?></h1>
+<div class="col-md-12">
+<div class="product-content-right">
+<div class="woocommerce">
+    <?php echo CHtml::form() ?>
+    <table cellspacing="0" class="shop_table cart">
+        <thead>
+        <tr>
+            <th class="product-remove">&nbsp;</th>
+            <th class="product-thumbnail">&nbsp;</th>
+            <th class="product-name">Наименование</th>
+            <th class="product-price">Цена</th>
+            <th class="product-quantity">Количество</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach($items as $index=>$product): ?>
+        <tr class="cart_item">
+            <td class="product-remove">
+                <?php echo CHtml::link('×', array('/orders/cart/remove', 'index'=>$index), array('class'=>'remove')); ?>
+            </td>
 
-<?php echo CHtml::form() ?>
-<div class="order_products">
-	<table width="100%" class="shop_table cart" cellspacing="0">
-		<thead>
-		<tr>
-			<th class="product-remove"></th>
-			<th class="product-thumbnail"></th>
-			<th class="product-name">Наименование,цена</th>
-			<th class="product-quantity">Количество</th>
-			<th class="product-subtotal">Всего</th>
-		</tr>
-		</thead>
-		<tbody>
-		<?php foreach($items as $index=>$product): ?>
-		<tr class="cart_item">
-			<td style="vertical-align:middle;" width="20px">
-				<?php echo CHtml::link('&nbsp;', array('/orders/cart/remove', 'index'=>$index), array('class'=>'remove')) ?>
-			</td>
-			<td class="product-thumbnail">
-				<?php
-					// Display image
-					if($product['model']->mainImage)
-						$imgSource = $product['model']->mainImage->getUrl('100x100');
-					else
-						$imgSource = 'http://placehold.it/100x100';
-					echo CHtml::image($imgSource, '', array('class'=>'shop_thumbnail'));
-				?>
-			</td>
-			<td class="product-name">
-				<?php
-					$price = StoreProduct::calculatePrices($product['model'], $product['variant_models'], $product['configurable_id']);
+            <td class="product-thumbnail">
+                <?php
+                // Display image
+                if($product['model']->mainImage)
+                    $imgSource = $product['model']->mainImage->getUrl('100x100');
+                else
+                    $imgSource = 'http://placehold.it/100x100';
+                echo CHtml::link(CHtml::image($imgSource, '', array('class'=>'shop_thumbnail')), array('/store/frontProduct/view', 'url'=>$product['model']->url)).'<br/>';
+                ?>
+            </td>
 
-					// Display product name with its variants and configurations
-					echo CHtml::link(CHtml::encode($product['model']->name), array('/store/frontProduct/view', 'url'=>$product['model']->url)).'<br/>';
-
-					// Price
-					echo CHtml::openTag('span', array('class'=>'amount'));
-					echo StoreProduct::formatPrice(Yii::app()->currency->convert($price));
-					echo ' '.Yii::app()->currency->active->symbol;
-					echo CHtml::closeTag('span');
-
-					// Display variant options
-					if(!empty($product['variant_models']))
-					{
-						echo CHtml::openTag('span', array('class'=>'cartProductOptions'));
-						foreach($product['variant_models'] as $variant)
-							echo ' - '.$variant->attribute->title.': '.$variant->option->value.'<br/>';
-						echo CHtml::closeTag('span');
-					}
-
-					// Display configurable options
-					if(isset($product['configurable_model']))
-					{
-						$attributeModels = StoreAttribute::model()->findAllByPk($product['model']->configurable_attributes);
-						echo CHtml::openTag('span', array('class'=>'cartProductOptions'));
-						foreach($attributeModels as $attribute)
-						{
-							$method = 'eav_'.$attribute->name;
-							echo ' - '.$attribute->title.': '.$product['configurable_model']->$method.'<br/>';
-						}
-						echo CHtml::closeTag('span');
-					}
-				?>
-			</td>
-			<td>
+            <td class="product-name">
+                <?
+                echo CHtml::link(CHtml::encode($product['model']->name), array('/store/frontProduct/view', 'url'=>$product['model']->url)).'<br/>';
+                ?>
+                </td>
+            <td class="product-price">
+                <?
+                $price = StoreProduct::calculatePrices($product['model'], $product['variant_models'], $product['configurable_id']);
+                echo CHtml::openTag('span', array('class'=>'amount'));
+                echo StoreProduct::formatPrice(Yii::app()->currency->convert($price));
+                echo ' '.Yii::app()->currency->active->symbol;
+                echo CHtml::closeTag('span');
+                ?>
+            </td>
+            <td class="product-quantity">
                 <div class="quantity buttons_added">
-                <button class="small_silver_button plus">+</button>
-				<?php echo CHtml::numberField("quantities[$index]", $product['quantity'], array('class'=>'count')) ?>
-				<button class="small_silver_button minus">&minus;</button>
+                    <button class="small_silver_button plus">+</button>
+                    <?php echo CHtml::numberField("quantities[$index]", $product['quantity'], array('class'=>'count')) ?>
+                    <button class="small_silver_button minus">&minus;</button>
                 </div>
-			</td>
-			<td>
-				<?php
-				echo CHtml::openTag('span', array('class'=>'amount'));
-				echo StoreProduct::formatPrice(Yii::app()->currency->convert($price * $product['quantity']));
-				echo ' '.Yii::app()->currency->active->symbol;
-				echo CHtml::closeTag('span');
-				?>
-			</td>
-		</tr>
-		<?php endforeach ?>
-		</tbody>
-	</table>
+            </td>
+        </tr>
+        <?php endforeach ?>
+        <tr>
+            <td class="actions" colspan="6">
+                <button class="recount" name="recount" type="submit" value="1" >Пересчитать</button>
 
-	<div class="recount">
-		<div class="silver_clean silver_button">
-			<button class="recount" name="recount" type="submit" value="1" >Пересчитать</button>
-		</div>
-		<span class="total">Всего:</span>
-		<span id="total">
-			<?php echo StoreProduct::formatPrice($totalPrice) ?>
-			<?php echo Yii::app()->currency->active->symbol ?>
-		</span>
-	</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
+
+    <div class="cart-collaterals">
+
+    <div class="cart_totals ">
+        <h2>К оплате</h2>
+
+        <table cellspacing="0">
+            <tbody>
+            <tr class="order-total">
+                <th>Всего</th>
+                <td><strong><span class="amount">
+                            <?php echo StoreProduct::formatPrice($totalPrice) ?>
+                            <?php echo Yii::app()->currency->active->symbol ?>
+                        </span></strong> </td>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+    </div>
+
+    </div>
+    <div class="order_data">
+        <div class="left">
+            <div class="delivery rc5">
+                <h2>Способ доставки</h2>
+                <ul>
+                    <?php foreach($deliveryMethods as $delivery): ?>
+                        <li>
+                            <label class="radio">
+                                <?php
+                                echo CHtml::activeRadioButton($this->form, 'delivery_id', array(
+                                    'checked'        => ($this->form->delivery_id == $delivery->id),
+                                    'uncheckValue'   => null,
+                                    'value'          => $delivery->id,
+                                    'data-price'     => Yii::app()->currency->convert($delivery->price),
+                                    'data-free-from' => Yii::app()->currency->convert($delivery->free_from),
+                                    'onClick'        => 'recountOrderTotalPrice(this);',
+                                ));
+                                ?>
+                                <span><?php echo CHtml::encode($delivery->name) ?></span>
+                            </label>
+                            <p><?=$delivery->description?></p>
+                        </li>
+                    <?php endforeach; ?>
+            </div>
+        </div>
+
+        <div class="user_data rc5">
+            <h2>Адрес получателя</h2>
+
+            <div class="form wide">
+                <?php echo CHtml::errorSummary($this->form); ?>
+
+                <div class="row">
+                    <?php echo CHtml::activeLabel($this->form,'name', array('required'=>true)); ?>
+                    <?php echo CHtml::activeTextField($this->form,'name'); ?>
+                </div>
+
+                <div class="row">
+                    <?php echo CHtml::activeLabel($this->form,'email', array('required'=>true)); ?>
+                    <?php echo CHtml::activeTextField($this->form,'email'); ?>
+                </div>
+
+                <div class="row">
+                    <?php echo CHtml::activeLabel($this->form,'phone'); ?>
+                    <?php echo CHtml::activeTextField($this->form,'phone'); ?>
+                </div>
+
+                <div class="row">
+                    <?php echo CHtml::activeLabel($this->form,'address'); ?>
+                    <?php echo CHtml::activeTextField($this->form,'address'); ?>
+                </div>
+
+                <div class="row">
+                    <?php echo CHtml::activeLabel($this->form,'comment'); ?>
+                    <?php echo CHtml::activeTextArea($this->form,'comment'); ?>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <input type="submit" value="Оформить заказ" name="proceed" class="checkout-button button alt wc-forward">
+    <?php echo CHtml::endForm() ?>
 </div>
 
-<div class="order_data">
-	<div class="left">
-		<div class="delivery rc5">
-			<h2>Способ доставки</h2>
-			<ul>
-				<?php foreach($deliveryMethods as $delivery): ?>
-				<li>
-					<label class="radio">
-						<?php
-						echo CHtml::activeRadioButton($this->form, 'delivery_id', array(
-							'checked'        => ($this->form->delivery_id == $delivery->id),
-							'uncheckValue'   => null,
-							'value'          => $delivery->id,
-							'data-price'     => Yii::app()->currency->convert($delivery->price),
-							'data-free-from' => Yii::app()->currency->convert($delivery->free_from),
-							'onClick'        => 'recountOrderTotalPrice(this);',
-						));
-						?>
-						<span><?php echo CHtml::encode($delivery->name) ?></span>
-					</label>
-					<p><?=$delivery->description?></p>
-				</li>
-				<?php endforeach; ?>
-		</div>
-	</div>
-
-	<div class="user_data rc5">
-		<h2>Адрес получателя</h2>
-
-		<div class="form wide">
-			<?php echo CHtml::errorSummary($this->form); ?>
-
-			<div class="row">
-				<?php echo CHtml::activeLabel($this->form,'name', array('required'=>true)); ?>
-				<?php echo CHtml::activeTextField($this->form,'name'); ?>
-			</div>
-
-			<div class="row">
-				<?php echo CHtml::activeLabel($this->form,'email', array('required'=>true)); ?>
-				<?php echo CHtml::activeTextField($this->form,'email'); ?>
-			</div>
-
-			<div class="row">
-				<?php echo CHtml::activeLabel($this->form,'phone'); ?>
-				<?php echo CHtml::activeTextField($this->form,'phone'); ?>
-			</div>
-
-			<div class="row">
-				<?php echo CHtml::activeLabel($this->form,'address'); ?>
-				<?php echo CHtml::activeTextField($this->form,'address'); ?>
-			</div>
-
-			<div class="row">
-				<?php echo CHtml::activeLabel($this->form,'comment'); ?>
-				<?php echo CHtml::activeTextArea($this->form,'comment'); ?>
-			</div>
-		</div>
-	</div>
-
+</div>
 </div>
 
-<div style="clear:both;"></div>
 
-<div class="has_background confirm_order">
-	<h1>Всего к оплате:</h1>
-	<span id="orderTotalPrice" class="total"><?php echo StoreProduct::formatPrice($totalPrice) ?></span>
-	<span class="current_currency">
-		<?php echo Yii::app()->currency->active->symbol; ?>
-	</span>
-	<button id="cart_button" class="blue_button" type="submit" name="create" value="1">Оформить</button>
 </div>
-
-<?php echo CHtml::endForm() ?>
