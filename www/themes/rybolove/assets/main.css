@@ -38,7 +38,18 @@ body {
 .product-gallery li {
   width: 100px;
   float: left;
+  height: 65px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 2.5px;
+}
+.product-gallery li:last-child{
+  margin-right: 0;
 }
 .product-gallery li a {
   float: none;
+  border: none;
+  overflow: hidden;
+  height: 56px;
 }
