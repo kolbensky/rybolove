@@ -93,8 +93,9 @@ function processCartResponseFromList(data, textStatus, jqXHR, redirect)
         window.location = redirect
     }else{
         reloadSmallCart();
-        $.jGrowl("Товар успешно добавлен в корзину. <a href='/cart'>Перейти к оформлению</a>.", {position:"bottom-right"});
         $("#cart").fadeOut().fadeIn().fadeOut().fadeIn();
+        $.jGrowl("Товар успешно добавлен в корзину. <a href='/cart'>Перейти к оформлению</a>.", {position:"bottom-right"});
+        
     }
 }
 
@@ -119,6 +120,7 @@ function applyCategorySorter(el)
     window.location = $(el).val();
 }
  //добавления в корзину
+/*
 function addToCart(submitButton){
     var form = $(submitButton).closest('form');
     $.ajax({
@@ -128,4 +130,5 @@ function addToCart(submitButton){
     success: alert('Товар успешно добавлен в корзину')
     });
 return false;
-}
+}*/
+

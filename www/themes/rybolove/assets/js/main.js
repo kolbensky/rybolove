@@ -123,7 +123,7 @@ jQuery(document).ready(
 	};
 })(jQuery);
 
-
+/*
 window.addToCart =  function (submitButton) {
         var form = $(submitButton).closest('form');
             $.ajax({
@@ -134,6 +134,6 @@ window.addToCart =  function (submitButton) {
             success: alert('Товар успешно добавлен в корзину')
         });
         return false;
-    }
+    }*/
 });
 

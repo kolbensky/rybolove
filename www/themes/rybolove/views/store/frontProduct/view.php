@@ -114,8 +114,12 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                         echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
                                         echo CHtml::hiddenField('configurable_id', 0);
                                         echo '<div class="quantity">' . CHtml::numberField('quantity', 1, array('class' => 'input-text qty text')) . '</div>';
-
-                                        echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'add_to_cart_button'))
+                                                echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Купить'), array('/orders/cart/add'), array(
+                'id'=>'addProduct'.$data->id,
+                'dataType'=>'json',
+                'success'=>'js:function(data, textStatus, jqXHR){processCartResponseFromList(data, textStatus, jqXHR, "'.Yii::app()->createAbsoluteUrl('/store/frontProduct/view', array('url'=>$data->url)).'")}',
+            ), array('class'=>'add_to_cart_button'));
+                                        //echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'add_to_cart_button'))
                                     ?>
 
                                     <?php echo CHtml::endForm() ?>
