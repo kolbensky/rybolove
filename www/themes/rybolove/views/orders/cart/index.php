@@ -126,6 +126,7 @@ if(empty($items))
                                     'data-price'     => Yii::app()->currency->convert($delivery->price),
                                     'data-free-from' => Yii::app()->currency->convert($delivery->free_from),
                                     'onClick'        => 'recountOrderTotalPrice(this);',
+									'checked'        => 'checked'
                                 ));
                                 ?>
                                 <span><?php echo CHtml::encode($delivery->name) ?></span>
