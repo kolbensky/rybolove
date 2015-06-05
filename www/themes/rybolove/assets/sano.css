@@ -45,4 +45,23 @@
     margin-bottom: 20px;
   }
 
+#per_page{
+
+}
+}
+@media (max-width: 475px){
+.onPage{
+	color: white;
+}
+#per_page{
+	margin-top: 15px;
+}
+}
+@media (max-width: 330px){
+.onPage{
+	display: none;
+}
+#per_page{
+	margin-top: 40px;
+}
 }

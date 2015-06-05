@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="<?=$temdir?>css/responsive.css">
     <link rel="stylesheet" href="<?=$temdir?>nikolay_r.css">
     <link rel="stylesheet" href="<?=$temdir?>main.css">
-    <link rel="stylesheet" href="<?=$temdir?>jquery.jgrowl.css">
+    <link rel="stylesheet" href="<?=$temdir?>css/jquery.jgrowl.css">
       <link rel="stylesheet" href="<?=$temdir?>Yrii.css">
 
     <link rel="stylesheet" href="<?=$temdir?>sano.css">
