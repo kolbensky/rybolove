@@ -255,6 +255,12 @@ a.cancel_filter {
   background: #222;
   cursor: pointer;
 }
+.category-container{
+  border: 1px solid #dddddd;
+}
+.category-container:hover{
+  border: 1px solid #222;
+}
 .contactInfo{
   float: left;
   margin-top: 28px;
@@ -346,6 +352,16 @@ a.cancel_filter {
   padding-top: 60px;
   font-size: 16px;
   font-weight: bold;
+}
+.recount {
+  float: right;
+}
+.product-breadcroumb select{
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.footer-top-area{
+  font-family: DecimaNovaProLt;
 }
 @media (max-width: 1200px){
   #yw1{
