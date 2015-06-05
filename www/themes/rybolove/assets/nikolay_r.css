@@ -375,7 +375,11 @@ a.cancel_filter {
 .list-view .blue_button{
   width: 100%;
 }
-
+.pagination .selected a{
+  background: #1abc9c;
+  color: white;
+  font-weight: bold;
+}
 /*media*/
 @media (max-width: 1200px){
   #yw1{
