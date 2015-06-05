@@ -25,7 +25,7 @@ h4,
 h5,
 h6 {
     font-weight: 700;
-    margin: 0 0 15px;
+      margin: 0 0 15px -1px;
 }
 body { font-family: 'Titillium Web', sans-serif; }
 
