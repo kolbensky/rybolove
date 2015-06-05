@@ -199,7 +199,7 @@
                         <?php
             $this->widget('zii.widgets.CMenu', array(
                 'items'=>array(
-                    array('label'=>Yii::t('core', 'Помощь!'), 'url'=>array('/pages/pages/view', 'url'=>'help')),
+                    array('label'=>Yii::t('core', 'Помощь'), 'url'=>array('/pages/pages/view', 'url'=>'help')),
                     array('label'=>Yii::t('core', 'Как сделать заказ'), 'url'=>array('/pages/pages/view', 'url'=>'how-to-create-order')),
                     array('label'=>Yii::t('core', 'Гарантия'), 'url'=>array('/pages/pages/view', 'url'=>'garantiya')),
                     array('label'=>Yii::t('core', 'Доставка и оплата'), 'url'=>array('/pages/pages/view', 'url'=>'dostavka-i-oplata')),
