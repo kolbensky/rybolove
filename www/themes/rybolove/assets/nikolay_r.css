@@ -372,6 +372,12 @@ a.cancel_filter {
 .footer-top-area{
   font-family: DecimaNovaProLt;
 }
+.list-view .blue_button{
+  width: 100%;
+}
+
+
+/*media*/
 @media (max-width: 1200px){
   #yw1{
     width: calc(100% - 276px);
