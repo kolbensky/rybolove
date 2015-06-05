@@ -43,12 +43,11 @@
 	
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?=$temdir?>css/owl.carousel.css">
-    <link rel="stylesheet" href="<?=$temdir?>fancybox/jquery.fancybox-1.3.4.css">
     <link rel="stylesheet" href="<?=$temdir?>style.css">
     <link rel="stylesheet" href="<?=$temdir?>css/responsive.css">
     <link rel="stylesheet" href="<?=$temdir?>nikolay_r.css">
     <link rel="stylesheet" href="<?=$temdir?>main.css">
-    <link rel="stylesheet" href="<?=$temdir?>jquery.jgrowl.css">
+    <link rel="stylesheet" href="<?=$temdir?>css/jquery.jgrowl.css">
       <link rel="stylesheet" href="<?=$temdir?>Yrii.css">
 
     <link rel="stylesheet" href="<?=$temdir?>sano.css">

@@ -117,7 +117,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                                 echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Купить'), array('/orders/cart/add'), array(
                 'id'=>'addProduct'.$data->id,
                 'dataType'=>'json',
-                'success'=>'js:function(data, textStatus, jqXHR){processCartResponseFromList(data, textStatus, jqXHR, "'.Yii::app()->createAbsoluteUrl('/store/frontProduct/view', array('url'=>$data->url)).'")}',
+                'success'=>'js:function(data, textStatus, jqXHR){processCartResponse(data, textStatus, jqXHR, "'.Yii::app()->createAbsoluteUrl('/store/frontProduct/view', array('url'=>$data->url)).'")}',
             ), array('class'=>'add_to_cart_button'));
                                         //echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'add_to_cart_button'))
                                     ?>
