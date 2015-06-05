@@ -51,8 +51,12 @@
     float:left;
 }
 #filter input {
-  width:30%;
+  width:33%;
   margin: 15px 0;
+  height: 20px;
+  margin:22 5px; 
+  padding: 0 5px;
+  text-align: center;
 }
 #filter .rounded {
     -webkit-border-radius: 0px;
@@ -256,11 +260,15 @@ a.cancel_filter {
   cursor: pointer;
 }
 .category-container{
-  border: 1px solid #dddddd;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border:1px solid #dddddd;
 }
 .category-container:hover{
   border: 1px solid #222;
 }
+
 .contactInfo{
   float: left;
   margin-top: 28px;
