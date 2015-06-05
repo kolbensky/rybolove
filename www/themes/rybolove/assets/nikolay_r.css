@@ -372,6 +372,12 @@ a.cancel_filter {
 .footer-top-area{
   font-family: DecimaNovaProLt;
 }
+.list-view .blue_button{
+  width: 100%;
+}
+
+
+/*media*/
 @media (max-width: 1200px){
   #yw1{
     width: calc(100% - 276px);
@@ -422,6 +428,7 @@ a.cancel_filter {
   .container .buttons{
     padding-left: 30px;
   }
+  .catalog .products_list #yw1,
   .container #yw2 .items,
   .container .catalog .products_list #yw2 .items{
     width: 100%;
