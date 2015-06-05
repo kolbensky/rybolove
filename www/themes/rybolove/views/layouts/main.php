@@ -43,16 +43,16 @@
 	
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?=$temdir?>css/owl.carousel.css">
+    <link rel="stylesheet" href="<?=$temdir?>fancybox/jquery.fancybox-1.3.4.css">
     <link rel="stylesheet" href="<?=$temdir?>style.css">
     <link rel="stylesheet" href="<?=$temdir?>css/responsive.css">
-    <link rel="stylesheet" href="<?=$temdir?>main.css">
-    <link rel="stylesheet" href="<?=$temdir?>css/jquery.jgrowl.css">
     <link rel="stylesheet" href="<?=$temdir?>nikolay_r.css">
-    <link rel="stylesheet" href="<?=$temdir?>Yrii.css">
+    <link rel="stylesheet" href="<?=$temdir?>main.css">
+    <link rel="stylesheet" href="<?=$temdir?>jquery.jgrowl.css">
+      <link rel="stylesheet" href="<?=$temdir?>Yrii.css">
 
     <link rel="stylesheet" href="<?=$temdir?>sano.css">
-    <link rel="stylesheet" href="<?=$temdir?>anton.css">
-    
+      <link rel="stylesheet" href="<?=$temdir?>anton.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -221,7 +221,18 @@
                     </div>
                 </div>
                 
-  
+                <!--<div class="col-md-3 col-sm-6">
+                    <div class="footer-newsletter">
+                        <h2 class="footer-wid-title">Почтовая рассылка</h2>
+                        <p>Подпишитесь на нашу супер рассылку</p>
+                        <div class="newsletter-form">
+                            <form action="#">
+                                <input type="email" placeholder="Введите ваш e-mail">
+                                <input type="submit" value="Подписаться">
+                            </form>
+                        </div>
+                    </div>
+                </div>-->
             </div>
         </div>
     </div> <!-- End footer top area -->
