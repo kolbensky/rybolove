@@ -50,10 +50,12 @@ body {
   overflow: hidden;
   height: 56px;
 }
-
+.product-breadcroumb select {
+  height: 32px;
+}
 @media (min-width: 768px) {
-.list-view .col-md-4:nth-child(3n+1) {padding-left: 0}
- .list-view .col-md-4:nth-child(3n) {padding-right: 0}
- .list-view .col-md-4:nth-child(3n+2) {padding: 0 7.5px}
+.list-view .col-md-4:nth-child(3n+1) {padding-left: 0; padding-right: 10px}
+ .list-view .col-md-4:nth-child(3n) {padding-right: 0; padding-left: 10px;}
+ .list-view .col-md-4:nth-child(3n+2) {padding: 0 5px}
 
 }

@@ -16,5 +16,33 @@
 }
 .list-view .blue_button{
 	height: 42px;
-	width: 210px;
+	width: 100%;
+}
+.section-title{
+	margin-bottom: 30px;
+	font-family: inherit;
+}
+.footer-top-area .row .col-md-3{
+	margin-left: 35px;
+
+}
+.footer-wid-title{
+	font-family:"DecimaNovaProLt"; 
+}
+.footer-top-area #yw1{
+	width:100%;
+}
+@media (max-width: 1200px){
+  #yw1{
+  
+  }
+}
+@media (max-width: 767px){
+.footer-wid-title{
+	margin-top: -40px;
+}
+#yw1{
+    margin-bottom: 20px;
+  }
+
 }
