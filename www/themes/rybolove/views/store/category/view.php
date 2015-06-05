@@ -1,4 +1,4 @@
- 
+
 <?php
 // Set meta tags
 $this->pageTitle = ($this->model->meta_title) ? $this->model->meta_title : $this->model->name;
