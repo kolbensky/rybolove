@@ -131,8 +131,11 @@
     }
 }
 .single-shop-product .product-upper{
-    display: table-cell;
-    vertical-align: middle;
+    display: inline-block;
+    line-height: 300px;
+}
+.single-shop-product .product-upper a, .single-shop-product .product-upper img{
+    width: 100%;
 }
 .single-slide .col-sm-6, .col-sm-12{
     padding: 0;
