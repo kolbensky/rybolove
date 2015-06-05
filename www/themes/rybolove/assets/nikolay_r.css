@@ -376,7 +376,6 @@ a.cancel_filter {
   width: 100%;
 }
 
-
 /*media*/
 @media (max-width: 1200px){
   #yw1{
@@ -438,6 +437,9 @@ a.cancel_filter {
   .container .buttons{
   width: 100%;
   text-align: center;
+  }
+  .site-branding-area .single-sidebar input[type="text"]{
+  width:100%;
   }
 }
 
