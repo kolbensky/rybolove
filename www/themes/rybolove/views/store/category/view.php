@@ -58,7 +58,7 @@ $this->breadcrumbs[] = $this->model->name;
                 foreach($this->allowedPageLimit as $l)
                     $limits[Yii::app()->request->addUrlParam('/store/category/view', array('per_page'=> $l))]=$l;
 
-                echo Yii::t('StoreModule.core', 'На странице:');
+                echo Yii::t('StoreModule.core', '<span class="onPage">На странице:</span>');
                 echo CHtml::dropDownList('per_page', Yii::app()->request->url, $limits, array('onchange'=>'applyCategorySorter(this)'));
             ?>
             </div> 

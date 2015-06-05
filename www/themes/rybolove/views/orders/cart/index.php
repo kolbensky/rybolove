@@ -14,7 +14,7 @@ $this->pageTitle = Yii::t('OrdersModule.core', 'Оформление заказ�
 
 if(empty($items))
 {
-    echo CHtml::openTag('h2');
+    echo CHtml::openTag('h2',array('class'=>'cart_h2'));
     echo Yii::t('OrdersModule.core', 'Корзина пуста');
     echo CHtml::closeTag('h2');
     return;
@@ -126,6 +126,7 @@ if(empty($items))
                                     'data-price'     => Yii::app()->currency->convert($delivery->price),
                                     'data-free-from' => Yii::app()->currency->convert($delivery->free_from),
                                     'onClick'        => 'recountOrderTotalPrice(this);',
+									'checked'        => 'checked'
                                 ));
                                 ?>
                                 <span><?php echo CHtml::encode($delivery->name) ?></span>
