@@ -42,8 +42,12 @@ if($data->mainImage)
                                         echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
                                         echo CHtml::hiddenField('configurable_id', 0);
                                         echo CHtml::hiddenField('quantity', 1);
-
-                                        echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'blue_button'))
+                                        echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Купить'), array('/orders/cart/add'), array(
+                'id'=>'addProduct'.$data->id,
+                'dataType'=>'json',
+                'success'=>'js:function(data, textStatus, jqXHR){processCartResponseFromList(data, textStatus, jqXHR, "'.Yii::app()->createAbsoluteUrl('/store/frontProduct/view', array('url'=>$data->url)).'")}',
+            ), array('class'=>'blue_button'));
+                                        //echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'blue_button'))
                                     ?>
 
                                     <?php echo CHtml::endForm() ?>
