@@ -21,9 +21,9 @@
 	</div>
 	<div class="price">
 		<?php
-		if($data->appliedDiscount)
+		/*if($data->appliedDiscount)
 			echo '<span style="color:red; "><s>'.$data->toCurrentCurrency('originalPrice').'</s></span>';
-		?>
+		*/?>
 		<?php echo $data->priceRange() ?>
 	</div>
 	<div class="desc">
@@ -41,7 +41,7 @@
 
 		if($data->getIsAvailable())
 		{
-			echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Куп223ить'), array('/orders/cart/add'), array(
+			echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Купить'), array('/orders/cart/add'), array(
 				'id'=>'addProduct'.$data->id,
 				'dataType'=>'json',
 				'success'=>'js:function(data, textStatus, jqXHR){processCartResponseFromList(data, textStatus, jqXHR, "'.Yii::app()->createAbsoluteUrl('/store/frontProduct/view', array('url'=>$data->url)).'")}',
@@ -55,8 +55,10 @@
 			));
 		}
 		?>
+		<?php /*
 		<button class="small_silver_button" title="<?=Yii::t('core','Сравнить')?>" onclick="return addProductToCompare(<?php echo $data->id ?>);"><span class="compare">&nbsp</span></button>
 		<button class="small_silver_button" title="<?=Yii::t('core','В список желаний')?>" onclick="return addProductToWishList(<?php echo $data->id ?>);"><span class="heart">&nbsp;</span></button>
+		*/?>
 		<?php echo CHtml::endForm() ?>
 	</div>
 </div>

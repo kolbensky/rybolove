@@ -64,10 +64,10 @@ $this->breadcrumbs[] = $this->model->name;
             </div> 
     <div class="buttons">
                 <div class="add_to_cart_button viewTypeButton <?php if($itemView==='_product_wide') echo 'active'; ?>">
-                    <a <?php if($itemView==='_product_wide') echo 'class="active"'; ?> href="<?php echo Yii::app()->request->addUrlParam('/store/category/view',  array('view'=>'wide')) ?>"><span class="icon lines"></span>Списком</a>
+                    <a <?php if($itemView==='_product_wide') echo 'class="active"'; ?> href="<?php echo Yii::app()->request->addUrlParam('/store/category/view',  array('view'=>'wide')) ?>"><span class="icon lines"></span>Картинками</a>
                 </div>
                 <div class="add_to_cart_button viewTypeButton <?php if($itemView==='_product') echo 'active'; ?>">
-                    <a <?php if($itemView==='_product') echo 'class="active"'; ?> href="<?php echo Yii::app()->request->removeUrlParam('/store/category/view', 'view') ?>"><span class="icon dots"></span>Картинками</a>
+                    <a <?php if($itemView==='_product') echo 'class="active"'; ?> href="<?php echo Yii::app()->request->removeUrlParam('/store/category/view', 'view') ?>"><span class="icon dots"></span>Списком</a>
                 </div>
             </div>
         <?php
