@@ -6,6 +6,9 @@
  */
 
 $title = Yii::t('OrdersModule.core', 
+	'Заказ #{id} принят',
+	 array('{id}'=>$model->id));
+$title1 = Yii::t('OrdersModule.core', 
 	'
 	<p id = "thx">Спасибо, Ваш заказ принят,<br>
 	мы свяжемся с вами в ближайшее время</p>
@@ -15,7 +18,7 @@ $this->pageTitle = $title;
 
 ?>
 <div class="container">
-<h1 class="has_background zagolovok-korzina"><?php echo $title; ?></h1>
+<h1 class="has_background zagolovok-korzina"><?php echo $title1; ?></h1>
 
 <div class="order_products">
 	<table width="100%" class="shop_table cart">
