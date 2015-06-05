@@ -306,7 +306,10 @@ a.cancel_filter {
   text-decoration: none;
   color: white;
 }
-
+.container .catalog .products_list #yw2 .items{
+  width: calc(80% - 60px);
+  float: right;
+}
 @media (max-width: 1200px){
   #yw1{
     width: calc(100% - 276px);
@@ -314,11 +317,19 @@ a.cancel_filter {
   .catalog #yw1{
   width: calc(100% - 276px);
   }
+  .container .catalog .products_list #yw2 .items{
+  width: calc(100% - 276px);
+  float: right;
+}
 }
 @media (max-width: 992px){
   .container .product-breadcroumb{
   padding-left: 276px;
   }
+  .container .catalog .products_list #yw2 .items{
+  width: calc(100% - 276px);
+  float: right;
+}
 }
 @media (max-width: 992px){
   .container .buttons{
@@ -347,6 +358,10 @@ a.cancel_filter {
   .container .product-breadcroumb,
   .container .buttons{
   padding-left: 30px;
+  }
+  .container .catalog .products_list #yw2 .items{
+  width: 100%;
+  float: right;
 }
 }
 
