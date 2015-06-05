@@ -255,6 +255,12 @@ a.cancel_filter {
   background: #222;
   cursor: pointer;
 }
+.category-container{
+  border: 1px solid #dddddd;
+}
+.category-container:hover{
+  border: 1px solid #222;
+}
 .contactInfo{
   float: left;
   margin-top: 28px;
@@ -286,6 +292,9 @@ a.cancel_filter {
 .container #yw1{
   padding-top: 0;
 }
+.product-breadcroumb{
+  font-size: 16px;
+}
 .container .product-breadcroumb{
   padding-top: 60px;
   padding-left: calc(20% + 60px);
@@ -309,6 +318,50 @@ a.cancel_filter {
 .container .catalog .products_list #yw2 .items{
   width: calc(80% - 60px);
   float: right;
+}
+/*order page*/
+.container h1 #thx{
+  color: #1abc9c;
+  font-size: 30px;
+}
+.container h1 #orderID{
+  color: #222;
+  font-size: 20px;
+}
+.container .order_products .order_data .user_data h2{
+  font-size: 20px;
+  color: #222;
+  padding-top: 0;
+}
+.container .order_products .order_data .user_data .form {
+  font-size: 16px;
+}
+.container .order_products .order_data .user_data .form .parameter{
+  font-weight: bold;
+  color: #1abc9c
+}
+.container .order_products .cart_totals{
+  font-weight: bold;
+  font-size: 18px;
+  color: #222;
+}
+.container #yw1 .items .product_block:first-child{
+  padding-top: 10px;
+}
+.container #yw1 .items .product_block{
+  padding-top: 60px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.recount {
+  float: right;
+}
+.product-breadcroumb select{
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.footer-top-area{
+  font-family: DecimaNovaProLt;
 }
 @media (max-width: 1200px){
   #yw1{
@@ -363,5 +416,10 @@ a.cancel_filter {
   width: 100%;
   float: right;
 }
+  .container .product-breadcroumb,
+  .container .buttons{
+  width: 100%;
+  text-align: center;
+  }
 }
 
