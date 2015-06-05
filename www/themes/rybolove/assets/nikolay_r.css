@@ -310,6 +310,35 @@ a.cancel_filter {
   width: calc(80% - 60px);
   float: right;
 }
+/*order page*/
+.container h1 #thx{
+  color: #1abc9c;
+  font-size: 30px;
+}
+.container h1 #orderID{
+  color: #222;
+  font-size: 20px;
+}
+.container .order_products .order_data .user_data h2{
+  font-size: 20px;
+  color: #222;
+  padding-top: 0;
+}
+.container .order_products .order_data .user_data .form {
+  font-size: 16px;
+}
+.container .order_products .order_data .user_data .form .parameter{
+  font-weight: bold;
+  color: #1abc9c
+}
+.container .order_products .cart_totals{
+  font-weight: bold;
+  font-size: 18px;
+  color: #222;
+}
+.container .order_products #total{
+  
+}
 @media (max-width: 1200px){
   #yw1{
     width: calc(100% - 276px);
