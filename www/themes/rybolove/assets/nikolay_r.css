@@ -269,8 +269,11 @@ a.cancel_filter {
   width: 82px;
   float: left;
 }
-.catalog .products_list{
+.catalog {
   margin-top: 60px;
+}
+.catalog #yw1{
+  width: calc(80% - 60px);
 }
 .catalog .products_list #yw1{
   padding-left: 0;
@@ -284,6 +287,9 @@ a.cancel_filter {
   #yw1{
     width: calc(100% - 276px);
   }
+  .catalog #yw1{
+  width: calc(100% - 276px);
+}
 }
 @media (max-width: 950px){
   .contactInfo{
