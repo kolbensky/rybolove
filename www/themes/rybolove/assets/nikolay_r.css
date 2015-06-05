@@ -422,6 +422,7 @@ a.cancel_filter {
   .container .buttons{
     padding-left: 30px;
   }
+  .catalog .products_list #yw1,
   .container #yw2 .items,
   .container .catalog .products_list #yw2 .items{
     width: 100%;
