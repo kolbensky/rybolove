@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="<?=$temdir?>css/responsive.css">
     <link rel="stylesheet" href="<?=$temdir?>nikolay_r.css">
     <link rel="stylesheet" href="<?=$temdir?>main.css">
-
+    <link rel="stylesheet" href="<?=$temdir?>jquery.jgrowl.css">
       <link rel="stylesheet" href="<?=$temdir?>Yrii.css">
 
     <link rel="stylesheet" href="<?=$temdir?>sano.css">
@@ -178,7 +178,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
                         <img src="<?=$temdir?>img/logo-footer.png" alt="">
-                        <p>Посетите наши страницы с социальных сетях</p>
+                        
                         <div class="footer-social">
                             <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                         <!--    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -266,9 +266,9 @@
     <script src="<?=$temdir?>js/jquery.easing.1.3.min.js"></script>
 
 
-	
+	<script src="<?=$temdir?>js/main.js"></script>
     <!-- Main Script -->
-    <script src="<?=$temdir?>js/main.js"></script>
+    <script src="<?=$temdir?>js/jquery.jgrowl.js"></script>
 
     <script src="<?=$temdir?>js/common.js"></script>
 

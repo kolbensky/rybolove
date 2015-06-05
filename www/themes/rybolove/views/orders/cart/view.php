@@ -5,15 +5,23 @@
  * @var Order $model
  */
 
-$title = Yii::t('OrdersModule.core', 'Просмотр заказа #{id}', array('{id}'=>$model->id));
+$title = Yii::t('OrdersModule.core', 
+	'Заказ #{id} принят',
+	 array('{id}'=>$model->id));
+$title1 = Yii::t('OrdersModule.core', 
+	'
+	<p id = "thx">Спасибо, Ваш заказ принят,<br>
+	мы свяжемся с вами в ближайшее время</p>
+	<p id = "orderID">Заказ #{id}</p>',
+	 array('{id}'=>$model->id));
 $this->pageTitle = $title;
 
 ?>
-
-<h1 class="has_background"><?php echo $title; ?></h1>
+<div class="container">
+<h1 class="has_background zagolovok-korzina"><?php echo $title1; ?></h1>
 
 <div class="order_products">
-	<table width="100%">
+	<table width="100%" class="shop_table cart">
 		<thead>
 		<tr>
 			<td></td>
@@ -52,27 +60,32 @@ $this->pageTitle = $title;
 
 			<div class="form wide">
 				<div class="row">
-					<?php echo Yii::t('OrdersModule.core', 'Доставка') ?>:
+					<?php echo Yii::t('OrdersModule.core', '<span class = "parameter">Доставка </span>') ?>:
 					<?php echo CHtml::encode($model->delivery_name); ?>
 				</div>
 				<div class="row">
-					<?php echo Yii::t('OrdersModule.core', 'Стоимость') ?>:
+					<?php echo Yii::t('OrdersModule.core', '<span class = "parameter">Стоимость</span>') ?>:
 					<?php echo StoreProduct::formatPrice(Yii::app()->currency->convert($model->delivery_price)) ?>
 					<?php echo Yii::app()->currency->active->symbol ?>
 				</div>
 				<div class="row">
+					<?php echo Yii::t('OrdersModule.core', '<span class = "parameter">Имя пользователя</span>') ?>:
 					<?php echo CHtml::encode($model->user_name); ?>
 				</div>
 				<div class="row">
+					<?php echo Yii::t('OrdersModule.core', '<span class = "parameter">E-mail позьзователя</span>') ?>:
 					<?php echo CHtml::encode($model->user_email); ?>
 				</div>
 				<div class="row">
+					<?php echo Yii::t('OrdersModule.core', '<span class = "parameter">Номер телефона позьзователя</span>') ?>:
 					<?php echo CHtml::encode($model->user_phone); ?>
 				</div>
 				<div class="row">
+					<?php echo Yii::t('OrdersModule.core', '<span class = "parameter">Адрес позьзователя</span>') ?>:
 					<?php echo CHtml::encode($model->user_address); ?>
 				</div>
 				<div class="row">
+					<?php echo Yii::t('OrdersModule.core', '<span class = "parameter">Комментарий ползьзователя</span>') ?>:
 					<?php echo CHtml::encode($model->user_comment); ?>
 				</div>
 			</div>
@@ -80,7 +93,7 @@ $this->pageTitle = $title;
 	</div>
 
 
-	<?php foreach($model->deliveryMethod->paymentMethods as $payment): ?>
+	<?php /*foreach($model->deliveryMethod->paymentMethods as $payment): ?>
 	<div class="order_data mt10 ">
 		<div class="user_data rc5 activeHover">
 			<h3><?php echo $payment->name ?></h3>
@@ -88,10 +101,10 @@ $this->pageTitle = $title;
 			<p><?php echo $payment->renderPaymentForm($model) ?></p>
 		</div>
 	</div>
-	<?php endforeach ?>
+	<?php endforeach */?>
 
 
-	<div class="recount">
+	<div class="recount cart_totals ">
 		<span class="total">Всего к оплате:</span>
 		<span id="total">
 			<?php echo StoreProduct::formatPrice(Yii::app()->currency->convert($model->full_price)) ?>
@@ -100,5 +113,5 @@ $this->pageTitle = $title;
 	</div>
 
 	<div style="clear: both;"></div>
-
+</div>
 </div>

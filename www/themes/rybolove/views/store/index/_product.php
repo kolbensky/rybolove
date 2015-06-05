@@ -14,18 +14,22 @@ else
         <img src="<?=$imgSource?>" alt="">
         <div class="product-hover">
 
-                                    <?php
-                                     ///форма для отправки данных о добавлении товара в карзину
-                                        echo CHtml::form(array('/cart/add'),  'post',array('id'=>'prod'.$data->id, 'class'=>'cart'));
-                                        echo CHtml::hiddenField('product_id', $data->id);
-                                        echo CHtml::hiddenField('product_price', $data->price);
-                                        echo CHtml::hiddenField('use_configurations', $data->use_configurations);
-                                        echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
-                                        echo CHtml::hiddenField('configurable_id', 0);
-                                        
+        <?php
+         ///форма для отправки данных о добавлении товара в карзину
+        echo CHtml::form(array('/cart/add'),  'post',array('id'=>'prod'.$data->id, 'class'=>'cart'));
+        echo CHtml::hiddenField('product_id', $data->id);
+        echo CHtml::hiddenField('product_price', $data->price);
+        echo CHtml::hiddenField('use_configurations', $data->use_configurations);
+        echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
+        echo CHtml::hiddenField('configurable_id', 0);
 
-                                        echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'add_to_cart_button add-to-cart-link'))
-                                    ?>
+        echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Купить'), array('/orders/cart/add'), array(
+                'id'=>'addProduct'.$data->id,
+                'dataType'=>'json',
+                'success'=>'js:function(data, textStatus, jqXHR){processCartResponseFromList(data, textStatus, jqXHR, "'.Yii::app()->createAbsoluteUrl('/store/frontProduct/view', array('url'=>$data->url)).'")}',
+            ), array('class'=>'blue_button add_to_cart_button add-to-cart-link'));
+        //echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'cartOperation(this)','class'=>'add_to_cart_button add-to-cart-link'))
+            ?>
                                     <?php echo CHtml::endForm() ?>
 
            <!-- <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>-->
