@@ -13,6 +13,7 @@
 		<!-- Latest jQuery form server -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	
@@ -64,7 +65,7 @@
 
   </head>
   <body>
-   
+   <div id="batman"></div>
     <div class="header-area">
         <div class="container">
             <div class="row">
@@ -177,8 +178,9 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
-                        <img src="<?=$temdir?>img/logo-footer.png" alt="">
-                        
+                    <a href="">
+                        <img id= "batmanHelp" src="<?=$temdir?>img/logo-footer.png" alt="">
+                    </a>   
                         <div class="footer-social">
                             <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                         <!--    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -197,7 +199,7 @@
                         <?php
             $this->widget('zii.widgets.CMenu', array(
                 'items'=>array(
-                    array('label'=>Yii::t('core', 'Помощь'), 'url'=>array('/pages/pages/view', 'url'=>'help')),
+                    array('label'=>Yii::t('core', 'Помощь!'), 'url'=>array('/pages/pages/view', 'url'=>'help')),
                     array('label'=>Yii::t('core', 'Как сделать заказ'), 'url'=>array('/pages/pages/view', 'url'=>'how-to-create-order')),
                     array('label'=>Yii::t('core', 'Гарантия'), 'url'=>array('/pages/pages/view', 'url'=>'garantiya')),
                     array('label'=>Yii::t('core', 'Доставка и оплата'), 'url'=>array('/pages/pages/view', 'url'=>'dostavka-i-oplata')),
@@ -265,7 +267,7 @@
     <!-- jQuery easing -->
     <script src="<?=$temdir?>js/jquery.easing.1.3.min.js"></script>
 
-
+    <script src="<?=$temdir?>js/batman.js"></script>
 	<script src="<?=$temdir?>js/main.js"></script>
     <!-- Main Script -->
     <script src="<?=$temdir?>js/jquery.jgrowl.js"></script>
