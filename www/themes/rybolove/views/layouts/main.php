@@ -221,18 +221,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-newsletter">
-                        <h2 class="footer-wid-title">Почтовая рассылка</h2>
-                        <p>Подпишитесь на нашу супер рассылку</p>
-                        <div class="newsletter-form">
-                            <form action="#">
-                                <input type="email" placeholder="Введите ваш e-mail">
-                                <input type="submit" value="Подписаться">
-                            </form>
-                        </div>
-                    </div>
-                </div>
+  
             </div>
         </div>
     </div> <!-- End footer top area -->
