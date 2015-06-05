@@ -295,7 +295,7 @@ a.cancel_filter {
 }
 .price_slider #yw1{
   padding-top: 0;
-  width: 100%;
+  width: 95%;
 }
 .container #yw1{
   padding-top: 0;
@@ -323,6 +323,7 @@ a.cancel_filter {
   text-decoration: none;
   color: white;
 }
+.container #yw2 .items,
 .container .catalog .products_list #yw2 .items{
   width: calc(80% - 60px);
   float: right;
@@ -387,10 +388,11 @@ a.cancel_filter {
   .container .product-breadcroumb{
   padding-left: 276px;
   }
+  .container #yw2 .items,
   .container .catalog .products_list #yw2 .items{
   width: calc(100% - 276px);
   float: right;
-}
+  }
 }
 @media (max-width: 992px){
   .container .buttons{
@@ -418,12 +420,13 @@ a.cancel_filter {
   }
   .container .product-breadcroumb,
   .container .buttons{
-  padding-left: 30px;
+    padding-left: 30px;
   }
+  .container #yw2 .items,
   .container .catalog .products_list #yw2 .items{
-  width: 100%;
-  float: right;
-}
+    width: 100%;
+    float: right;
+  } 
   .container .product-breadcroumb,
   .container .buttons{
   width: 100%;

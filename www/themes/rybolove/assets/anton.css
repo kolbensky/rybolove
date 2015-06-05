@@ -31,7 +31,7 @@
 .categories-container{
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
     padding-bottom: 30px;
 }
@@ -123,7 +123,7 @@
     }
 }
 .static_pages{
-    padding-top: 30px;
+    padding-top: 20px;
 }
 @media (max-width: 520px){
     .slider-area{
