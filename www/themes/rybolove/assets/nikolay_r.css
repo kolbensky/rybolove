@@ -269,10 +269,27 @@ a.cancel_filter {
   width: 82px;
   float: left;
 }
+.catalog {
+  margin-top: 60px;
+}
+.catalog #yw1{
+  width: calc(80% - 60px);
+}
+.catalog .products_list #yw1{
+  padding-left: 0;
+  padding-top: 0;
+}
+.price_slider #yw1{
+  padding-top: 0;
+  width: 100%;
+}
 @media (max-width: 1200px){
   #yw1{
     width: calc(100% - 276px);
   }
+  .catalog #yw1{
+  width: calc(100% - 276px);
+}
 }
 @media (max-width: 950px){
   .contactInfo{

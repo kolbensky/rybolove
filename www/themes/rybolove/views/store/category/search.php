@@ -11,7 +11,7 @@ $this->breadcrumbs[] = Yii::t('StoreModule.core', 'Поиск');
 
 ?>
 <div class="container">
-	<div class="leftWrapper">
+	<div class="leftWrapper" style="margin-right:60px;">
         <div class="mainm">
         <?php
             $this->renderPartial('//layouts/_mainm');
@@ -63,7 +63,7 @@ $this->breadcrumbs[] = Yii::t('StoreModule.core', 'Поиск');
 			?>
 		</div>
 
-		<?php
+		<?php /*
 			if(isset($provider))
 			{
 				$this->widget('zii.widgets.CListView', array(
@@ -80,6 +80,20 @@ $this->breadcrumbs[] = Yii::t('StoreModule.core', 'Поиск');
 			{
 				echo Yii::t('StoreModule.core', 'Нет результатов');
 			}
+		*/
+
+			$this->widget('zii.widgets.CListView', array(
+				'dataProvider'=>$provider,
+				'ajaxUpdate'=>false,
+				'template'=>'{items} <div class="row"> <div class="col-md-12">{pager} </div></div>{summary}' ,
+				'itemView'=>$itemView,
+				'sortableAttributes'=>array(
+					'name', 'price'
+				),
+                'pagerCssClass' => 'product-pagination text-center',
+
+                'pager' => array('class' => 'CLinkPager', 'header' => '', 'htmlOptions'=>array('class'=>'pagination')),
+			));
 		?>
 	</div>
 </div>
