@@ -182,12 +182,12 @@
                         <img id= "batmanHelp" src="<?=$temdir?>img/logo-footer.png" alt="">
                     </a>   
                         <div class="footer-social">
-                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/groups/1398569730473723/" target="_blank"><i class="fa fa-facebook"></i></a>
                         <!--    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>-->
-                            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://instagram.com/rybolove2000" target="_blank"><i class="fa fa-instagram"></i></a>
                             <a href="http://vk.com/ribolove" target="_blank"><i class="fa fa-vk"></i></a>
                         </div>
                     </div>
