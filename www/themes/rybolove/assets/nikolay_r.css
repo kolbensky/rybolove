@@ -380,6 +380,18 @@ a.cancel_filter {
   color: white;
   font-weight: bold;
 }
+/*batman*/
+#batman{
+  display: none;
+  position: fixed;
+  background: url("img/batman.png");
+  z-index: 9999;
+  height: 324px;
+  width: 445px;
+  top:50%;
+  left: 0;
+
+}
 /*media*/
 @media (max-width: 1200px){
   #yw1{
