@@ -119,6 +119,16 @@ function applyCategorySorter(el)
 {
     window.location = $(el).val();
 }
+ff2=function(t){ 
+        t.className=/\D/.test(t.value)?'err':''; 
+        if(/\D/.test(t.value)){
+            t.value=t.defaultValue; 
+            if(self.ww)
+            clearTimeout(ww); o=t; 
+            ww=setTimeout("o.className='';",999); 
+        }
+        else t.defaultValue=t.value;
+        }
  //добавления в корзину
 /*
 function addToCart(submitButton){
