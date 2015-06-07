@@ -723,6 +723,11 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
     float: left;
     margin-right: 15px;
 }
+.quantity input[type="text"] {
+    border: 1px solid #1abc9c;
+    padding: 5px;
+    width: 50px;
+}
 .quantity input[type="number"] {
     border: 1px solid #1abc9c;
     padding: 5px;
