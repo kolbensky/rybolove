@@ -19,3 +19,9 @@
 .cart_h2 {
     margin: 30px 100px;
 }
+.product-inner .add_to_cart_button {
+    background: none repeat scroll 0 0 #57aa3c;
+}
+#filter .rounded button {
+    margin-top: 4px;
+}
