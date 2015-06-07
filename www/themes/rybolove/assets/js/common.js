@@ -124,11 +124,16 @@ ff2=function(t){
         if(/\D/.test(t.value)){
             t.value=t.defaultValue; 
             if(self.ww)
-            clearTimeout(ww); o=t; 
+            clearTimeout(ww); 
+            o=t; 
             ww=setTimeout("o.className='';",999); 
         }
         else t.defaultValue=t.value;
+        if(t.value==0){
+            t.value=1;
         }
+        }
+
  //добавления в корзину
 /*
 function addToCart(submitButton){
