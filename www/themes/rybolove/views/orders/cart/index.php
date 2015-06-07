@@ -72,7 +72,7 @@ if(empty($items))
             <td class="product-quantity">
                 <div class="quantity buttons_added">
                     <button class="small_silver_button plus">+</button>
-                    <?php echo CHtml::numberField("quantities[$index]", $product['quantity'], array('class'=>'count','onkeyup'=>'ff2(this)')) ?>
+                    <?php echo CHtml::textField("quantities[$index]", $product['quantity'], array('class'=>'count','onkeyup'=>'ff2(this)')) ?>
                     <button class="small_silver_button minus">&minus;</button>
                 </div>
             </td>
