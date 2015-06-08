@@ -59,3 +59,7 @@ body {
  .list-view .col-md-4:nth-child(3n+2) {padding: 0 10px}
 
 }
+
+.promo-area .col-md-3:last-child .single-promo{ 
+  padding: 20px 40px;
+}
