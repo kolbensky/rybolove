@@ -113,7 +113,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                         echo CHtml::hiddenField('use_configurations', $model->use_configurations);
                                         echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
                                         echo CHtml::hiddenField('configurable_id', 0);
-                                        echo '<div class="quantity">' . CHtml::numberField('quantity', 1, array('class' => 'input-text qty text', 'min' => '1')) . '</div>';
+                                        echo '<div class="quantity">' . CHtml::numberField('quantity', 1, array('class' => 'input-text qty text', 'min' => '1','onkeyup'=>'ff2(this)','pattern'=>'^[ 1-9]+$')) . '</div>';
                                                 echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Купить'), array('/orders/cart/add'), array(
                 'id'=>'addProduct'.$data->id,
                 'dataType'=>'json',
@@ -187,6 +187,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
        	$("#home").css( "display", "none" );
         $("#profile").fadeIn(1000);
     });
+        
 });
 
 </script>

@@ -33,6 +33,25 @@ $(document).ready(function() {
         $("#blod").css( "background-color", "#1abc9c" );
         $(".box_profile").fadeIn(1000);
     });
+    $("#mainMob").click(function(){
+        $(".navbar-collapse").toggle(200);
+        $(".mainm").css("display","none");
+        $("#filter").css("display","none");
+      
+    });
+    $(".mobileMenu").click(function(){
+        $(".navbar-header .mainm").toggle(200);
+        $("#filter").css("display","none");
+        $(".navbar-collapse").css("display","none");
+    
+    });
+    
+    $("#filterMob").click(function(){
+        $("#filter").toggle(200);
+        $(".navbar-collapse").css("display","none");
+        $(".mainm").css("display","none");
+
+    });
 });
 
 /**
@@ -119,6 +138,21 @@ function applyCategorySorter(el)
 {
     window.location = $(el).val();
 }
+ff2=function(t){ 
+        t.className=/\D/.test(t.value)?'err':''; 
+        if(/\D/.test(t.value)){
+            t.value=t.defaultValue; 
+            if(self.ww)
+            clearTimeout(ww); 
+            o=t; 
+            ww=setTimeout("o.className='';",999); 
+        }
+        else t.defaultValue=t.value;
+        if(t.value==0){
+            t.value=1;
+        }
+        }
+
  //добавления в корзину
 /*
 function addToCart(submitButton){

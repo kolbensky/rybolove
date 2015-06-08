@@ -149,21 +149,38 @@
     <div class="mainmenu-area">
         <div class="container">
             <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                <div class="navbar-header" >
+                    <button type="button" id="mainMob" class="navbar-toggle" data-toggle="collapse">
+                        <img src="<?=$temdir?>img/mainmob.png">
                     </button>
+
+                    <li class="mobileMenu">Каталог товаров</li>
+                    <button type="button" class="navbar-toggle filter" id="filterMob" data-toggle="collapse" data-target="#filter">
+                        <img src="<?=$temdir?>img/filtermob.png">  
+                    </button> 
+                    <div class="mainm">
+                        <?php
+                            $this->renderPartial('//layouts/_mainm');
+                        ?>
+                    </div>
+                        <div id="filter" >
+                            <?php/*
+                                    $this->widget('application.modules.store.widgets.filter.SFilterRenderer', array(
+                                    'model'=>$this->model,
+                                    'attributes'=>$this->eavAttributes,
+                                ));
+                            */?>
+                        </div>
+          
+        </div>
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/page/categories">Каталог товаров</a></li>
                         <li><a href="/page/how-to-create-order">Как сделать заказ</a></li>
-                        <li><a href="/page/garantiya">Гарантия</a></li>
                         <li><a href="/page/dostavka-i-oplata">Доставка и оплата</a></li>
                         <li><a href="/page/obratnaya-svyaz">Обратная связь</a></li>
+                        <li><a href="/page/garantiya">Гарантия</a></li>
                         <li><a href="/page/help">Помощь</a></li>
                     </ul>
                 </div>  
@@ -182,12 +199,12 @@
                         <img id= "batmanHelp" src="<?=$temdir?>img/logo-footer.png" alt="">
                     </a>   
                         <div class="footer-social">
-                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/groups/1398569730473723/" target="_blank"><i class="fa fa-facebook"></i></a>
                         <!--    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>-->
-                            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://instagram.com/rybolove2000" target="_blank"><i class="fa fa-instagram"></i></a>
                             <a href="http://vk.com/ribolove" target="_blank"><i class="fa fa-vk"></i></a>
                         </div>
                     </div>
