@@ -19,3 +19,29 @@
 .cart_h2 {
     margin: 30px 100px;
 }
+.product-inner .add_to_cart_button {
+    background: none repeat scroll 0 0 #57aa3c;
+}
+#filter .rounded button {
+    margin-top: 4px;
+}
+@media (max-width: 1200px) {
+    .product-hover a {
+        width: 80%;
+    }
+    .product-hover a, .product-hover input {
+        border: none;
+    }
+}
+.owl-carousel .owl-item img {
+    display: inline;
+}
+.product-f-image {
+    line-height: 271px;
+}
+.product-hover a.view-details-link {
+    line-height: 22px;
+}
+.product-hover a.add-to-cart-link, .product-hover input.add-to-cart-link {
+    line-height: 22px;
+}
