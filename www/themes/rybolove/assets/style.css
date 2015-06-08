@@ -315,9 +315,11 @@ body { font-family: 'Titillium Web', sans-serif; }
     border: 1px solid #1abc9c;
     width: 80%;z-index: 99;transition: .4s;
 }
-.product-hover a:hover,.product-hover input:hover {
-    background: #000;
-    text-decoration: none;border-color: #444;
+.product-hover a:hover, .product-hover input:hover {
+    background: #222;
+    text-decoration: none;
+    border-color: #222;
+    color: #ffffff;
 }
 .product-carousel-price ins {
     color: #1abc9c;

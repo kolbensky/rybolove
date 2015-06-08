@@ -25,3 +25,11 @@
 #filter .rounded button {
     margin-top: 4px;
 }
+@media (max-width: 1200px) {
+    .product-hover a {
+        width: 80%;
+    }
+    .product-hover a, .product-hover input {
+        border: none;
+    }
+}
