@@ -1,5 +1,13 @@
+.navbar-header .mainm{display: none;}
+.mobileMenu {display: none;}
+.navbar-header #filter{
+	display: none;
+}
 .shopping-item{
 	padding: 10px 15px;
+}
+.navbar-header #filter{
+	display: none;
 }
 .blue_button{
 	width: 200px;
@@ -48,7 +56,74 @@
 #per_page{
 
 }
+.mobileMenu{
+	float:left;
+	display: block;
+	list-style: none;
+	color: white;
+	width: 60%;
+	line-height: 51px;
+	font-size: 18px;
+	cursor: pointer;
 }
+.navbar-toggle {
+	float: left;
+	margin-left: 10px;
+	border: 0;
+	background-color: #e9e9e9;
+  	padding-top: 15px;
+  	margin-top: 0px;
+  	margin-left: 0px;
+  	margin-bottom: 0px;
+  	padding-bottom: 15px;
+  	padding-right: 15px;
+  	padding-left: 15px;
+  	border-radius: 0;
+}
+.filter{
+	float: right;
+	height: 50px;
+}
+.navbar-header #filter{
+	width: 100%;
+	display: block;
+	margin-top: 0;
+	background-color:#e9e9e9;
+	display: none;
+}
+.mainm{
+	margin-top: -1px;
+	display: none;
+}
+.navbar-collapse{
+	height:307px !important;
+	margin-top: -1px;
+	color: black;
+}
+.navbar-collapse.collapse.in{
+	background-color: #e9e9e9;
+	color: black;
+}
+.navbar-collapse.collapse.in li{
+	border-bottom: 1px solid black;
+	overflow: hidden;
+}
+
+.navbar-collapse.collapse.in a{
+	color: black;
+}
+.navbar-collapse .navbar-nav{
+	margin-bottom: 0;
+	margin-top: -1px;
+	background-color: #e9e9e9;
+}
+.navbar-nav li {border-bottom: 1px solid black;}
+.mainmenu-area ul.navbar-nav li a{color: black;}
+.mainmenu-area ul.navbar-nav li:hover a{
+	color: white;
+}
+}
+
 @media (max-width: 475px){
 .onPage{
 	color: white;
