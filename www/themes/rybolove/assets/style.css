@@ -288,7 +288,9 @@ body { font-family: 'Titillium Web', sans-serif; }
     left: 0;
     position: absolute;
     top: 0;
-    width: 100%;overflow: hidden;border: 1px solid #ddd;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ddd;
 }
 .product-hover:after {
     background: none repeat scroll 0 0 #000;
@@ -298,7 +300,8 @@ body { font-family: 'Titillium Web', sans-serif; }
     opacity: 0.6;
     position: absolute;
     top: 0;
-    width: 100%;transition: .4s;
+    width: 100%;
+    transition: .4s;
 }
 .product-hover a,.product-hover input {
     background: none repeat scroll 0 0 #1abc9c;

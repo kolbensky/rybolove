@@ -33,3 +33,15 @@
         border: none;
     }
 }
+.owl-carousel .owl-item img {
+    display: inline;
+}
+.product-f-image {
+    line-height: 271px;
+}
+.product-hover a.view-details-link {
+    line-height: 22px;
+}
+.product-hover a.add-to-cart-link, .product-hover input.add-to-cart-link {
+    line-height: 22px;
+}
