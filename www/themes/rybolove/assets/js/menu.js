@@ -11,9 +11,7 @@ var liNumber = 0;
 var FilterStartHeight = 540;
 var newFilterHeight = 0;
 //checks if it is necessary to display menu
-    if (productsList.length != 0){
-        menu.css("display","inline-block");
-    }
+
     $('.mainm li.has-sub>a').on('click', function(){
         $(this).removeAttr('href');
         var element = $(this).parent('li');

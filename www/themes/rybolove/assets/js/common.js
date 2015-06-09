@@ -3,6 +3,7 @@
  */
 
 $(document).ready(function() {
+    $("#searchebet").css("display","none")
     // Hide flash messages block
     $(".flash_messages .close").click(function(){
         $(".flash_messages").fadeOut();
