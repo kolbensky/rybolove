@@ -138,9 +138,6 @@ body { font-family: 'Titillium Web', sans-serif; }
     top: -10px;
     width: 20px;
 }
-.shopping-item i.fa {
-    margin-left: 15px;
-}
 
 
 .shopping-item:hover {
