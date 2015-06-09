@@ -202,9 +202,9 @@
 }
 .site-branding-area .container .single-sidebar form{
     padding: 0 15px;
-        }
+}
 .site-branding-area .container .single-sidebar input{
-    float: none;
+    float: left;
     display: block;
     max-width: 738px;
 }
