@@ -139,6 +139,10 @@
         margin-top: 5px;
         font-size: 14px;
     }
+    .mainmenu-area .container .row .navbar-header li{
+        text-align: center!important;
+        margin: 0 auto!important;
+    }
 }
 .static_pages{
     padding-top: 20px;
@@ -207,4 +211,7 @@
     padding: 11px 20px;
     text-transform: uppercase;
     margin-bottom: 30px;
+}
+.order_products .order_data .wide{
+    margin-bottom: 20px;
 }
