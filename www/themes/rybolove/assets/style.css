@@ -162,7 +162,7 @@ body { font-family: 'Titillium Web', sans-serif; }
     color: #fff;
     font-size: 16px;
     font-weight: 700;
-    padding: 20px;
+    padding: 20px 17px;
 }
 
 .mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #222}
