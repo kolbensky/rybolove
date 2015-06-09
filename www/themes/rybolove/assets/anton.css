@@ -81,6 +81,14 @@
         width: 100%;
     }
 }
+@media (max-width: 890px){
+    .bg-green .zigzag-bottom{
+        bottom: -140px;
+    }
+    .slide-bulletz .container .row .col-md-12 ol{
+        bottom: -35px;
+    }
+}
 @media (max-width: 870px){
     .site-branding-area .container .single-sidebar{
         text-align: center;
@@ -112,10 +120,17 @@
         width: 50%;
         float: left;
     }
+    .site-branding-area .container .single-sidebar form{
+        padding: 15px;
+    }
+    .site-branding-area .container .single-sidebar input{
+        float: none;
+        display: block;
+        max-width: 738px;
+    }
     .site-branding-area .container .single-sidebar button{
         float: none;
         padding: 10px;
-        margin-bottom: 10px;
         display: block;
         max-width: 738px;
     }
@@ -217,4 +232,7 @@
 }
 .cart-collaterals .cart_totals h2{
     margin-top: 4px;
+}
+.mainm .dropdown li ul{
+    text-transform: none;
 }

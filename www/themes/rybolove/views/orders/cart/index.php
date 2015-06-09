@@ -141,7 +141,7 @@ if(empty($items))
             <h2>Адрес получателя</h2>
 
             <div class="form wide">
-                <?php echo CHtml::errorSummary($this->form); ?>
+                <?php echo CHtml::errorSummary($this->form, $header = 'Пожалуйста, исправьте следующие ошибки:'); ?>
 
                 <div class="row">
                     <?php echo CHtml::activeLabel($this->form,'name', array('required'=>true)); ?>
@@ -149,12 +149,12 @@ if(empty($items))
                 </div>
 
                 <div class="row">
-                    <?php echo CHtml::activeLabel($this->form,'email', array('required'=>true)); ?>
+                    <?php echo CHtml::activeLabel($this->form,'email'); ?>
                     <?php echo CHtml::activeTextField($this->form,'email'); ?>
                 </div>
 
                 <div class="row">
-                    <?php echo CHtml::activeLabel($this->form,'phone'); ?>
+                    <?php echo CHtml::activeLabel($this->form,'phone', array('required'=>true)); ?>
                     <?php echo CHtml::activeTextField($this->form,'phone'); ?>
                 </div>
 
@@ -179,3 +179,6 @@ if(empty($items))
 
 
 </div>
+<script type="text/javascript">
+    $("#cart").css("display","none");
+</script>
