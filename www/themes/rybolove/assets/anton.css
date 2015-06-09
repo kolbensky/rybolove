@@ -113,10 +113,12 @@
         float: left;
     }
     .site-branding-area .container .single-sidebar form{
-        padding: 0 15px;
+        padding: 15px;
     }
     .site-branding-area .container .single-sidebar input{
         float: none;
+        margin-left: 15px;
+        margin-right: 15px;
         display: block;
         max-width: 738px;
     }
@@ -124,6 +126,8 @@
         float: none;
         padding: 10px;
         margin-bottom: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
         display: block;
         max-width: 738px;
     }
@@ -138,10 +142,6 @@
     .contactInfo {
         margin-top: 5px;
         font-size: 14px;
-    }
-    .mainmenu-area .container .row .navbar-header li{
-        text-align: center!important;
-        margin: 0 auto!important;
     }
 }
 .static_pages{
@@ -211,10 +211,4 @@
     padding: 11px 20px;
     text-transform: uppercase;
     margin-bottom: 30px;
-}
-.order_products .order_data .wide{
-    margin-bottom: 20px;
-}
-.cart-collaterals .cart_totals h2{
-    margin-top: 4px;
 }
