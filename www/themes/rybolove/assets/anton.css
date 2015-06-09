@@ -81,6 +81,14 @@
         width: 100%;
     }
 }
+@media (max-width: 890px){
+    .bg-green .zigzag-bottom{
+        bottom: -140px;
+    }
+    .slide-bulletz .container .row .col-md-12 ol{
+        bottom: -35px;
+    }
+}
 @media (max-width: 870px){
     .site-branding-area .container .single-sidebar{
         text-align: center;
