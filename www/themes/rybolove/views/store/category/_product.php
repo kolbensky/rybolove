@@ -30,7 +30,7 @@ if($data->mainImage)
 								<?php echo $data->priceRange() ?>
 							</div>
                         </div>  
-                        
+
                         <div class="product-option-shop">
                             
                                     <?php
@@ -51,7 +51,7 @@ if($data->mainImage)
                                     ?>
 
                                     <?php echo CHtml::endForm() ?>
-                          
+
                         </div>                       
                     </div>
-                </div>
+</div>
