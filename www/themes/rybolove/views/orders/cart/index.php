@@ -179,3 +179,6 @@ if(empty($items))
 
 
 </div>
+<script type="text/javascript">
+    $("#cart").css("display","none");
+</script>
