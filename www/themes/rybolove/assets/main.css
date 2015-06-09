@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'DecimaNovaProLt';
+  src: url('fonts/DecimaNovaProLt.woff'), url('fonts/DecimaNovaProLt.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('fonts/RobotoCondensed-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .carousel-inner .col-md-6{padding: 0;}
 .carousel-inner .big-img{width: 100%;}
 
@@ -18,13 +32,6 @@ margin-top: 28px;
 }
 body {
 	font-family: 'DecimaNovaProLt';
-}
-@font-face {
-  font-family: 'DecimaNovaProLt';
-  src: url('fonts/Decima_Nova_Pro_Light.otf') format('embedded-opentype'),  url('fonts/Decima_Nova_Pro_Light.otf')  format('opentype'),
-	     url('fonts/Decima_Nova_Pro_Light.otf') format('woff'), url('fonts/Decima_Nova_Pro_Light.otf')  format('truetype'), url('fonts/Decima_Nova_Pro_Light.otf') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 
 .single-product-area .leftWrapper{
@@ -63,3 +70,10 @@ body {
 .promo-area .col-md-3:last-child .single-promo{ 
   padding: 20px 40px;
 }
+@media (max-width: 1200px) {
+.mainmenu-area .navbar-nav {
+  height: 50px;
+}
+}
+
+#searchQuery {height: 42px;}
