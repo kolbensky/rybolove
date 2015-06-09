@@ -169,8 +169,8 @@ if(empty($items))
                 </div>
             </div>
         </div>
-
     </div>
+    <div style="clear: both;"></div>
     <button id="cart_button" class="oformit" type="submit" name="create" value="1">Оформить</button>
     <?php echo CHtml::endForm() ?>
 </div>
@@ -179,3 +179,6 @@ if(empty($items))
 
 
 </div>
+<script type="text/javascript">
+    $("#cart").css("display","none");
+</script>
