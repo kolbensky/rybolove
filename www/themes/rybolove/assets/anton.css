@@ -119,11 +119,16 @@
         margin-bottom: 10px;
     }
     .site-branding-area .container .shopping-item{
-        margin-top: 100px;
+        width: 100%;
+        margin-bottom: 10px;
     }
     .single-shop-product .product-upper a, .single-shop-product .product-upper img{
         display: block;
         margin: 0 auto;
+    }
+    .contactInfo {
+        margin-top: 5px;
+        font-size: 14px;
     }
 }
 .static_pages{

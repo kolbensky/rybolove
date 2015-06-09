@@ -272,7 +272,7 @@ a.cancel_filter {
 .contactInfo{
   float: left;
   margin-top: 28px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .site-branding-area .single-sidebar input[type="text"]{
   width: calc(100% - 84px);
@@ -425,10 +425,28 @@ a.cancel_filter {
     
   }
 }
-@media (max-width: 950px){
+@media (max-width: 963px){
   .contactInfo{
-    display: none;
+    font-size: 12px;
   }
+  .site-branding-area .col-md-4 {
+      padding: 0;
+  }
+}
+@media (max-width: 912px){
+    .site-branding-area .shopping-item{
+        padding: 10px;
+    }
+    .contactInfo{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .site-branding-area .shopping-item{
+        float: left;
+        margin-top: 8px;
+        margin-bottom: 5px;
+
+    }
 }
 
 @media (max-width: 767px){
