@@ -154,25 +154,28 @@
                         <img src="<?=$temdir?>img/mainmob.png">
                     </button>
 
-                    <li class="mobileMenu">Каталог товаров</li>
-                    <button type="button" class="navbar-toggle filter" id="filterMob" data-toggle="collapse" data-target="#filter">
-                        <img src="<?=$temdir?>img/filtermob.png">  
-                    </button> 
+                    <div class="mobileMenu">Каталог товаров</div>
+                    
                     <div class="mainm">
                         <?php
                             $this->renderPartial('//layouts/_mainm');
                         ?>
                     </div>
+
+                    <? if (get_class($this) == 'CategoryController') : ?>
+                    <button type="button" class="navbar-toggle filter" id="filterMob" data-toggle="collapse" data-target="#filter">
+                        <img src="<?=$temdir?>img/filtermob.png">  
+                    </button> 
                         <div id="filter" >
-                            <?php/*
+                            <?php
                                     $this->widget('application.modules.store.widgets.filter.SFilterRenderer', array(
                                     'model'=>$this->model,
                                     'attributes'=>$this->eavAttributes,
                                 ));
-                            */?>
+                            ?>
                         </div>
-          
-        </div>
+                    <? endif; ?>        
+</div>
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">

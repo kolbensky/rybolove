@@ -83,3 +83,13 @@ body {
 }
 
 #searchQuery {height: 42px;}
+
+.mainmenu-area .navbar-header{
+  position: relative;
+}
+.mainmenu-area .navbar-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#filterMob {left:auto; right:0;}
