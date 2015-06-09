@@ -149,13 +149,30 @@
     <div class="mainmenu-area">
         <div class="container">
             <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                <div class="navbar-header" >
+                    <button type="button" id="mainMob" class="navbar-toggle" data-toggle="collapse">
+                        <img src="<?=$temdir?>img/mainmob.png">
                     </button>
+
+                    <li class="mobileMenu">Каталог товаров</li>
+                    <button type="button" class="navbar-toggle filter" id="filterMob" data-toggle="collapse" data-target="#filter">
+                        <img src="<?=$temdir?>img/filtermob.png">  
+                    </button> 
+                    <div class="mainm">
+                        <?php
+                            $this->renderPartial('//layouts/_mainm');
+                        ?>
+                    </div>
+                        <div id="filter" >
+                            <?php/*
+                                    $this->widget('application.modules.store.widgets.filter.SFilterRenderer', array(
+                                    'model'=>$this->model,
+                                    'attributes'=>$this->eavAttributes,
+                                ));
+                            */?>
+                        </div>
+          
+        </div>
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
