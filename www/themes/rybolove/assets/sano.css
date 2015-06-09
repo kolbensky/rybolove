@@ -1,3 +1,16 @@
+.cart-collaterals{
+  	float: left;
+	min-width: 400px;
+}
+.cart_totals{
+	min-width: 320px;
+} 
+.left{float: left;}
+.user_data{
+	float: right;
+}
+.user_data h2{padding-top:0 !important;}
+#cart_button {float: right;}
 .navbar-header .mainm{display: none;}
 .mobileMenu {display: none;}
 .navbar-header #filter{
@@ -131,6 +144,13 @@
 .mobileMenu{width: 70%}
 }
 @media (max-width: 475px){
+	.cart-collaterals{
+  	float: left;
+	min-width: 200px;
+}
+	.user_data{
+	float: left;
+}
  .navbar-header .mainm{display: none;}
 .mobileMenu{width: 60%}
 .onPage{
@@ -149,4 +169,3 @@
 	margin-top: 40px;
 }
 }
-
