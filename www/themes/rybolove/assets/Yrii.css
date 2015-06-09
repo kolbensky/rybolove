@@ -45,3 +45,13 @@
 .product-hover a.add-to-cart-link, .product-hover input.add-to-cart-link {
     line-height: 22px;
 }
+@media (max-width: 992px) {
+    .product-content-right .product-breadcroumb {
+        margin-left: 230px;
+    }
+}
+@media (max-width: 768px) {
+    .product-content-right .product-breadcroumb {
+        margin-left: 0;
+    }
+}
