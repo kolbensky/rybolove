@@ -187,6 +187,7 @@
             </div>
         </div>
     </div><!-- End mainmenu area -->
+	<div class="clear"></div>
     <? echo $content;?>
     
     <div class="footer-top-area">
