@@ -135,7 +135,7 @@
     }
 }
 .single-shop-product .product-upper{
-    display: inline-block;
+    display: inline;
     line-height: 300px;
 }
 .single-shop-product .product-upper a, .single-shop-product .product-upper img{
