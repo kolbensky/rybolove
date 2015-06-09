@@ -55,3 +55,9 @@
 .list-view .row {
     clear: both;
 }
+.zagolovok-korzina #thx {
+    margin: 0 0 25px;
+}
+.mainmenu-area .navbar-collapse {
+    padding-left: 0;
+}
