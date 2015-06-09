@@ -112,11 +112,20 @@
         width: 50%;
         float: left;
     }
+    .site-branding-area .container .single-sidebar form{
+        padding: 0 15px;
+    }
+    .site-branding-area .container .single-sidebar input{
+        float: none;
+        display: block;
+        max-width: 738px;
+    }
     .site-branding-area .container .single-sidebar button{
-        float: left;
-        width: 100%;
+        float: none;
         padding: 10px;
         margin-bottom: 10px;
+        display: block;
+        max-width: 738px;
     }
     .site-branding-area .container .shopping-item{
         width: 100%;
