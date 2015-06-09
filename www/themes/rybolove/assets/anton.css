@@ -225,3 +225,6 @@
 .cart-collaterals .cart_totals h2{
     margin-top: 4px;
 }
+.mainm .dropdown li ul{
+    text-transform: none;
+}
