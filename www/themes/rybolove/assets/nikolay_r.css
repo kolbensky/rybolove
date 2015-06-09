@@ -435,15 +435,15 @@ a.cancel_filter {
 }
 @media (max-width: 912px){
     .site-branding-area .shopping-item{
-        padding: 10px;
+        padding: 7px;
     }
     .contactInfo{
         width: 100%;
-        margin-top: 10px;
+        margin-top: 13px;
     }
     .site-branding-area .shopping-item{
         float: left;
-        margin-top: 8px;
+        margin-top: 0;
         margin-bottom: 5px;
 
     }
