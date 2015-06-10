@@ -29,8 +29,9 @@
 .items{
   display: block;
 }
-.items .single-shop-product{
-  margin-bottom: 80px;
+.items .single-shop-product {
+    margin-bottom: 80px;
+    margin-top: 40px;
 }
 /*leftWrapper*/
 .leftWrapper{
