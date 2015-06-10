@@ -154,18 +154,14 @@
 }
  .navbar-header .mainm{display: none;}
 
-.onPage{
-	color: white;
-}
+
 #per_page{
 	margin-top: 15px;
 }
 }
 @media (max-width: 330px){
 .navbar-header .mainm{display: none;}
-.onPage{
-	display: none;
-}
+
 #per_page{
 	margin-top: 40px;
 }
