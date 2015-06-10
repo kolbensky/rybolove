@@ -62,3 +62,14 @@
 .mainmenu-area .navbar-collapse {
     padding-left: 0;
 }
+.navbar-collapse ul {
+    text-align: center;
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+.footer-about-us {
+    margin-bottom: 20px;
+    }
+.footer-menu {
+    margin-bottom: 30px;
+    }
+}
