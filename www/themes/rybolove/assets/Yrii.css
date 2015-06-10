@@ -18,6 +18,7 @@
 }
 .product-inner .add_to_cart_button {
     background: none repeat scroll 0 0 #57aa3c;
+    width: 172px;
 }
 #filter .rounded button {
     margin-top: 4px;
