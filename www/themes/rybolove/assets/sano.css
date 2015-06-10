@@ -141,10 +141,8 @@
 }
 @media (max-width: 575px){
  .navbar-header .mainm{display: none;}
-.mobileMenu{width: 75%}
 }
 @media (max-width: 475px){
-	.mobileMenu{width: 64%}
 	.cart-collaterals{
   	float: left;
 	min-width: 200px;
@@ -163,10 +161,6 @@
 }
 }
 @media (max-width: 330px){
-.mobileMenu{ 
-	width: 100%;
- 	max-width: 190px;
-  			}
 .navbar-header .mainm{display: none;}
 .onPage{
 	display: none;
