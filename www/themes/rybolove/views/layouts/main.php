@@ -44,7 +44,6 @@
 	
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?=$temdir?>css/owl.carousel.css">
-    <link rel="stylesheet" href="<?=$temdir?>fancybox/jquery.fancybox-1.3.4.css">
     <link rel="stylesheet" href="<?=$temdir?>style.css">
     <link rel="stylesheet" href="<?=$temdir?>css/responsive.css">
     <link rel="stylesheet" href="<?=$temdir?>nikolay_r.css">
@@ -65,7 +64,6 @@
 
   </head>
   <body>
-   <div id="batman"></div>
     <div class="header-area">
         <div class="container">
             <div class="row">
@@ -200,7 +198,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
                     <a href="">
-                        <img id= "batmanHelp" src="<?=$temdir?>img/logo-footer.png" alt="">
+                        <img src="<?=$temdir?>img/logo-footer.png" alt="">
                     </a>   
                         <div class="footer-social">
                             <a href="https://www.facebook.com/groups/1398569730473723/" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -288,20 +286,14 @@
 
      <!-- jQuery sticky menu -->
     <script src="<?=$temdir?>js/owl.carousel.min.js"></script>
-    <script src="<?=$temdir?>js/jquery.sticky.js"></script>
-    
+    <script src="<?=$temdir?>js/jquery.sticky.js"></script> 
     <!-- jQuery easing -->
     <script src="<?=$temdir?>js/jquery.easing.1.3.min.js"></script>
 
 	<script src="<?=$temdir?>js/main.js"></script>
     <!-- Main Script -->
     <script src="<?=$temdir?>js/jquery.jgrowl.js"></script>
-
     <script src="<?=$temdir?>js/common.js"></script>
-
     <script src="<?=$temdir?>js/menu.js"></script>
-    <script> 
-        
-    </script>
   </body>
 </html>

@@ -33,7 +33,7 @@ class OrderCreateForm extends CFormModel
 	public function rules()
 	{
 		return array(
-			array('name, phone', 'required', 'message'=>'Пожалуйста, заполните обязательные поля'),
+			array('name, phone, email', 'required', 'message'=>'Пожалуйста, заполните обязательные поля'),
 			array('email', 'email'),
 			array('comment', 'length', 'max'=>'500'),
 			array('address', 'length', 'max'=>'255'),

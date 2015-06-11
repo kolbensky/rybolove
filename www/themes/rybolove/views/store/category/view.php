@@ -21,12 +21,12 @@ $this->breadcrumbs[] = $this->model->name;
         ?>
         </div>
         <div id="filter">
-        <?php
-            $this->widget('application.modules.store.widgets.filter.SFilterRenderer', array(
-                'model'=>$this->model,
-                'attributes'=>$this->eavAttributes,
-            ));
-        ?>
+                            <?php
+                                    $this->widget('application.modules.store.widgets.filter.SFilterRenderer', array(
+                                    'model'=>$this->model,
+                                    'attributes'=>$this->eavAttributes,
+                                ));
+                            ?>
 		</div>
 	</div>
         <div class="product-breadcroumb">

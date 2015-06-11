@@ -149,7 +149,7 @@ if(empty($items))
                 </div>
 
                 <div class="row">
-                    <?php echo CHtml::activeLabel($this->form,'email'); ?>
+                    <?php echo CHtml::activeLabel($this->form,'email', array('required'=>true)); ?>
                     <?php echo CHtml::activeTextField($this->form,'email'); ?>
                 </div>
 
