@@ -249,4 +249,13 @@
     .cart_item .product-price {
         min-width: 70px;
     }
+    .actions .recount {
+        float: left;
+    }
+    .woocommerce .product-thumbnail {
+        display: none;
+    }
+    .cart_item .small_silver_button {
+        display: none;
+    }
 }
