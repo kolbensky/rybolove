@@ -3,6 +3,7 @@
  */
 
 $(document).ready(function() {
+    $(".empty").html("Нет результатов");
     $("#searchebet").css("display","none")
     // Hide flash messages block
     $(".flash_messages .close").click(function(){

@@ -98,3 +98,4 @@ $this->breadcrumbs[] = Yii::t('StoreModule.core', 'Поиск');
 	</div>
 </div>
 </div>
+
