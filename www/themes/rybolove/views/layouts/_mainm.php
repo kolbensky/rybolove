@@ -4,7 +4,7 @@
             if(isset($items['items']))
             {
                 $this->widget('application.extensions.mbmenu.MbMenu',array(
-                    'cssFile'=>Yii::app()->theme->baseUrl.'/assets/css/menu.css',
+                    'cssFile'=>Yii::app()->theme->baseUrl.'/assets/main.css',
                     'htmlOptions'=>array('class'=>'dropdown', 'id'=>'nav'),
                     'items'=>$items['items'])
                 );
