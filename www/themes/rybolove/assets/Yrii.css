@@ -73,3 +73,14 @@
     margin-bottom: 30px;
     }
 }
+@media only screen and (max-width: 420px){
+    .actions .recount {
+        float: left;
+    }
+    .woocommerce .product-thumbnail {
+        display: none;
+    }
+    .cart_item .small_silver_button {
+        display: none;
+    }
+}

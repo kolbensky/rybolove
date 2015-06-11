@@ -236,3 +236,17 @@
 .mainm .dropdown li ul{
     text-transform: none;
 }
+@media only screen and (max-width: 420px){
+    .product-quantity {
+        min-width: 80px;
+    }
+    .order_data .row input, .order_data .row textarea {
+        width: 280px;
+    }
+    .cart_totals {
+        min-width: 280px;
+    }
+    .cart_item .product-price {
+        min-width: 70px;
+    }
+}
