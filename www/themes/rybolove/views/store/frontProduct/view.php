@@ -93,8 +93,8 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                     <h2 class="product-name"><?php echo CHtml::encode($model->name); ?></h2>
                                     <div class="product-inner-price">
                                         <ins>
-                                        	<?php echo Yii::app()->currency->active->symbol; ?>
                                         	<?php echo StoreProduct::formatPrice($model->toCurrentCurrency()); ?>
+                                            <?php echo Yii::app()->currency->active->symbol; ?>
                                         </ins> 
                                         <del><!-- discount price-->
                                             <?php /*

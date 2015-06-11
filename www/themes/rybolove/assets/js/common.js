@@ -139,6 +139,8 @@ function applyCategorySorter(el)
 {
     window.location = $(el).val();
 }
+
+
 ff2=function(t){ 
         t.className=/\D/.test(t.value)?'err':''; 
         if(/\D/.test(t.value)){
@@ -149,7 +151,8 @@ ff2=function(t){
             ww=setTimeout("o.className='';",999); 
         }
         else t.defaultValue=t.value;
-        if(t.value==0){
+        var zero = "0";
+        if(t.value==zero){
             t.value=1;
         }
         }
