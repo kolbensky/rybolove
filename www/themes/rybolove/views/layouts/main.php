@@ -268,6 +268,11 @@
                         <p>&copy; 2015 rybolove. Все права сохранены.</p>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="tqg">
+                       <p>Создано командой <a href="http://tqg.com.ua" target="_blank">Top Quality Guys</a></p>
+                    </div>
+                </div>
                 <!--
                 <div class="col-md-4">
                     <div class="footer-card-icon">
@@ -288,7 +293,6 @@
     <!-- jQuery easing -->
     <script src="<?=$temdir?>js/jquery.easing.1.3.min.js"></script>
 
-    <script src="<?=$temdir?>js/batman.js"></script>
 	<script src="<?=$temdir?>js/main.js"></script>
     <!-- Main Script -->
     <script src="<?=$temdir?>js/jquery.jgrowl.js"></script>
