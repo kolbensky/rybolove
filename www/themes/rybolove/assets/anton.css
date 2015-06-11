@@ -151,7 +151,7 @@
     padding-top: 20px;
 }
 @media (max-width: 520px){
-    .slider-area{
+    .slider-area .big-img{
         display: none;
     }
 }
