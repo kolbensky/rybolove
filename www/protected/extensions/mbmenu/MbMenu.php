@@ -115,13 +115,15 @@ class MbMenu extends CMenu
     }
     
     /**
+
+
     * Registers the external javascript files
     */
     public function registerClientScripts()
     {
         // add the script
         $cs = Yii::app()->getClientScript();
-        $cs->registerCoreScript('jquery');
+       
         
         $js = $this->createJsCode();
         $cs->registerScript('mbmenu_'.$this->getId(), $js, CClientScript::POS_READY);
