@@ -2,23 +2,13 @@
 <?php
     $temdir = Yii::app()->theme->baseUrl.'/assets/';
     $assetsManager = Yii::app()->clientScript;
-    $assetsManager->registerCoreScript('jquery');
-    $assetsManager->registerCoreScript('jquery.ui');
     $contactNumber = '095 555 55 55';
 ?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!-- Latest jQuery form server -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
-    
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	
-    <!-- Bootstrap JS form CDN -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
    
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -270,6 +260,11 @@
                         <p>&copy; 2015 rybolove. Все права сохранены.</p>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="tqg">
+                       <p>Создано командой <a href="http://tqg.com.ua" target="_blank">Top Quality Guys</a></p>
+                    </div>
+                </div>
                 <!--
                 <div class="col-md-4">
                     <div class="footer-card-icon">
@@ -282,12 +277,21 @@
             </div>
         </div>
     </div> <!-- End footer bottom area -->
+            <!-- Latest jQuery form server -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+    <!-- Bootstrap JS form CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
      <!-- jQuery sticky menu -->
     <script src="<?=$temdir?>js/owl.carousel.min.js"></script>
     <script src="<?=$temdir?>js/jquery.sticky.js"></script> 
     <!-- jQuery easing -->
     <script src="<?=$temdir?>js/jquery.easing.1.3.min.js"></script>
+
 	<script src="<?=$temdir?>js/main.js"></script>
     <!-- Main Script -->
     <script src="<?=$temdir?>js/jquery.jgrowl.js"></script>

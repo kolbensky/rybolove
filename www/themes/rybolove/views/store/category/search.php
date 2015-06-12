@@ -90,6 +90,7 @@ $this->breadcrumbs[] = Yii::t('StoreModule.core', 'Поиск');
 				'sortableAttributes'=>array(
 					'name', 'price'
 				),
+				'emptyText' => 'Нет результатов',
                 'pagerCssClass' => 'product-pagination text-center',
 
                 'pager' => array('class' => 'CLinkPager', 'header' => '', 'htmlOptions'=>array('class'=>'pagination')),

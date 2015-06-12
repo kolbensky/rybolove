@@ -147,6 +147,18 @@
         font-size: 14px;
     }
 }
+@media (max-width: 768px) and (min-width: 690px){
+    .single-slide .col-sm-6{
+        width: 50%;
+        float: left;
+    }
+    .single-slide .col-sm-6 .col-sm-12{
+        width: 100%;
+    }
+    .single-slide .col-sm-6 .col-sm-6{
+        width: 50%;
+    }
+}
 .static_pages{
     padding-top: 20px;
 }
