@@ -160,12 +160,16 @@
                         ?>
                     </div>
 
-                    <? if (get_class($this) == 'CategoryController') : ?>
+                    <? 
+                    require_once('Mobile_Detect.php');
+                    $detect = new Mobile_Detect;
+                    if ((get_class($this) == 'CategoryController')&&(($detect->isMobile()) or ($detect->isTablet()))) : ?>
                     <button type="button" class="navbar-toggle filter" id="filterMob" data-toggle="collapse" data-target="#filter">
                         <img src="<?=$temdir?>img/filtermob.png">  
                     </button> 
                         <div id="filter" >
-                            <?php
+                            <?php 
+
                                     $this->widget('application.modules.store.widgets.filter.SFilterRenderer', array(
                                     'model'=>$this->model,
                                     'attributes'=>$this->eavAttributes,
