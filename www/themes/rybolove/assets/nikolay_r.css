@@ -381,6 +381,7 @@ a.cancel_filter {
   color: white;
   font-weight: bold;
 }
+
 /*batman*/
 #batman{
   display: none;
@@ -393,6 +394,7 @@ a.cancel_filter {
   left: 0;
 
 }
+
 /*media*/
 @media (max-width: 1200px){
   #yw1{
@@ -475,6 +477,19 @@ a.cancel_filter {
   }
   .site-branding-area .single-sidebar input[type="text"]{
   width:100%;
+  }
+  #filter input{
+  height: 30px;
+  }
+  .ui-widget{
+    height: 40px;
+    width: 88%;
+    margin: 0 auto;
+  } 
+  .ui-slider .ui-slider-handle{
+    height: 40px;
+    width: 40px;
+    margin-top:3px;
   }
 }
 
