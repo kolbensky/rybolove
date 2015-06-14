@@ -394,7 +394,35 @@ a.cancel_filter {
   left: 0;
 
 }
-
+/*cart*/
+td.product-quantity div.quantity input{
+  text-align: center;
+}
+/*pageupButton*/
+#pageUpButton{
+    display: none;
+    width: 141px;
+    height: 30px;
+    background: url(img/pageUpButton.png);
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    z-index: 9999;
+}
+#pageUpButton:hover{
+    cursor: pointer;
+    height: 35px;
+}
+@media screen and (max-width: 500px){
+    #pageUpButton{
+        width: 51px;
+        height: 35px;
+        background: url(img/pageUpButtonMobile.png);
+    }
+    #pageUpButton:hover{
+        height: 40px;
+    }
+}
 /*media*/
 @media (max-width: 1200px){
   #yw1{
