@@ -54,6 +54,10 @@
 
   </head>
   <body>
+    <!-- Counters -->
+    <script src="<?=$temdir?>js/yandexMetrika.js"></script>
+    <script src="<?=$temdir?>js/googleAnalytics.js"></script>
+
     <div id="pageUpButton"></div>
     <div class="header-area">
         <div class="container">
@@ -299,5 +303,6 @@
     <script src="<?=$temdir?>js/common.js"></script>
     <script src="<?=$temdir?>js/menu.js"></script>
     <script src="<?=$temdir?>js/pageupButton.js"></script>
+
   </body>
 </html>
