@@ -5,12 +5,12 @@
 
 $(document).ready(function(){
     $('button.plus').click(function(){
-        var count = $(this).next('.count');
+        var count = $(this).prev('.count');
         $(count).val(parseInt($(count).val())+1);
         return false;
     });
     $('button.minus').click(function(){
-        var count = $(this).prev('.count');
+        var count = $(this).next('.count');
         var val   = parseInt($(count).val())-1;
         if(val < 1) val = 1;
         $(count).val(val);

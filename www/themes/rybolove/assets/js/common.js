@@ -143,15 +143,7 @@ function applyCategorySorter(el)
 
 
 ff2=function(t){ 
-        t.className=/\D/.test(t.value)?'err':''; 
-        if(/\D/.test(t.value)){
-            t.value=t.defaultValue; 
-            if(self.ww)
-            clearTimeout(ww); 
-            o=t; 
-            ww=setTimeout("o.className='';",999); 
-        }
-        else t.defaultValue=t.value;
+        t.value = t.value.replace(/[^0-9]/,'');
         var zero = "0";
         if(t.value==zero){
             t.value=1;
