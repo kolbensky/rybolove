@@ -18,6 +18,9 @@ jQuery(document).ready(
             0:{
                 items:1,
             },
+            440: {
+                items:2,
+            },
             600:{
                 items:3,
             },
