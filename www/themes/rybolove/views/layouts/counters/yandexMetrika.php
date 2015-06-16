@@ -1,3 +1,4 @@
+<script>
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
         try {
@@ -20,3 +21,4 @@
         d.addEventListener("DOMContentLoaded", f, false);
     } else { f(); }
 })(document, window, "yandex_metrika_callbacks");
+</script>

@@ -55,8 +55,8 @@
   </head>
   <body>
     <!-- Counters -->
-    <script src="<?=$temdir?>js/yandexMetrika.js"></script>
-    <script src="<?=$temdir?>js/googleAnalytics.js"></script>
+    <?php include_once("counters/yandexMetrika.php") ?>
+    <?php include_once("counters/googleAnalytics.php") ?>
 
     <div id="pageUpButton"></div>
     <div class="header-area">
