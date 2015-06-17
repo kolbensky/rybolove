@@ -311,6 +311,8 @@
     <!-- Main Script -->
     <script src="<?=$temdir?>js/jquery.jgrowl.js"></script>
     <script src="<?=$temdir?>js/common.js"></script>
+    <script src="<?=$temdir?>js/contact_us.js"></script>
+    <script src="<?=$temdir?>js/jquery.maskedinput.min.js"></script>
     <script src="<?=$temdir?>js/menu.js"></script>
     <script src="<?=$temdir?>js/pageupButton.js"></script>
 

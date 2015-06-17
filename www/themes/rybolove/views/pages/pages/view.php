@@ -10,7 +10,7 @@ $this->pageTitle       = ($model->meta_title) ? $model->meta_title : $model->tit
 $this->pageKeywords    = $model->meta_keywords;
 $this->pageDescription = $model->meta_description;
 ?>
-<div class="container">
+<div class="container static_pages_container">
 <h1 class="has_background static_pages"><?php echo $model->title; ?></h1>
 <p>
 	<?php echo $model->short_description; ?>
