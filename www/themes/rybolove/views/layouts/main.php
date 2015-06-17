@@ -54,6 +54,10 @@
 
   </head>
   <body>
+    <!-- Counters -->
+    <?php include_once("counters/yandexMetrika.php") ?>
+    <?php include_once("counters/googleAnalytics.php") ?>
+
     <div id="pageUpButton"></div>
     <div class="header-area">
         <div class="container">
@@ -121,7 +125,7 @@
                     </div>
 				</div>
                 <div class="col-md-5 col-sm-5">
-                    <div class="contactInfo">Доставка по всей Украине<br><?php echo $contactNumber ;?></div>
+                    <div class="contactInfo">Доставка по всей Украине<br><?php echo $contactNumber;?></div>
                                 
                     <div class="shopping-item" id="cart">
                         <?php $this->renderFile(Yii::getPathOfAlias('orders.views.cart._small_cart').'.php'); ?>
@@ -309,5 +313,6 @@
     <script src="<?=$temdir?>js/common.js"></script>
     <script src="<?=$temdir?>js/menu.js"></script>
     <script src="<?=$temdir?>js/pageupButton.js"></script>
+
   </body>
 </html>

@@ -3,8 +3,7 @@
 	$adminAssetsUrl = Yii::app()->getModule('admin')->assetsUrl;
 
 	$assetsManager = Yii::app()->clientScript;
-	$assetsManager->registerCoreScript('jquery');
-	$assetsManager->registerCoreScript('jquery.ui');
+
 
 	// Disable jquery-ui default theme
 	$assetsManager->scriptMap=array(
@@ -21,15 +20,14 @@
 	// jGrowl
 	Yii::import('ext.jgrowl.Jgrowl');
 	Jgrowl::register();
-
 	// Back Button & Query Library
-	$assetsManager->registerScriptFile($adminAssetsUrl.'/vendors/jquery.ba-bbq.min.js');
+	$assetsManager->registerScriptFile($adminAssetsUrl.'/vendors/jquery.ba-bbq.min.js', CClientScript::POS_END);
 
 	// Init script
-	$assetsManager->registerScriptFile($adminAssetsUrl.'/scripts/init.scripts.js');
-	$assetsManager->registerScriptFile($adminAssetsUrl.'/scripts/red_circles.js');
-	$assetsManager->registerScriptFile($adminAssetsUrl.'/scripts/jquery-datepicker-russian.js');
-	$assetsManager->registerScriptFile($adminAssetsUrl.'/scripts/jquery.hotkeys.js');
+	$assetsManager->registerScriptFile($adminAssetsUrl.'/scripts/init.scripts.js', CClientScript::POS_END);
+	$assetsManager->registerScriptFile($adminAssetsUrl.'/scripts/red_circles.js', CClientScript::POS_END);
+	$assetsManager->registerScriptFile($adminAssetsUrl.'/scripts/jquery-datepicker-russian.js', CClientScript::POS_END);
+	$assetsManager->registerScriptFile($adminAssetsUrl.'/scripts/jquery.hotkeys.js', CClientScript::POS_END);
 ?>
 <!doctype html>
 <html>
@@ -173,5 +171,11 @@
 	</div>
 
 </div>
+<!-- Latest jQuery form server -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </body>
 </html>
