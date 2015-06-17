@@ -413,6 +413,9 @@ td.product-quantity div.quantity input{
     cursor: pointer;
     height: 35px;
 }
+div.container p{
+  font-size: 12pt;
+}
 @media screen and (max-width: 500px){
     #pageUpButton{
         width: 51px;
