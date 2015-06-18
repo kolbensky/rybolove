@@ -214,8 +214,16 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
                         <h2 class="footer-wid-title">Навигация</h2>
+                        <ul>
+                            <li><a href="/page/help">Помощь</a></li>
+                            <li><a href="/page/how-to-create-order">Как сделать заказ</a></li>
+                            <li><a href="/page/garantiya">Гарантия</a></li>
+                            <li><a href="/page/dostavka-i-oplata">Доставка и оплата</a></li>
+                            <li><a href="/page/obratnaya-svyaz">Обратная связь</a></li>
+                        </ul>
                         <?php
-            $this->widget('zii.widgets.CMenu', array(
+            /*
+             $this->widget('zii.widgets.CMenu', array(
                 'items'=>array(
                     array('label'=>Yii::t('core', 'Помощь'), 'url'=>array('/pages/pages/view', 'url'=>'help')),
                     array('label'=>Yii::t('core', 'Как сделать заказ'), 'url'=>array('/pages/pages/view', 'url'=>'how-to-create-order')),
@@ -224,7 +232,9 @@
                     array('label'=>Yii::t('core', 'Обратная связь'), 'url'=>array('/feedback/default/index')),
                 ),
             ));
-            ?>                        
+            */
+            ?>
+
                     </div>
                 </div>
                 
@@ -301,6 +311,8 @@
     <!-- Main Script -->
     <script src="<?=$temdir?>js/jquery.jgrowl.js"></script>
     <script src="<?=$temdir?>js/common.js"></script>
+    <script src="<?=$temdir?>js/contact_us.js"></script>
+    <script src="<?=$temdir?>js/jquery.maskedinput.min.js"></script>
     <script src="<?=$temdir?>js/menu.js"></script>
     <script src="<?=$temdir?>js/pageupButton.js"></script>
 

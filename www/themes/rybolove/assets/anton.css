@@ -271,3 +271,34 @@
         display: none;
     }
 }
+.static_pages_container{
+    min-height: 480px;
+    margin-bottom: 20px;
+}
+.static_pages_container h1{
+    margin: 20px 0;
+}
+.static_pages_container p{
+    font-size: 13pt!important;
+    font-family: 'Tahoma';
+}
+.contact-with-us-content input, textarea{
+    width: 310px;
+    margin-bottom: 10px;
+}
+.contact-with-us-content #valid{
+    font-family: 'DecimaNovaProLt';
+    font-size: 12pt;
+}
+.contact-with-us-content textarea{
+    resize: none;
+    height: 100px;
+}
+.contact-with-us-content{
+    margin-left: 40px;
+    width: 310px;
+}
+.contact-with-us-content h1{
+    font-size: 14pt;
+    text-align: center;
+}
