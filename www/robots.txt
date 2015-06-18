@@ -1,0 +1,33 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /protected/
+Disallow: /*/manufacturer/
+Disallow: /*/search/
+Disallow: /*/sort/
+Disallow: /*/per_page/
+Disallow: /*/min_price/
+Disallow: /*/max_price/
+Disallow: /themes/
+Disallow: /ipresent/
+Disallow: /framework/
+Disallow: /assets/
+Disallow: /_file-manager/
+
+User-agent: Yandex
+Disallow: /admin/
+Disallow: /protected/
+Disallow: /*/manufacturer/
+Disallow: /*/search/
+Disallow: /*/sort/
+Disallow: /*/per_page/
+Disallow: /*/min_price/
+Disallow: /*/max_price/
+Disallow: /themes/
+Disallow: /ipresent/
+Disallow: /framework/
+Disallow: /assets/
+Disallow: /_file-manager/
+
+Host: rybolove.com.ua
+
+sitemap: http://rybolove.com.ua/sitemap.xml
