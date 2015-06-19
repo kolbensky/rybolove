@@ -2,7 +2,9 @@
 <?php
     $temdir = Yii::app()->theme->baseUrl.'/assets/';
     //$assetsManager = Yii::app()->clientScript;
-    $contactNumber = '095 555 55 55';
+    $contactNumber = '  +380663180027<br>
+                        +380633407056<br>
+                        +380980110987';
 ?>
 <html lang="en">
   <head>
