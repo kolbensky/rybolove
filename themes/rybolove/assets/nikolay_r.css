@@ -272,7 +272,7 @@ a.cancel_filter {
 
 .contactInfo{
   float: left;
-  margin-top: 28px;
+  margin-top: 10px;
   font-size: 14px;
 }
 .site-branding-area .single-sidebar input[type="text"]{
@@ -459,7 +459,7 @@ div.container p{
     
   }
 }
-@media (max-width: 963px){
+@media (max-width: 980px){
   .contactInfo{
     font-size: 12px;
   }
@@ -521,6 +521,12 @@ div.container p{
     height: 40px;
     width: 40px;
     margin-top:3px;
+  }
+  .contactInfo{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
