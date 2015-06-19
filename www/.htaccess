@@ -1,0 +1,32 @@
+AddDefaultCharset UTF-8
+
+#Cache
+
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
+  Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+
+	
+#DEFLATE 
+<IfModule mod_deflate.c>
+    <IfModule mod_headers.c>
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
+        AddOutputFilterByType DEFLATE text/css text/x-component application/x-javascript application/javascript text/javascript text/x-js text/html text/richtext image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon application/json 
+    <IfModule mod_mime.c>
+        AddOutputFilter DEFLATE js css htm html xml
+    </IfModule>
+</IfModule>
+
+
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond $1 !^(favicon\.ico)
+RewriteRule ^(.*)$ /index.php  [L]
+
+# otherwise forward it to index.php
+# RewriteRule . index.php
