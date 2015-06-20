@@ -59,6 +59,7 @@
     <!-- Counters -->
     <?php include_once("counters/yandexMetrika.php") ?>
     <?php include_once("counters/googleAnalytics.php") ?>
+    
 
     <div id="pageUpButton"></div>
     <div class="header-area">
@@ -138,7 +139,7 @@
         </div>
     </div> <!-- End site branding area -->
 
-
+    
     
     
     <div class="mainmenu-area">
@@ -175,6 +176,7 @@
                         </div>
                     <? endif; ?>        
 </div>
+
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -190,8 +192,9 @@
         </div>
     </div><!-- End mainmenu area -->
 	<div class="clear"></div>
+
     <? echo $content;?>
-    
+
     <div class="footer-top-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
@@ -209,6 +212,7 @@
                             <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>-->
                             <a href="https://instagram.com/rybolove2000" target="_blank"><i class="fa fa-instagram"></i></a>
                             <a href="http://vk.com/ribolove" target="_blank"><i class="fa fa-vk"></i></a>
+                            <?php include_once("counters/liveinternet.php") ?>
                         </div>
                     </div>
                 </div>
@@ -274,7 +278,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="copyright">
-                        <p>&copy; 2015 rybolove. Все права сохранены.</p>
+                        <p>&copy; 2015 rybolove. Все права сохранены </p>
                     </div>
                 </div>
                 <div class="col-md-4">

@@ -416,6 +416,17 @@ td.product-quantity div.quantity input{
 div.container p{
   font-size: 12pt;
 }
+
+div.promo-area{
+  padding-top: 0;
+}
+div.promo-area .text{
+  margin-bottom: 40px;
+  font-size: 20px;
+  padding: 15px 30px;
+  background: white;
+  color: #222;
+}
 @media screen and (max-width: 500px){
     #pageUpButton{
         width: 51px;
