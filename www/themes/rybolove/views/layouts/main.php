@@ -59,7 +59,15 @@
     <!-- Counters -->
     <?php include_once("counters/yandexMetrika.php") ?>
     <?php include_once("counters/googleAnalytics.php") ?>
-    
+    <!--sape -->
+    <?php
+        global $sape;
+        if (!defined('_SAPE_USER')){
+            define('_SAPE_USER', '2aee502e9dca4e2ca61035b7e1780616');
+        }
+        require_once(realpath($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'));
+        $sape = new SAPE_client();
+    ?>
 
     <div id="pageUpButton"></div>
     <div class="header-area">
@@ -206,14 +214,17 @@
                     </a>   
                         <div class="footer-social">
                             <a href="https://www.facebook.com/groups/1398569730473723/" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <!--    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>-->
                             <a href="https://instagram.com/rybolove2000" target="_blank"><i class="fa fa-instagram"></i></a>
                             <a href="http://vk.com/ribolove" target="_blank"><i class="fa fa-vk"></i></a>
                             <?php include_once("counters/liveinternet.php") ?>
                         </div>
+                    <div class="sapeLinks">
+                        Возможно вас также интересует:
+                        <?php
+                            global $sape;
+                            echo $sape->return_links();
+                        ?>
+                    </div>
                     </div>
                 </div>
                 

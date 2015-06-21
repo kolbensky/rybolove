@@ -427,6 +427,9 @@ div.promo-area .text{
   background: white;
   color: #222;
 }
+.sapeLinks{
+  margin-top: 15px;
+}
 @media screen and (max-width: 500px){
     #pageUpButton{
         width: 51px;
