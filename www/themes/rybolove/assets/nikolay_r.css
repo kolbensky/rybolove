@@ -440,6 +440,10 @@ div.promo-area .text{
         height: 40px;
     }
 }
+.shareBlock
+{
+  margin-bottom: 10px;
+}
 /*media*/
 @media (max-width: 1200px){
   #yw1{

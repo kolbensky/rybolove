@@ -134,7 +134,8 @@
 					    <button type="submit">Поиск</button>
 						<?php echo CHtml::endForm() ?>
                     </div>
-				</div>
+				
+                </div>
                 <div class="col-md-5 col-sm-5">
                     <div class="contactInfo">Доставка по всей Украине<br><?php echo $contactNumber;?></div>
                                 
