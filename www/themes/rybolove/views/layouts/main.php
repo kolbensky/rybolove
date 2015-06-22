@@ -56,7 +56,7 @@
 
   </head>
   <body>
-    <!-- Counters -->
+    <!--Counters-->
     <?php include_once("counters/yandexMetrika.php") ?>
     <?php include_once("counters/googleAnalytics.php") ?>
     <!--sape -->
@@ -217,7 +217,7 @@
                             <a href="https://www.facebook.com/groups/1398569730473723/" target="_blank"><i class="fa fa-facebook"></i></a>
                             <a href="https://instagram.com/rybolove2000" target="_blank"><i class="fa fa-instagram"></i></a>
                             <a href="http://vk.com/ribolove" target="_blank"><i class="fa fa-vk"></i></a>
-                            <?php include_once("counters/liveinternet.php") ?>
+                            
                         </div>
                     <div class="sapeLinks">
                         Возможно вас также интересует:
@@ -288,9 +288,16 @@
     <div class="footer-bottom-area">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-4">
                     <div class="copyright">
                         <p>&copy; 2015 rybolove. Все права сохранены </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="copyright">
+                        <!-- Counters -->
+                        <?php include_once("counters/liveinternet.php") ?>
+                        <?php include_once("counters/ramblerTop100.php") ?> 
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -333,6 +340,7 @@
     <script src="<?=$temdir?>js/jquery.maskedinput.min.js"></script>
     <script src="<?=$temdir?>js/menu.js"></script>
     <script src="<?=$temdir?>js/pageupButton.js"></script>
+    
 
   </body>
 </html>
