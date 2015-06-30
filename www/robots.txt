@@ -30,4 +30,4 @@ Disallow: /_file-manager/
 
 Host: rybolove.com.ua
 
-sitemap: http://rybolove.com.ua/sitemaps/sitemapindex.xml
+sitemap: http://rybolove.com.ua/sitemap.xml

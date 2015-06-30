@@ -124,7 +124,10 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
 
                                     <?php echo CHtml::endForm() ?>
 									<div class="clear"></div>
-                                 
+                                    <div class="shareBlock">
+                                        Поделиться в социальной сети:
+                                        <?php include_once("shareBlock.php") ?>
+                                    </div> 
                                     
                                     <div role="tabpanel">
                                         <ul class="product-tab" role="tablist">
@@ -171,6 +174,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
             </div>
         </div>
     </div>
+
 
 <script type="text/javascript">
 	$(document).ready(function(){

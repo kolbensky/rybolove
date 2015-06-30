@@ -416,6 +416,20 @@ td.product-quantity div.quantity input{
 div.container p{
   font-size: 12pt;
 }
+
+div.promo-area{
+  padding-top: 0;
+}
+div.promo-area .text{
+  margin-bottom: 40px;
+  font-size: 20px;
+  padding: 15px 30px;
+  background: white;
+  color: #222;
+}
+.sapeLinks{
+  margin-top: 15px;
+}
 @media screen and (max-width: 500px){
     #pageUpButton{
         width: 51px;
@@ -425,6 +439,10 @@ div.container p{
     #pageUpButton:hover{
         height: 40px;
     }
+}
+.shareBlock
+{
+  margin-bottom: 10px;
 }
 /*media*/
 @media (max-width: 1200px){
