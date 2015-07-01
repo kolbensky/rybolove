@@ -137,7 +137,7 @@
 				
                 </div>
                 <div class="col-md-5 col-sm-5">
-                    <div class="contactInfo">Доставка по всей Украине<br><?php echo $contactNumber;?></div>
+                    <div class="contactInfo"><b>Доставка по всей Украине</b><br><?php echo $contactNumber;?></div>
                                 
                     <div class="shopping-item" id="cart">
                         <?php $this->renderFile(Yii::getPathOfAlias('orders.views.cart._small_cart').'.php'); ?>
@@ -231,7 +231,7 @@
                 
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">Навигация</h2>
+                        <h3 class="footer-wid-title">Навигация</h3>
                         <ul>
                             <li><a href="/page/help">Помощь</a></li>
                             <li><a href="/page/how-to-create-order">Как сделать заказ</a></li>
@@ -258,7 +258,7 @@
                 
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">Категории</h2>
+                        <h3 class="footer-wid-title">Категории</h3>
                         <ul>
                             <li><a href="/spinnigi">Катушки</a></li>
                             <li><a href="/udilisha">Удилища</a></li>
