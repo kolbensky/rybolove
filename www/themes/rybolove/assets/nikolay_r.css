@@ -420,7 +420,7 @@ div.container p{
 div.promo-area{
   padding-top: 0;
 }
-div.promo-area .text{
+.text{
   margin-bottom: 40px;
   font-size: 20px;
   padding: 15px 30px;
@@ -429,6 +429,10 @@ div.promo-area .text{
 }
 .sapeLinks{
   margin-top: 15px;
+}
+div.static_pages_container div.categories-container{
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 500px){
     #pageUpButton{
