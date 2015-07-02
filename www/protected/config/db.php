@@ -14,7 +14,7 @@ if(YII_DEBUG) return array(
 else return 
     
 array(
-    'connectionString' => 'mysql:host=localhost; dbname=u732441123_site',
+    'connectionString' => 'mysql:host=localhost; dbname=rybolove',
     'username' => 'root',
     'password' => '',
     'enableProfiling' => YII_DEBUG, // Disable in production
