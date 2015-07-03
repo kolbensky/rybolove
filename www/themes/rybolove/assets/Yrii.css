@@ -90,4 +90,17 @@
         float: left;
     }
 }
+@media (max-width: 1200px) {
+    .pagination .page {
+        display: none;
+    }
+    .pagination .selected {
+        display: inline;
+    }
+}
+@media (max-width: 385px) {
+    .pagination .first, .pagination .last {
+        display: none;
+    }
+}
 

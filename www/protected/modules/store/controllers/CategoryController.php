@@ -96,7 +96,7 @@ class CategoryController extends Controller
 		if(Yii::app()->request->isPostRequest)
 			$this->redirect(Yii::app()->request->addUrlParam('/store/category/search', array('q'=>Yii::app()->request->getPost('q'))));
 		$q=Yii::app()->request->getQuery('q');
-		if(!$q)
+		if((!$q)&&($q!=''))
 			$this->render('search');
 		$this->doSearch($q, 'search');
 	}

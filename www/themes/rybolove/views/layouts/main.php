@@ -2,7 +2,9 @@
 <?php
     $temdir = Yii::app()->theme->baseUrl.'/assets/';
     //$assetsManager = Yii::app()->clientScript;
-    $contactNumber = '095 555 55 55';
+    $contactNumber = '  +380663180027<br>
+                        +380633407056<br>
+                        +380980110987';
 ?>
 <html lang="en">
   <head>
@@ -54,9 +56,18 @@
 
   </head>
   <body>
-    <!-- Counters -->
+    <!--Counters-->
     <?php include_once("counters/yandexMetrika.php") ?>
     <?php include_once("counters/googleAnalytics.php") ?>
+    <!--sape -->
+    <?php
+        global $sape;
+        if (!defined('_SAPE_USER')){
+            define('_SAPE_USER', '2aee502e9dca4e2ca61035b7e1780616');
+        }
+        require_once(realpath($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'));
+        $sape = new SAPE_client();
+    ?>
 
     <div id="pageUpButton"></div>
     <div class="header-area">
@@ -123,9 +134,10 @@
 					    <button type="submit">Поиск</button>
 						<?php echo CHtml::endForm() ?>
                     </div>
-				</div>
+				
+                </div>
                 <div class="col-md-5 col-sm-5">
-                    <div class="contactInfo">Доставка по всей Украине<br><?php echo $contactNumber;?></div>
+                    <div class="contactInfo"><b>Доставка по всей Украине</b><br><?php echo $contactNumber;?></div>
                                 
                     <div class="shopping-item" id="cart">
                         <?php $this->renderFile(Yii::getPathOfAlias('orders.views.cart._small_cart').'.php'); ?>
@@ -136,7 +148,7 @@
         </div>
     </div> <!-- End site branding area -->
 
-
+    
     
     
     <div class="mainmenu-area">
@@ -173,6 +185,7 @@
                         </div>
                     <? endif; ?>        
 </div>
+
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -188,8 +201,9 @@
         </div>
     </div><!-- End mainmenu area -->
 	<div class="clear"></div>
+
     <? echo $content;?>
-    
+
     <div class="footer-top-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
@@ -201,19 +215,23 @@
                     </a>   
                         <div class="footer-social">
                             <a href="https://www.facebook.com/groups/1398569730473723/" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <!--    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>-->
                             <a href="https://instagram.com/rybolove2000" target="_blank"><i class="fa fa-instagram"></i></a>
                             <a href="http://vk.com/ribolove" target="_blank"><i class="fa fa-vk"></i></a>
+                            
                         </div>
+                    <div class="sapeLinks">
+                        Возможно вас также интересует:
+                        <?php
+                            global $sape;
+                            echo $sape->return_links();
+                        ?>
+                    </div>
                     </div>
                 </div>
                 
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">Навигация</h2>
+                        <h3 class="footer-wid-title">Навигация</h3>
                         <ul>
                             <li><a href="/page/help">Помощь</a></li>
                             <li><a href="/page/how-to-create-order">Как сделать заказ</a></li>
@@ -240,7 +258,7 @@
                 
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">Категории</h2>
+                        <h3 class="footer-wid-title">Категории</h3>
                         <ul>
                             <li><a href="/spinnigi">Катушки</a></li>
                             <li><a href="/udilisha">Удилища</a></li>
@@ -270,9 +288,16 @@
     <div class="footer-bottom-area">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-4">
                     <div class="copyright">
-                        <p>&copy; 2015 rybolove. Все права сохранены.</p>
+                        <p>&copy; 2015 rybolove. Все права сохранены </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="copyright">
+                        <!-- Counters -->
+                        <?php include_once("counters/liveinternet.php") ?>
+                        <?php include_once("counters/ramblerTop100.php") ?> 
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -315,6 +340,7 @@
     <script src="<?=$temdir?>js/jquery.maskedinput.min.js"></script>
     <script src="<?=$temdir?>js/menu.js"></script>
     <script src="<?=$temdir?>js/pageupButton.js"></script>
+    
 
   </body>
 </html>

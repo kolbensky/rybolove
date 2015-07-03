@@ -1,1 +1,1 @@
-<?phpclass FixtureGenerator extends CCodeGenerator{    public $codeModel='application.gii.fixture.FixtureCode';}
+<?phpclass FixtureGenerator extends CCodeGenerator{    public $codeModel='application.gii.fixture.FixtureCode';}
