@@ -34,7 +34,6 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
 
 ?>
 
-
  <div class="single-product-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
@@ -128,19 +127,18 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                     
                                     <div role="tabpanel">
                                         <ul class="product-tab" role="tablist">
-                                            <!--<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Описание</a></li>-->
-                                            <!--<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Отзывы</a></li> -->
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Описание</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Отзывы</a></li> 
                                         </ul>
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane fade in active" id="home">
                                                 <div class="desc"><?php echo $model->full_description; ?></div>
                                             </div>
-                                            <!--        
+                                                
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
-                                                <h2>Reviews</h2>
-                                                <div class="submit-review">
-
-                                                    <p><label for="name">Name</label> <input name="name" type="text"></p>
+                                                
+                                                    <?php $this->renderPartial('comments.views.comment.create', array('model'=>$model)); ?>
+                                                   <!-- <p><label for="name">Name</label> <input name="name" type="text"></p>
                                                     <p><label for="email">Email</label> <input name="email" type="email"></p>
                                                 <div class="rating-chooser">
                                                         <p>Your rating</p>
@@ -154,13 +152,13 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                                         </div>
                                                     </div>
                                                     <p><label for="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
-                                                    <p><input type="submit" value="Submit"></p>
+                                                    <p><input type="submit" value="Submit"></p>-->
 
-                                                </div>
-                                            </div>-->
+                                                
+                                            </div>
                                         </div>
+                                        
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
