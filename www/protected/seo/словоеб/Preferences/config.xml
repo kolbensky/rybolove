@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<PreferencesData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProxyList />
+  <HideCopyMoveBtn>false</HideCopyMoveBtn>
+  <TextFormattingModeValue />
+  <IgnoreUnimportantWordsWithKEIValue />
+  <IgnoreUnimportantWordsWithKEIIsChecked>false</IgnoreUnimportantWordsWithKEIIsChecked>
+  <KEIGooglePrefix />
+  <WriteModeForYandexDirectDataSelectedIndex>0</WriteModeForYandexDirectDataSelectedIndex>
+  <YandexMaxConnectionsCount>9999</YandexMaxConnectionsCount>
+  <YandexWordstatAuthFTimeoutFrom>15000</YandexWordstatAuthFTimeoutFrom>
+  <YandexWordstatAuthFTimeoutTo>20000</YandexWordstatAuthFTimeoutTo>
+  <DontRestoreManualAddedPhrasesList>false</DontRestoreManualAddedPhrasesList>
+  <UseCommaSeparationInPackParsing>false</UseCommaSeparationInPackParsing>
+  <UpdateGroupCheckBoxesStatus>true</UpdateGroupCheckBoxesStatus>
+  <OverwriteSecondarySEData>false</OverwriteSecondarySEData>
+  <TabBGColor1>#55FF899B</TabBGColor1>
+  <TabBGColor2>#55BF89FF</TabBGColor2>
+  <TabBGColor3>#5589DBFF</TabBGColor3>
+  <TabBGColor4>#55D2FF89</TabBGColor4>
+  <TabBGColor5>#7FFFFF89</TabBGColor5>
+  <TabBGColor6>#7FC7C7C7</TabBGColor6>
+  <TabBGColor7>#FFFFDC9E</TabBGColor7>
+  <TabBGColor8>#FFB6FFA1</TabBGColor8>
+  <TabBGColor9>#FFA1FFE1</TabBGColor9>
+  <TabBGColor10>#FFA1D4FF</TabBGColor10>
+  <TabBGColor11>#FFFDADF6</TabBGColor11>
+  <RIPCaptchaUseAntigateForRussianCaptcha>false</RIPCaptchaUseAntigateForRussianCaptcha>
+  <YandexSearchUserMode>false</YandexSearchUserMode>
+  <GAUseBetaVersionParser>true</GAUseBetaVersionParser>
+  <DontUseAntigateForRussianCaptcha>false</DontUseAntigateForRussianCaptcha>
+  <YDProxyUsingModeSelectedIndex>0</YDProxyUsingModeSelectedIndex>
+  <DontAddPhraseIfPhraseExistsOnOtherTabs>false</DontAddPhraseIfPhraseExistsOnOtherTabs>
+  <AddSourcePhrasesFromPackParsing>false</AddSourcePhrasesFromPackParsing>
+  <FilterLessAboveHeaderMode>слова (больше, меньше)</FilterLessAboveHeaderMode>
+  <UseOnlyCheckedStopWords>false</UseOnlyCheckedStopWords>
+  <QuickFilterIsHidden>false</QuickFilterIsHidden>
+  <PartOccuranceSearchOnlyFirstChars>false</PartOccuranceSearchOnlyFirstChars>
+  <CheckMainDataTableForNewStopWords>false</CheckMainDataTableForNewStopWords>
+  <FilterEditorSortFieldsByName>false</FilterEditorSortFieldsByName>
+  <FilterEditorDontShowHiddenFields>true</FilterEditorDontShowHiddenFields>
+  <YDWSHowToAccepted>false</YDWSHowToAccepted>
+  <SettingsCheckMaxFreqSet0ForNull>false</SettingsCheckMaxFreqSet0ForNull>
+  <SettingsCheckMaxFreqDataColumnComboBoxSelectedIndex xsi:nil="true" />
+  <SetCurrentTabWordsGroupModeByDefault>true</SetCurrentTabWordsGroupModeByDefault>
+  <WSSingleQueryIsEnabled>false</WSSingleQueryIsEnabled>
+  <KEIWordsFormDoesntMatters>true</KEIWordsFormDoesntMatters>
+  <New2385V>0</New2385V>
+  <AutoSetNextGoogleAdwordsAccount>false</AutoSetNextGoogleAdwordsAccount>
+  <ParseSecondarySEData>true</ParseSecondarySEData>
+  <SystemProxyProxyConnectionLogin />
+  <SystemProxyProxyConnectionPassword />
+  <SystemProxyProxyConnectionServer />
+  <SystemProxyProxyConnectionPort>80</SystemProxyProxyConnectionPort>
+  <SystemProxyProxyConnectionMode>0</SystemProxyProxyConnectionMode>
+  <SystemProxyConnectionMode>0</SystemProxyConnectionMode>
+  <SeasonChartDoubleSizeIsChecked>false</SeasonChartDoubleSizeIsChecked>
+  <DeactivateYDAccountIfXCaptchaInRowCatched>true</DeactivateYDAccountIfXCaptchaInRowCatched>
+  <VirtualTimeoutDisabled>false</VirtualTimeoutDisabled>
+  <KeywordsProviderPageSize>50000</KeywordsProviderPageSize>
+  <KEIWordsSpecialSymbolsDoesntMatters>false</KEIWordsSpecialSymbolsDoesntMatters>
+  <DontUpdateFilteredInAndCheckedCountersWhenParsing>false</DontUpdateFilteredInAndCheckedCountersWhenParsing>
+  <SetZeroValueToQuoteAndQuotePointFreqWhenBaseFreqHasZeroValue>false</SetZeroValueToQuoteAndQuotePointFreqWhenBaseFreqHasZeroValue>
+  <UseREGEXPQuickFilterToggleIsChecked xsi:nil="true" />
+  <SemRushFilterEntryList />
+  <DisableShadows>false</DisableShadows>
+  <DontSetNextRecordAfterSpace>true</DontSetNextRecordAfterSpace>
+  <RAWModelForWS>false</RAWModelForWS>
+  <PositionsRequestResultsCountSelectedIndex>0</PositionsRequestResultsCountSelectedIndex>
+  <DataGridAutoEnableColumnsByParsing>false</DataGridAutoEnableColumnsByParsing>
+  <QATAddedHideEmptyColumnsBtn>true</QATAddedHideEmptyColumnsBtn>
+  <StopWordsSearchTypeSelectedIndex>0</StopWordsSearchTypeSelectedIndex>
+  <HiddenNewsIDList />
+  <ProxyCheckSimpleHTTPTimeout>30000</ProxyCheckSimpleHTTPTimeout>
+  <ReplaceELetter>false</ReplaceELetter>
+  <LoadPrdoxyListFromURLAutocheckTimeout>30000</LoadPrdoxyListFromURLAutocheckTimeout>
+  <LoadProxyListFromURLAutocheckModeIndex>3</LoadProxyListFromURLAutocheckModeIndex>
+  <ProxyTypeSelectedIndex>0</ProxyTypeSelectedIndex>
+  <SuggestsEnablePreBroot>false</SuggestsEnablePreBroot>
+  <YandexDirectDontUseProxyServers>false</YandexDirectDontUseProxyServers>
+  <YandexDirectDontUseProxyServersForQuery>false</YandexDirectDontUseProxyServersForQuery>
+  <UseProxy>false</UseProxy>
+  <IgnoreCertificateValidation>false</IgnoreCertificateValidation>
+  <WordstatQuickQueryAlertMessaseShowed>false</WordstatQuickQueryAlertMessaseShowed>
+  <ShowBlockNotifyFromCriticalErrorsOnly>true</ShowBlockNotifyFromCriticalErrorsOnly>
+  <SendPhraseToStopWordsTarget>1</SendPhraseToStopWordsTarget>
+  <SendPhraseToStopWordsMode>part</SendPhraseToStopWordsMode>
+  <SaveDataGridViewSettingsToProject>false</SaveDataGridViewSettingsToProject>
+  <KEIWordsOrderDoesntMatters>false</KEIWordsOrderDoesntMatters>
+  <AntigateCaptchaBorder>1000</AntigateCaptchaBorder>
+  <BoosterQuestionAccepted>true</BoosterQuestionAccepted>
+  <YandexXMLSimpleUrl>http://xmlsearch.yandex.ru/xmlsearch?user=</YandexXMLSimpleUrl>
+  <TimeoutXML>45000</TimeoutXML>
+  <CopyPhraseToBufferLeftPart />
+  <CopyPhraseToBufferRightPart />
+  <YDPassGroupedPhrasesToQueue>false</YDPassGroupedPhrasesToQueue>
+  <YDParseOnlyAuctionData>false</YDParseOnlyAuctionData>
+  <TimeoutLowBoundGoogleSearch>3000</TimeoutLowBoundGoogleSearch>
+  <TimeoutHighBoundGoogleSearch>5000</TimeoutHighBoundGoogleSearch>
+  <TimeoutLowBoundYandexSearch>3000</TimeoutLowBoundYandexSearch>
+  <TimeoutHighBoundYandexSearch>5000</TimeoutHighBoundYandexSearch>
+  <TimeoutLowBoundYD>3000</TimeoutLowBoundYD>
+  <TimeoutHighBoundYD>5000</TimeoutHighBoundYD>
+  <TimeoutLowBoundRA>3000</TimeoutLowBoundRA>
+  <TimeoutHighBoundRA>5000</TimeoutHighBoundRA>
+  <TimeoutLowBoundWS>5000</TimeoutLowBoundWS>
+  <TimeoutHighBoundWS>15000</TimeoutHighBoundWS>
+  <WriteWordstatDataFromYandexDirect>true</WriteWordstatDataFromYandexDirect>
+  <YD1PlaceModeSelected>true</YD1PlaceModeSelected>
+  <YDGarShowModeSelected>false</YDGarShowModeSelected>
+  <YDSpecOfferModeSelected>false</YDSpecOfferModeSelected>
+  <UpdateRAStatForExistingPhrases>true</UpdateRAStatForExistingPhrases>
+  <UpdateWSStatForExistingPhrases>true</UpdateWSStatForExistingPhrases>
+  <YandexWordstatDontStopThreadWhenMainIPIsBlocked>false</YandexWordstatDontStopThreadWhenMainIPIsBlocked>
+  <ShowBlockNotifyFromTray>false</ShowBlockNotifyFromTray>
+  <UncheckDeactivatedCaptchaProxy>false</UncheckDeactivatedCaptchaProxy>
+  <UncheckDeletedFromParsingProxy>false</UncheckDeletedFromParsingProxy>
+  <RibbonIsMinimized>false</RibbonIsMinimized>
+  <RamblerAdstatBlockProxyServerWhenTimeoutError>false</RamblerAdstatBlockProxyServerWhenTimeoutError>
+  <UseMainIPWithRamblerAdstat>true</UseMainIPWithRamblerAdstat>
+  <UseMainIPWithYandexDirect>true</UseMainIPWithYandexDirect>
+  <HTTPTimeout>30000</HTTPTimeout>
+  <YandexDirectBlockProxyServerWhenTimeoutError>false</YandexDirectBlockProxyServerWhenTimeoutError>
+  <GoogleSearchDontStopThreadWhenBlockProxy>false</GoogleSearchDontStopThreadWhenBlockProxy>
+  <GoogleSearchDontStopThreadWhenBlockProxySelectedMode>0</GoogleSearchDontStopThreadWhenBlockProxySelectedMode>
+  <GoogleSearchBlockProxyServerWhenTimeoutError>false</GoogleSearchBlockProxyServerWhenTimeoutError>
+  <YandexSearchDontStopThreadWhenBlockProxy>false</YandexSearchDontStopThreadWhenBlockProxy>
+  <YandexSearchDontStopThreadWhenBlockProxySelectedMode>0</YandexSearchDontStopThreadWhenBlockProxySelectedMode>
+  <YandexSearchBlockProxyServerWhenTimeoutError>false</YandexSearchBlockProxyServerWhenTimeoutError>
+  <SuggestsDontStopThreadWhenBlockProxy>false</SuggestsDontStopThreadWhenBlockProxy>
+  <SuggestsDontStopThreadWhenBlockProxySelectedMode>0</SuggestsDontStopThreadWhenBlockProxySelectedMode>
+  <SuggestsBlockProxyServerWhenTimeoutError>false</SuggestsBlockProxyServerWhenTimeoutError>
+  <New2648Tag>no</New2648Tag>
+  <YandexDirectDontStopThreadWhenBlockProxy>false</YandexDirectDontStopThreadWhenBlockProxy>
+  <YandexDirectDontStopThreadWhenBlockProxySelectedMode>0</YandexDirectDontStopThreadWhenBlockProxySelectedMode>
+  <YandexWordstatDontStopThreadWhenBlockProxy>false</YandexWordstatDontStopThreadWhenBlockProxy>
+  <YandexWordstatDontStopThreadWhenBlockProxySelectedMode>0</YandexWordstatDontStopThreadWhenBlockProxySelectedMode>
+  <YandexWordstatBlockProxyServerWhenTimeoutError>false</YandexWordstatBlockProxyServerWhenTimeoutError>
+  <YandexWordstatHTTPTimeout>35000</YandexWordstatHTTPTimeout>
+  <DontClearTableFromWSQuickSearch>false</DontClearTableFromWSQuickSearch>
+  <FilterPlusSymbolForWS>false</FilterPlusSymbolForWS>
+  <ExportOnlyCurrentTabToXSLX>false</ExportOnlyCurrentTabToXSLX>
+  <KCServiceCouponCode />
+  <OpenPhraseInSESelectedIndex>0</OpenPhraseInSESelectedIndex>
+  <DeactivateYDAccountForYandexWordstatCaptchaBorder>25</DeactivateYDAccountForYandexWordstatCaptchaBorder>
+  <UseYDForYandexWordstat>false</UseYDForYandexWordstat>
+  <UrlSuggests>
+    <string />
+    <string>rybolove.com.ua</string>
+  </UrlSuggests>
+  <DontUpdateDataSourceWhenParsing>false</DontUpdateDataSourceWhenParsing>
+  <ExportGAPathToTXT>false</ExportGAPathToTXT>
+  <ExportPositionsPageUrlToTXT>false</ExportPositionsPageUrlToTXT>
+  <BoostCachePeriod>TwoMonths</BoostCachePeriod>
+  <EnableBoost>false</EnableBoost>
+  <DeactivateBadProxy>false</DeactivateBadProxy>
+  <build17>no</build17>
+  <ParseAllYandexWordstatFreqsBaseFreq>true</ParseAllYandexWordstatFreqsBaseFreq>
+  <ParseAllYandexWordstatFreqsQuoteFreq>true</ParseAllYandexWordstatFreqsQuoteFreq>
+  <ParseAllYandexWordstatFreqsQuotePointFreq>true</ParseAllYandexWordstatFreqsQuotePointFreq>
+  <ParseModeIndex>1</ParseModeIndex>
+  <DelayedAcceptDataTableChanges_NewOption>no</DelayedAcceptDataTableChanges_NewOption>
+  <DelayedAcceptDataTableChangesTime>6500</DelayedAcceptDataTableChangesTime>
+  <DelayedAcceptDataTableChangesMinThreadQuantity>10</DelayedAcceptDataTableChangesMinThreadQuantity>
+  <DelayedAcceptDataTableChanges>false</DelayedAcceptDataTableChanges>
+  <AutoRestartYandexDirect>false</AutoRestartYandexDirect>
+  <LowBoundOfBaseFreqForParseLevel>0</LowBoundOfBaseFreqForParseLevel>
+  <CSVEncoding>1251</CSVEncoding>
+  <YandexDirectAccountData>nikolay.r2015@yandex.ru:yandexlol
+nnniikk@yandex.ru:nnniikk123123</YandexDirectAccountData>
+  <ParseOnlyTopSuggestsWithoutSpace>false</ParseOnlyTopSuggestsWithoutSpace>
+  <useCyrillicCharsForSuggestsEndings>true</useCyrillicCharsForSuggestsEndings>
+  <useLatinCharsForSuggestsEndings>false</useLatinCharsForSuggestsEndings>
+  <useNumberCharsForSuggestsEndings>false</useNumberCharsForSuggestsEndings>
+  <useCyrillicCharsForSuggestsPhrases>true</useCyrillicCharsForSuggestsPhrases>
+  <useLatinCharsForSuggestsPhrases>true</useLatinCharsForSuggestsPhrases>
+  <useNumberCharsForSuggestsPhrases>true</useNumberCharsForSuggestsPhrases>
+  <appendSpaceToSuggestsQuery>true</appendSpaceToSuggestsQuery>
+  <DefaultDataGridViewTemplateName />
+  <UrlDecodeEncodingName>1251</UrlDecodeEncodingName>
+  <UseSubdomainsWithPositions>false</UseSubdomainsWithPositions>
+  <MaxWordCountInPhrase>10</MaxWordCountInPhrase>
+  <AutoloadExportFileFilePath />
+  <UseTimestampInAutoloadExportFile>false</UseTimestampInAutoloadExportFile>
+  <FieldLabelsSettingsForMainTable>
+    <FieldLabelsSettings>
+      <FieldName>Phrase</FieldName>
+      <FieldLabel>Фраза</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>KeySource</FieldName>
+      <FieldLabel>Источник</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>AddDateTime</FieldName>
+      <FieldLabel>Дата добавления</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>YandexWordstatBaseFreq</FieldName>
+      <FieldLabel>Частотность [WS]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>YandexWordstatQuoteFreq</FieldName>
+      <FieldLabel>Частотность " " [WS]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>YandexWordstatQuotePointFreq</FieldName>
+      <FieldLabel>Частотность "!" [WS]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>YandexWordstatSeason</FieldName>
+      <FieldLabel>Сезонность [WS]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>Suggests_Wordform</FieldName>
+      <FieldLabel>Корректность словоформы [SG]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>RamblerAdstat_FirstPageFreq</FieldName>
+      <FieldLabel>Частотность (первая) [RA]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>RamblerAdstat_AllPagesFreq</FieldName>
+      <FieldLabel>Частотность (все) [RA]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>KEI_YandexDocCount</FieldName>
+      <FieldLabel>Конкуренция в ПС Яндекс [KEI]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>KEI_GoogleDocCount</FieldName>
+      <FieldLabel>Конкуренция в ПС Google [KEI]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>KEI_YandexMainPagesCount</FieldName>
+      <FieldLabel>Кол-во главных страниц в ПС Яндекс [KEI]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>KEI_GoogleMainPagesCount</FieldName>
+      <FieldLabel>Кол-во главных страниц в ПС Google [KEI]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>KEI_YandexTitlesCount</FieldName>
+      <FieldLabel>Кол-во вхождений в заголовок в ПС Яндекс [KEI]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>KEI_GoogleTitlesCount</FieldName>
+      <FieldLabel>Кол-во вхождений в заголовок в ПС Google [KEI]</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>RelevantPages_YandexPageURL</FieldName>
+      <FieldLabel>Рел. страница в ПС Яндекс</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>RelevantPages_GooglePageURL</FieldName>
+      <FieldLabel>Рел. страница в ПС Google</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>Positions_YandexPosition</FieldName>
+      <FieldLabel>Позиция в ПС Яндекс</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>Positions_YandexPageURL</FieldName>
+      <FieldLabel>Страница в ПС Яндекс</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>Positions_YandexFoundedByLink</FieldName>
+      <FieldLabel>НПС в ПС Яндекс</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>Positions_GooglePosition</FieldName>
+      <FieldLabel>Позиция в ПС Google</FieldLabel>
+    </FieldLabelsSettings>
+    <FieldLabelsSettings>
+      <FieldName>Positions_GooglePageURL</FieldName>
+      <FieldLabel>Страница в ПС Google</FieldLabel>
+    </FieldLabelsSettings>
+  </FieldLabelsSettingsForMainTable>
+  <RamblerAdstatUseLowerTable>false</RamblerAdstatUseLowerTable>
+  <LoadDataGridCustomizationFromPC>true</LoadDataGridCustomizationFromPC>
+  <IsMaximizedState>false</IsMaximizedState>
+  <WindowWidth>1024</WindowWidth>
+  <WindowHeight>700</WindowHeight>
+  <WindowTop>11</WindowTop>
+  <WindowLeft>174</WindowLeft>
+  <CSVSeparatorChar>;</CSVSeparatorChar>
+  <CSVRoundChar>"</CSVRoundChar>
+  <ParseLeftColumnClaster>false</ParseLeftColumnClaster>
+  <AllowPhraseEdit>false</AllowPhraseEdit>
+  <UseLowerVariant>true</UseLowerVariant>
+  <BackupProject>true</BackupProject>
+  <SwitchProxyOnCaptcha>false</SwitchProxyOnCaptcha>
+  <MainTableExportingColumns>
+    <string>IsChecked</string>
+    <string>Phrase</string>
+    <string>KeySource</string>
+    <string>AddDateTime</string>
+    <string>YandexWordstatBaseFreq</string>
+    <string>YandexWordstatQuoteFreq</string>
+    <string>YandexWordstatQuotePointFreq</string>
+    <string>YandexWordstatSeason</string>
+    <string>Suggests_Wordform</string>
+    <string>RamblerAdstat_FirstPageFreq</string>
+    <string>RamblerAdstat_AllPagesFreq</string>
+    <string>KEI_YandexDocCount</string>
+    <string>KEI_GoogleDocCount</string>
+    <string>KEI_YandexMainPagesCount</string>
+    <string>KEI_GoogleMainPagesCount</string>
+    <string>KEI_YandexTitlesCount</string>
+    <string>KEI_GoogleTitlesCount</string>
+    <string>RelevantPages_YandexPageURL</string>
+    <string>RelevantPages_GooglePageURL</string>
+    <string>Positions_YandexPosition</string>
+    <string>Positions_YandexPageURL</string>
+    <string>Positions_YandexFoundedByLink</string>
+    <string>Positions_GooglePosition</string>
+    <string>Positions_GooglePageURL</string>
+  </MainTableExportingColumns>
+  <OpenBrowserWithCTRL>true</OpenBrowserWithCTRL>
+  <SpaceKeyUpAction>CheckActiveRow</SpaceKeyUpAction>
+  <UseMainIPWithWordFormSG>true</UseMainIPWithWordFormSG>
+  <UseMainIPWithLiveInternet>true</UseMainIPWithLiveInternet>
+  <YandexDirectThreadsQuantity>1</YandexDirectThreadsQuantity>
+  <WordFormSGThreadsQuantity>1</WordFormSGThreadsQuantity>
+  <UseMainIPWithGooglePositions>true</UseMainIPWithGooglePositions>
+  <GooglePositionsThreadsQuantity>1</GooglePositionsThreadsQuantity>
+  <UseMainIPWithMailPositions>true</UseMainIPWithMailPositions>
+  <UseMainIPWithYandexPositions>true</UseMainIPWithYandexPositions>
+  <YandexPositionsThreadsQuantity>1</YandexPositionsThreadsQuantity>
+  <UseMainIPWithSolomono>true</UseMainIPWithSolomono>
+  <UseMainIPWithWordstat>true</UseMainIPWithWordstat>
+  <WordstatThreadsQuantity>1</WordstatThreadsQuantity>
+  <ExportFormat>csv</ExportFormat>
+  <AllowFilterRecords>true</AllowFilterRecords>
+  <AllowSummRecords>true</AllowSummRecords>
+  <Counter>0</Counter>
+  <PreferencesTabControl_1_LastSelectedIndex>0</PreferencesTabControl_1_LastSelectedIndex>
+  <PreferencesTabControl_2_LastSelectedIndex>5</PreferencesTabControl_2_LastSelectedIndex>
+  <PreferencesTabControl_3_LastSelectedIndex>0</PreferencesTabControl_3_LastSelectedIndex>
+  <PreferencesAnticaptchaTabControl_LastSelectedIndex>0</PreferencesAnticaptchaTabControl_LastSelectedIndex>
+  <ReplaceBadSymbolsFromWordsString>-.</ReplaceBadSymbolsFromWordsString>
+  <BadSymbolsFromWordsString>!-.+</BadSymbolsFromWordsString>
+  <PlaySoundOnParsed>false</PlaySoundOnParsed>
+  <ParseAllFuncPreferences />
+  <SuggestsGoogleParametrs />
+  <GoogleSuggestsSelectedDomain>0</GoogleSuggestsSelectedDomain>
+  <ParseGoogleSuggests>true</ParseGoogleSuggests>
+  <ParseYandexSuggests>true</ParseYandexSuggests>
+  <ParseRamblerSuggests>false</ParseRamblerSuggests>
+  <ParseMailSuggests>false</ParseMailSuggests>
+  <ParseNigmaSuggests>false</ParseNigmaSuggests>
+  <ParseYahooSuggests>false</ParseYahooSuggests>
+  <LowBoundOfBaseFreq>0</LowBoundOfBaseFreq>
+  <ParseOnlyCheckedRows>false</ParseOnlyCheckedRows>
+  <SeasonGraphicView>2</SeasonGraphicView>
+  <ScrollingMode>DeferredWithScrollTips</ScrollingMode>
+  <SummaryInfoPosition>Bottom</SummaryInfoPosition>
+  <WantSummaryInfo>false</WantSummaryInfo>
+  <PointOccuranceRadioBtnIsChecked>false</PointOccuranceRadioBtnIsChecked>
+  <PartOccuranceRadioBtnIsChecked>false</PartOccuranceRadioBtnIsChecked>
+  <FullOccuranceRadioBtnIsChecked>true</FullOccuranceRadioBtnIsChecked>
+  <RecentOpenedFiles>
+    <string>Z:\home\rybolove\www\protected\seo\словоеб\rybolove.sedb</string>
+  </RecentOpenedFiles>
+  <QATTargetIDs>
+    <string>NewProjectBtn</string>
+    <string>LoadProjectBtn</string>
+    <string>SaveAsProjectBtn</string>
+    <string>ExportToXLSBtn</string>
+    <string>PreferencesBtn</string>
+    <string>HideEmptyColumnsBtn</string>
+  </QATTargetIDs>
+  <OpenExportFile>false</OpenExportFile>
+  <HideRowsBySearch>false</HideRowsBySearch>
+  <MinimizeToTray>false</MinimizeToTray>
+  <AutoHideCaptcha>false</AutoHideCaptcha>
+  <AddColumnCaptionsToBuffer>false</AddColumnCaptionsToBuffer>
+  <MaxPositionToParse>30</MaxPositionToParse>
+  <GoogleQueryParametersParametr />
+  <YandexQueryParametersParametr />
+  <GoogleSelectedDomain>2</GoogleSelectedDomain>
+  <YandexSelectedDomain>1</YandexSelectedDomain>
+  <QuoteQueryToSE>false</QuoteQueryToSE>
+  <QuoteQueryToSERelevant>false</QuoteQueryToSERelevant>
+  <KEIFormula>( 'Частотность'  / 2) * ( 'Частотность'  / 2) / 'Конкуренция по Яндексу' </KEIFormula>
+  <KEIFormula2>( 'Частотность'  / 2) * ( 'Частотность'  / 2) / 'Конкуренция по Яндексу' </KEIFormula2>
+  <KEIFormula3>( 'Частотность'  / 2) * ( 'Частотность'  / 2) / 'Конкуренция по Яндексу' </KEIFormula3>
+  <KEIFormula4>( 'Частотность'  / 2) * ( 'Частотность'  / 2) / 'Конкуренция по Яндексу' </KEIFormula4>
+  <RegionForYandexSearch>187</RegionForYandexSearch>
+  <ManualYandexRegionSuggests>false</ManualYandexRegionSuggests>
+  <RegionForYandexSuggests>0</RegionForYandexSuggests>
+  <WordstatStartXPosition>668</WordstatStartXPosition>
+  <WordstatStartYPosition>105</WordstatStartYPosition>
+  <StopWordsStartXPosition>200</StopWordsStartXPosition>
+  <StopWordsStartYPosition>200</StopWordsStartYPosition>
+  <CaptchaAutoRecognizeSelectedModeIndex>0</CaptchaAutoRecognizeSelectedModeIndex>
+  <AntigateKey />
+  <CaptchaBotKey />
+  <RIPCaptchaKey />
+  <RUCaptchaKey />
+  <SociaLinkKey />
+  <AddStopWordsDataToQuery>false</AddStopWordsDataToQuery>
+  <AddSumLine>false</AddSumLine>
+  <PersentRate>1</PersentRate>
+  <FontSize>12</FontSize>
+  <DeleteDialog>false</DeleteDialog>
+  <ExitDialog>true</ExitDialog>
+  <ClearDialog>true</ClearDialog>
+  <StoreCurrentCheckedPartsToGlobalStopWordsList>false</StoreCurrentCheckedPartsToGlobalStopWordsList>
+  <ParseOnlyCountYDAuctionData>false</ParseOnlyCountYDAuctionData>
+  <YDMode>0</YDMode>
+  <YDSimpleQueryModeChecked>true</YDSimpleQueryModeChecked>
+  <YDQuoteQueryModeChecked>false</YDQuoteQueryModeChecked>
+  <YDQuotePointQueryModeChecked>false</YDQuotePointQueryModeChecked>
+  <YDParseAuctionData>false</YDParseAuctionData>
+  <RamblerLogin />
+  <RamblerPwd />
+  <ParseLevel>0</ParseLevel>
+  <ParseLevelSuggests>0</ParseLevelSuggests>
+  <ParseLevelAdstat>0</ParseLevelAdstat>
+  <TimeoutLowBoundSuggests>50</TimeoutLowBoundSuggests>
+  <TimeoutHighBoundSuggests>250</TimeoutHighBoundSuggests>
+  <PagesToParse>40</PagesToParse>
+  <PagesToParseAdstat>40</PagesToParseAdstat>
+  <Retry>30</Retry>
+  <FreqToParseLowBound>0</FreqToParseLowBound>
+  <FreqToParseLowBoundAdstat>0</FreqToParseLowBoundAdstat>
+  <FreqToParseHighBound>999000000</FreqToParseHighBound>
+  <FreqToParseHighBoundAdstat>999000000</FreqToParseHighBoundAdstat>
+  <GraphicsColorA>130</GraphicsColorA>
+  <GraphicsColorR>0</GraphicsColorR>
+  <GraphicsColorG>0</GraphicsColorG>
+  <GraphicsColorB>0</GraphicsColorB>
+</PreferencesData>
