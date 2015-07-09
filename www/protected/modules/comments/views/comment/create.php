@@ -32,9 +32,8 @@ if(!empty($comments))
 }
 ?>
 
-<div class="leave_comment" id="leave_comment">
 	<h3><?php echo Yii::t('CommentsModule.core', 'Оставить отзыв') ?></h3>
-	<div class="form wide ">
+	<div class="submit-review ">
 	<?php $form=$this->beginWidget('CActiveForm', array(
 		'id'                     =>'comment-create-form',
 		'action'                 =>$currentUrl.'#comment-create-form',
@@ -43,27 +42,27 @@ if(!empty($comments))
 	)); ?>
 
 	<?php if(Yii::app()->user->isGuest): ?>
-		<div class="row">
+		<p>
 			<?php echo $form->labelEx($comment,'name'); ?>
 			<?php echo $form->textField($comment,'name'); ?>
 			<?php echo $form->error($comment,'name'); ?>
-		</div>
+		</p>
 
-		<div class="row">
+		<p>
 			<?php echo $form->labelEx($comment,'email'); ?>
 			<?php echo $form->textField($comment,'email'); ?>
 			<?php echo $form->error($comment,'email'); ?>
-		</div>
+		</p>
 	<?php endif; ?>
 
-		<div class="row">
+		<p>
 			<?php echo $form->labelEx($comment,'text'); ?>
-			<?php echo $form->textArea($comment,'text', array('rows'=>5)); ?>
+			<?php echo $form->textArea($comment,'text', array('rows'=>10, 'cols'=>30)); ?>
 			<?php echo $form->error($comment,'text'); ?>
-		</div>
+		</p>
 
 		<?php if(Yii::app()->user->isGuest): ?>
-		<div class="row">
+		<p>
 			<?php echo CHtml::activeLabelEx($comment, 'verifyCode')?>
 			<?php $this->widget('CCaptcha', array(
 				'clickableImage'=>true,
@@ -73,12 +72,12 @@ if(!empty($comments))
 			<label>&nbsp;</label>
 			<?php echo CHtml::activeTextField($comment, 'verifyCode')?>
 			<?php echo $form->error($comment,'verifyCode'); ?>
-		</div>
+		</p>
 		<?php endif ?>
 
-		<div class="row buttons">
-			<?php echo CHtml::submitButton(Yii::t('CommentsModule.core', 'Отправить')); ?>
-		</div>
+		<p>
+			<?php echo CHtml::submitButton(Yii::t('CommentsModule.core', 'Отправить'), array('value' => 'Отправить')); ?>
+		</p>
 
 	<?php $this->endWidget(); ?><!-- /form -->
 	</div>
