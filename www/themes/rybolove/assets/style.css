@@ -281,6 +281,7 @@ body { font-family: 'Titillium Web', sans-serif; }
 
 .product-f-image {
     position: relative;
+	width: 100%;
 }
 .product-hover {
     height: 100%;
