@@ -61,7 +61,7 @@
   <KEIWordsSpecialSymbolsDoesntMatters>false</KEIWordsSpecialSymbolsDoesntMatters>
   <DontUpdateFilteredInAndCheckedCountersWhenParsing>false</DontUpdateFilteredInAndCheckedCountersWhenParsing>
   <SetZeroValueToQuoteAndQuotePointFreqWhenBaseFreqHasZeroValue>false</SetZeroValueToQuoteAndQuotePointFreqWhenBaseFreqHasZeroValue>
-  <UseREGEXPQuickFilterToggleIsChecked xsi:nil="true" />
+  <UseREGEXPQuickFilterToggleIsChecked>true</UseREGEXPQuickFilterToggleIsChecked>
   <SemRushFilterEntryList />
   <DisableShadows>false</DisableShadows>
   <DontSetNextRecordAfterSpace>true</DontSetNextRecordAfterSpace>
@@ -281,8 +281,8 @@ nnniikk@yandex.ru:nnniikk123123</YandexDirectAccountData>
   <IsMaximizedState>false</IsMaximizedState>
   <WindowWidth>1024</WindowWidth>
   <WindowHeight>700</WindowHeight>
-  <WindowTop>11</WindowTop>
-  <WindowLeft>174</WindowLeft>
+  <WindowTop>3</WindowTop>
+  <WindowLeft>298</WindowLeft>
   <CSVSeparatorChar>;</CSVSeparatorChar>
   <CSVRoundChar>"</CSVRoundChar>
   <ParseLeftColumnClaster>false</ParseLeftColumnClaster>
@@ -333,8 +333,8 @@ nnniikk@yandex.ru:nnniikk123123</YandexDirectAccountData>
   <ExportFormat>csv</ExportFormat>
   <AllowFilterRecords>true</AllowFilterRecords>
   <AllowSummRecords>true</AllowSummRecords>
-  <Counter>0</Counter>
-  <PreferencesTabControl_1_LastSelectedIndex>0</PreferencesTabControl_1_LastSelectedIndex>
+  <Counter>1</Counter>
+  <PreferencesTabControl_1_LastSelectedIndex>2</PreferencesTabControl_1_LastSelectedIndex>
   <PreferencesTabControl_2_LastSelectedIndex>5</PreferencesTabControl_2_LastSelectedIndex>
   <PreferencesTabControl_3_LastSelectedIndex>0</PreferencesTabControl_3_LastSelectedIndex>
   <PreferencesAnticaptchaTabControl_LastSelectedIndex>0</PreferencesAnticaptchaTabControl_LastSelectedIndex>
@@ -382,10 +382,10 @@ nnniikk@yandex.ru:nnniikk123123</YandexDirectAccountData>
   <YandexSelectedDomain>1</YandexSelectedDomain>
   <QuoteQueryToSE>false</QuoteQueryToSE>
   <QuoteQueryToSERelevant>false</QuoteQueryToSERelevant>
-  <KEIFormula>( 'Частотность'  / 2) * ( 'Частотность'  / 2) / 'Конкуренция по Яндексу' </KEIFormula>
-  <KEIFormula2>( 'Частотность'  / 2) * ( 'Частотность'  / 2) / 'Конкуренция по Яндексу' </KEIFormula2>
-  <KEIFormula3>( 'Частотность'  / 2) * ( 'Частотность'  / 2) / 'Конкуренция по Яндексу' </KEIFormula3>
-  <KEIFormula4>( 'Частотность'  / 2) * ( 'Частотность'  / 2) / 'Конкуренция по Яндексу' </KEIFormula4>
+  <KEIFormula>( YandexWordstatBaseFreq  / 2) * ( YandexWordstatBaseFreq  / 2) / KEI_YandexDocCount </KEIFormula>
+  <KEIFormula2>( YandexWordstatBaseFreq  / 2) * ( YandexWordstatBaseFreq  / 2) / KEI_YandexDocCount </KEIFormula2>
+  <KEIFormula3>( YandexWordstatBaseFreq  / 2) * ( YandexWordstatBaseFreq  / 2) / KEI_YandexDocCount </KEIFormula3>
+  <KEIFormula4>( YandexWordstatBaseFreq  / 2) * ( YandexWordstatBaseFreq  / 2) / KEI_YandexDocCount </KEIFormula4>
   <RegionForYandexSearch>187</RegionForYandexSearch>
   <ManualYandexRegionSuggests>false</ManualYandexRegionSuggests>
   <RegionForYandexSuggests>0</RegionForYandexSuggests>
