@@ -214,9 +214,9 @@
                         <img src="<?=$temdir?>img/logo-footer.png" alt="">
                     </a>   
                         <div class="footer-social">
-                            <a href="https://www.facebook.com/groups/1398569730473723/" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="https://instagram.com/rybolove2000" target="_blank"><i class="fa fa-instagram"></i></a>
-                            <a href="http://vk.com/ribolove" target="_blank"><i class="fa fa-vk"></i></a>
+                            <a href="https://www.facebook.com/groups/1398569730473723/" target="_blank" rel="nofollow" ><i class="fa fa-facebook"></i></a>
+                            <a href="https://instagram.com/rybolove2000" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a>
+                            <a href="http://vk.com/ribolove" target="_blank" rel="nofollow"><i class="fa fa-vk"></i></a>
                             
                         </div>
                     <div class="sapeLinks">
@@ -302,7 +302,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="tqg">
-                       <p>Создано командой <a href="http://tqg.com.ua" target="_blank">Top Quality Guys</a></p>
+                       <p>Создано командой <a href="http://tqg.com.ua" target="_blank" rel="nofollow">Top Quality Guys</a></p>
                     </div>
                 </div>
                 <!--
