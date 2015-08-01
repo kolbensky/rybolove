@@ -135,9 +135,14 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                         </ul>
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                                <div class="desc"><?php echo $model->full_description; ?></div>
+                                                <div class="desc">
+                                                    <sape_index> 
+                                                    <?php 
+                                                        echo $model->full_description; 
+                                                    ?>
+                                                    </sape_index>
+                                                </div>   
                                             </div>
-                                                
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
                                                 
                                                     <?php $this->renderPartial('comments.views.comment.create', array('model'=>$model)); ?>

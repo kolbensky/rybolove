@@ -11,8 +11,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
-   
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo CHtml::encode($this->pageTitle) ?></title>
 	<meta name="description" content="<?php echo CHtml::encode($this->pageDescription) ?>">
@@ -23,8 +21,7 @@
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
-	
-    
+ 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     
@@ -41,24 +38,10 @@
     <link rel="stylesheet" href="<?=$temdir?>nikolay_r.css">
     <link rel="stylesheet" href="<?=$temdir?>main.css">
     <link rel="stylesheet" href="<?=$temdir?>css/jquery.jgrowl.css">
-      <link rel="stylesheet" href="<?=$temdir?>Yrii.css">
-
+    <link rel="stylesheet" href="<?=$temdir?>Yrii.css">
     <link rel="stylesheet" href="<?=$temdir?>sano.css">
-      <link rel="stylesheet" href="<?=$temdir?>anton.css">
+    <link rel="stylesheet" href="<?=$temdir?>anton.css">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	
-
-  </head>
-  <body>
-    <!--Counters-->
-    <?php include_once("counters/yandexMetrika.php") ?>
-    <?php include_once("counters/googleAnalytics.php") ?>
     <!--sape -->
     <?php
         global $sape;
@@ -67,7 +50,16 @@
         }
         require_once(realpath($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'));
         $sape = new SAPE_client();
+        $sape_context = new SAPE_context();
+        ob_start(array(&$sape_context,'replace_in_page'));
     ?>
+
+  </head>
+  <body>
+    <!--Counters-->
+    <?php include_once("counters/yandexMetrika.php") ?>
+    <?php include_once("counters/googleAnalytics.php") ?>
+    
 
     <div id="pageUpButton"></div>
     <div class="header-area">
@@ -220,9 +212,7 @@
                             
                         </div>
                     <div class="sapeLinks">
-                        Возможно вас также интересует:
                         <?php
-                            global $sape;
                             echo $sape->return_links();
                         ?>
                     </div>
@@ -239,20 +229,6 @@
                             <li><a href="/page/dostavka-i-oplata">Доставка и оплата</a></li>
                             <li><a href="/page/obratnaya-svyaz">Обратная связь</a></li>
                         </ul>
-                        <?php
-            /*
-             $this->widget('zii.widgets.CMenu', array(
-                'items'=>array(
-                    array('label'=>Yii::t('core', 'Помощь'), 'url'=>array('/pages/pages/view', 'url'=>'help')),
-                    array('label'=>Yii::t('core', 'Как сделать заказ'), 'url'=>array('/pages/pages/view', 'url'=>'how-to-create-order')),
-                    array('label'=>Yii::t('core', 'Гарантия'), 'url'=>array('/pages/pages/view', 'url'=>'garantiya')),
-                    array('label'=>Yii::t('core', 'Доставка и оплата'), 'url'=>array('/pages/pages/view', 'url'=>'dostavka-i-oplata')),
-                    array('label'=>Yii::t('core', 'Обратная связь'), 'url'=>array('/feedback/default/index')),
-                ),
-            ));
-            */
-            ?>
-
                     </div>
                 </div>
                 
