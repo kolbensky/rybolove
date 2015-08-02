@@ -2,9 +2,7 @@
 
     <div class="container">
 <style>
-.instansive-widget img{
-	padding: 0px!important;
-	}
+
 </style>
 <!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/99bb44d9c2c9d419561c620a3c8b1c029da1c2ae.html" id="instansive_99bb44d9c2" name="instansive_99bb44d9c2"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
    <!-- <div class="slider-area">
