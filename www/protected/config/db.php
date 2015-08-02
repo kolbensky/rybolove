@@ -1,9 +1,9 @@
 <?php
 
 if(YII_DEBUG) return array(
-    'connectionString' => 'mysql:host=localhost; dbname=rybolove',
+    'connectionString' => 'mysql:host=localhost; dbname=u732441123_site',
     'username' => 'root',
-    'password' => '',
+    'password' => 'root',
     'enableProfiling' => YII_DEBUG, // Disable in production
     'enableParamLogging' => YII_DEBUG, // Disable in production
     'emulatePrepare' => true,
@@ -14,9 +14,9 @@ if(YII_DEBUG) return array(
 else return 
     
 array(
-    'connectionString' => 'mysql:host=localhost; dbname=rybolove',
+    'connectionString' => 'mysql:host=localhost; dbname=u732441123_site',
     'username' => 'root',
-    'password' => '',
+    'password' => 'root',
     'enableProfiling' => YII_DEBUG, // Disable in production
     'enableParamLogging' => YII_DEBUG, // Disable in production
     'emulatePrepare' => true,
