@@ -42,16 +42,25 @@
     <link rel="stylesheet" href="<?=$temdir?>sano.css">
     <link rel="stylesheet" href="<?=$temdir?>anton.css">
 
-    <!--sape -->
+    <!--sape links-->
     <?php
-        global $sape;
-        if (!defined('_SAPE_USER')){
+         if (!defined('_SAPE_USER')){
             define('_SAPE_USER', '2aee502e9dca4e2ca61035b7e1780616');
+         }
+         require_once(realpath($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'));
+         $sape = new SAPE_client();
+    ?>
+
+    <!--sape context links-->
+    <?php 
+        if (!defined('_SAPE_USER')){
+            if (!defined('_SAPE_USER')){
+                define('_SAPE_USER', '2aee502e9dca4e2ca61035b7e1780616'); 
+            }
         }
-        require_once(realpath($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'));
-        $sape = new SAPE_client();
-        $sape_context = new SAPE_context();
-        ob_start(array(&$sape_context,'replace_in_page'));
+        require_once($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'); 
+        $o['debug']=true;
+        $sape_context = new SAPE_context($o);
     ?>
 
   </head>
@@ -213,7 +222,7 @@
                         </div>
                     <div class="sapeLinks">
                         <?php
-                            echo $sape->return_links();
+                            echo iconv( "windows-1251", "UTF-8", $sape->return_links() );
                         ?>
                     </div>
                     </div>

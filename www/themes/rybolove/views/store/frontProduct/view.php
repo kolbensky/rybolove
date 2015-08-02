@@ -135,12 +135,11 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                         </ul>
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                                <div class="desc">
-                                                    <sape_index> 
-                                                    <?php 
-                                                        echo $model->full_description; 
-                                                    ?>
-                                                    </sape_index>
+                                                <div class="desc"> 
+                                                    <?
+                                                        $text = $model->full_description;
+                                                        echo '<sape_index>'.$text.'</sape_index>';
+                                                        ?>
                                                 </div>   
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
