@@ -96,7 +96,11 @@ $this->widget('ext.sgridview.SGridView', array(
 //			'value'=>'CHtml::link(CHtml::encode($data->url), array("/store/frontProduct/view", "url"=>$data->url), array("target"=>"_blank"))',
 //		),
 		'sku',
-		'price',
+                array(
+			'name'=>'price',
+			'type'=>'raw',
+			'value'=>'Yii::app()->currency->main->symbol .(string)$data->price." / ".StoreProduct::formatPrice($data->toCurrentCurrency()) . Yii::app()->currency->active->symbol;',
+		),		
 		array(
 			'name'   => 'manufacturer_id',
 			'type'   => 'raw',
