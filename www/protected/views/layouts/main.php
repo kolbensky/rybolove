@@ -1,5 +1,4 @@
 <?php
-
 	Yii::import('application.modules.store.components.SCompareProducts');
 	Yii::import('application.modules.store.models.wishlist.StoreWishlist');
 
@@ -47,8 +46,6 @@
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/private_css/alexander_a.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/private_css/yury_s.css">
 	
-	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/common.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/menu.js"></script>
 </head>
 <body>
 
@@ -208,5 +205,8 @@
 		</div>
 	</div>
 </div>
+<!--javascripts-->
+<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/common.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/menu.js"></script>
 </body>
 </html>

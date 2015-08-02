@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+a:13:{s:18:"__sape_delimiter__";s:0:"";s:12:"__for_user__";s:32:"2aee502e9dca4e2ca61035b7e1780616";s:12:"__for_host__";s:15:"http://rybolove";s:31:"__sape_page_obligatory_output__";s:0:"";s:16:"__sape_new_url__";s:17:"<!--check code-->";s:26:"__sape_new_teasers_block__";s:18:"<!--teaser code-->";s:16:"__sape_charset__";s:12:"windows-1251";s:15:"__last_update__";i:1438543802;s:14:"__multi_site__";b:0;s:21:"__fetch_remote_type__";s:17:"file_get_contents";s:15:"__ignore_case__";b:0;s:15:"__php_version__";s:17:"5.5.9-1ubuntu4.11";s:19:"__server_software__";s:21:"Apache/2.4.7 (Ubuntu)";}
+=======
 a:18:{s:18:"__sape_delimiter__";s:0:"";s:12:"__for_user__";s:32:"2aee502e9dca4e2ca61035b7e1780616";s:12:"__for_host__";s:22:"http://rybolove.com.ua";s:31:"__sape_page_obligatory_output__";s:285:"<script type="text/javascript">
 <!--
 var _acic={dataProvider:10};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="//www2.acint.net/aci.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
@@ -148,4 +151,4 @@ var _acic={dataProvider:10};(function(){var e=document.createElement("script");e
                 height: 600px;
             }
 </style>";s:16:"__sape_new_url__";s:20:"<!--2097627179416-->";s:26:"__sape_new_teasers_block__";s:21:"<!--t2097627179416-->";s:16:"__sape_charset__";s:12:"windows-1251";s:15:"__last_update__";i:1438462586;s:14:"__multi_site__";b:0;s:21:"__fetch_remote_type__";s:17:"file_get_contents";s:15:"__ignore_case__";b:0;s:15:"__php_version__";s:6:"5.5.26";s:19:"__server_software__";s:6:"Apache";}
-
+>>>>>>> 07794474c2cdc7298e1aee2d66307bb4c0bbfbf6
