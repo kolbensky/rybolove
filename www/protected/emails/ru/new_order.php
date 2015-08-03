@@ -20,7 +20,8 @@
     
     <p>
       <b>Всего к оплате:</b>
-      <?=StoreProduct::formatPrice($order->total_price + $order->delivery_price)?> <?=Yii::app()->currency->main->symbol?>
+      <?=  (int)Yii::app()->currency->convert(StoreProduct::formatPrice($order->total_price + $order->delivery_price)); ?> 
+      <?=  Yii::app()->currency->active->symbol; ?>
     </p>
 
     <p>
