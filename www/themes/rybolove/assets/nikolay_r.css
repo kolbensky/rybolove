@@ -13,6 +13,7 @@
 }
 .product-upper img{
   max-height: 300px;
+  min-width:100%
 }
 .single-shop-product h2{
   height: 47px;

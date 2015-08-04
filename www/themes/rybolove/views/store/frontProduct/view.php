@@ -92,7 +92,7 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                     <h2 class="product-name"><?php echo CHtml::encode($model->name); ?></h2>
                                     <div class="product-inner-price">
                                         <ins>
-                                        	<?php echo StoreProduct::formatPrice($model->toCurrentCurrency()); ?>
+                                            <?php echo (int)StoreProduct::formatPrice($model->toCurrentCurrency()); ?>
                                             <?php echo Yii::app()->currency->active->symbol; ?>
                                         </ins> 
                                         <del><!-- discount price-->
@@ -114,9 +114,9 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                         echo CHtml::hiddenField('configurable_id', 0);
                                         echo '<div class="quantity">' . CHtml::numberField('quantity', 1, array('class' => 'input-text qty text', 'min' => '1','onkeyup'=>'ff2(this)','pattern'=>'^[ 1-9]+$')) . '</div>';
                                                 echo CHtml::ajaxSubmitButton(Yii::t('StoreModule.core','Купить'), array('/orders/cart/add'), array(
-                'id'=>'addProduct'.$data->id,
+                'id'=>'addProduct'.$model->id,
                 'dataType'=>'json',
-                'success'=>'js:function(data, textStatus, jqXHR){processCartResponse(data, textStatus, jqXHR, "'.Yii::app()->createAbsoluteUrl('/store/frontProduct/view', array('url'=>$data->url)).'")}',
+                'success'=>'js:function(data, textStatus, jqXHR){processCartResponse(data, textStatus, jqXHR, "'.Yii::app()->createAbsoluteUrl('/store/frontProduct/view', array('url'=>$model->url)).'")}',
             ), array('class'=>'add_to_cart_button'));
                                         //echo CHtml::button(Yii::t('StoreModule.core','Купить'), array('onclick'=>'addToCart(this)','class'=>'add_to_cart_button'))
                                     ?>

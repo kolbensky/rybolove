@@ -1,4 +1,4 @@
-<?
+<?php
 if($data->mainImage)
 			$imgSource = $data->mainImage->getUrl('190x150');
 		else
@@ -7,16 +7,16 @@ if($data->mainImage)
 /**
  * @var StoreProduct $data
  */
+                $title = CHtml::encode($data->name);
 ?>
 
 <div class="col-md-4 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <? echo CHtml::link('<img src="'.$imgSource.'" alt="">', array('frontProduct/view', 'url'=>$data->url), array('title'=> $title)); ?>
+                            <?php echo CHtml::link('<img src="'.$imgSource.'" alt="">', array('frontProduct/view', 'url'=>$data->url), array('title'=> $title)); ?>
                         </div>
                         <h2>
-                            <?php
-                        	$title = CHtml::encode($data->name);
+                            <?php                        	
                         	echo CHtml::link(CHtml::encode($data->name), array('frontProduct/view', 'url'=>$data->url), array('title'=> $title));
                             ?>
                         </h2>
@@ -27,7 +27,8 @@ if($data->mainImage)
 							*/
 							?>
 							<div class="price">
-								<?php echo $data->priceRange() ?>
+								<?php echo (int)StoreProduct::formatPrice($data->toCurrentCurrency()); ?>
+                                                                <?php echo Yii::app()->currency->active->symbol; ?>
 							</div>
                         </div>  
 
@@ -37,7 +38,7 @@ if($data->mainImage)
                                      ///форма для отправки данных о добавлении товара в карзину
                                         echo CHtml::form(array('/cart/add'),  'post',array('id'=>'prod'.$data->id));
                                         echo CHtml::hiddenField('product_id', $data->id);
-                                        echo CHtml::hiddenField('product_price', $data->price);
+                                        echo CHtml::hiddenField('product_price', (int)$data->price);
                                         echo CHtml::hiddenField('use_configurations', $data->use_configurations);
                                         echo CHtml::hiddenField('currency_rate', Yii::app()->currency->active->rate);
                                         echo CHtml::hiddenField('configurable_id', 0);

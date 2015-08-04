@@ -766,12 +766,16 @@ class StoreProduct extends BaseModel
 	 * Used in product listing.
 	 * @return string
 	 */
-	public function priceRange()
-	{
+	public function priceRange($params=null)
+	{   
 		$price     = Yii::app()->currency->convert($this->price);
 		$max_price = Yii::app()->currency->convert($this->max_price);
 		$symbol    = Yii::app()->currency->active->symbol;
-
+                if(isset($params['ceil'])){
+                    $price = ceil($price);
+                    $max_price = ceil($max_price);
+                }
+                
 		if($this->use_configurations && $max_price > 0)
 			return self::formatPrice($price).' '.$symbol.' - '.self::formatPrice($max_price).' '.$symbol;
 
