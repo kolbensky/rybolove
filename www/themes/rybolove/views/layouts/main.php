@@ -43,24 +43,16 @@
     <link rel="stylesheet" href="<?=$temdir?>anton.css">
 
     <!--sape links-->
-    <?php
-         if (!defined('_SAPE_USER')){
-            define('_SAPE_USER', '2aee502e9dca4e2ca61035b7e1780616');
-         }
-         require_once(realpath($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'));
-         $sape = new SAPE_client();
-    ?>
-
-    <!--sape context links-->
-    <?php 
+    <?php/*
+        global $sape;
         if (!defined('_SAPE_USER')){
-            if (!defined('_SAPE_USER')){
-                define('_SAPE_USER', '2aee502e9dca4e2ca61035b7e1780616'); 
-            }
+        define('_SAPE_USER', '2aee502e9dca4e2ca61035b7e1780616');
         }
-        require_once($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'); 
-        $o['debug']=true;
+        require_once(realpath($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'));
+        $o['force_show_code'] = true;
+        $sape = new SAPE_client($o);
         $sape_context = new SAPE_context($o);
+        */
     ?>
 
   </head>
@@ -220,11 +212,27 @@
                             <a href="http://vk.com/ribolove" target="_blank" rel="nofollow"><i class="fa fa-vk"></i></a>
                             
                         </div>
-                    <div class="sapeLinks">
-                        <?php
-                            echo iconv( "windows-1251", "UTF-8", $sape->return_links() );
-                        ?>
-                    </div>
+                        <div class="sapeLinks">
+                            <!--sape -->
+                            <?php
+                                //echo iconv( "windows-1251", "UTF-8", $sape->return_links() );
+                            ?>
+                            <!-- cmse ru -->
+                            <?php /*
+                                $o['charset'] = "utf-8"; // Если на сайте используется кодировка отличная от Windows-1251, то необходимо указать вашу кодировку на этой строке.
+                                if (!defined('_SAPE_USER')){
+                                    define('_SAPE_USER', 'c55bf3fc219b9610c2b8abde2d8ed171');
+                                }
+                                require_once($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php');
+                                echo "<!--check code-->";
+                                $o['force_show_code'] = true;
+                                $sape = new SAPE_client($o);
+                                echo $sape->return_links();
+                                unset($o);
+                                echo "<!--check code-->";
+                                */
+                            ?>
+                        </div>
                     </div>
                 </div>
                 

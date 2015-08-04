@@ -137,10 +137,19 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
                                             <div role="tabpanel" class="tab-pane fade in active" id="home">
                                                 <div class="desc"> 
                                                     <?
-                                                        $text = $model->full_description;
-                                                        echo '<sape_index>'.$text.'</sape_index>';
-                                                        ?>
-                                                </div>   
+                                                        $text = $model->full_description;//В данном фрагменте текста страницы моего сайта я хочу продавать контекстные ссылки
+                                                        //$text = $sape_context->replace_in_text_segment($text);
+                                                        echo $text;
+                                                        //Fatal error: Call to a member function replace_in_text_segment() on a non-object in /home/u732441123/public_html/themes/rybolove/views/store/frontProduct/view.php 
+                                                    ?>
+                                                </div>  
+                                                <? 
+                                                    //global $sape;
+                                                    //echo iconv( "windows-1251", "UTF-8", $sape->return_links(1) );
+                                                    //global $sape;
+                                                    //echo $sape->return_links(1); 
+                                                    //Fatal error: Call to a member function return_links() on a non-object in /home/u732441123/public_html/themes/rybolove/views/store/frontProduct/view.php
+                                                ?>
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
                                                 
